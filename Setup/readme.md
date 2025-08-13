@@ -4,7 +4,7 @@ Este repositorio requiere el uso de [Git LFS (Large File Storage)](https://git-l
 
 ---
 
-### ✅ Instalación en Ubuntu 22.04
+### ✅ Instalación Git LFS (Larfe file Storage)
 
 1. **Instalar Git LFS**  
    Abre la terminal y ejecuta:
@@ -53,3 +53,18 @@ Este repositorio requiere el uso de [Git LFS (Large File Storage)](https://git-l
 ---
 
 > ⚠️ **Importante:** Asegúrate de hacer `git add` a los archivos rastreados con LFS **después** de configurar el `git lfs track`, para que el seguimiento sea efectivo.
+
+---
+
+## Instalar ROS2 Humble en Ubuntu 22.04
+
+Para instalar **ROS2 Humble** en **Ubuntu 22.04**, visita el siguiente enlace y sigue los pasos indicados:
+
+👉 [Guía oficial de instalación de ROS2 Humble en Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+
+> ⚠️ **Importante:** Se debe usar la opción **"Desktop Install"** y **NO** la opción **"ros-base (Bare Bones)"**.
+
+
+
+
+
