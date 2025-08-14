@@ -64,7 +64,19 @@ Para instalar **ROS2 Humble** en **Ubuntu 22.04**, visita el siguiente enlace y 
 
 > ⚠️ **Importante:** Se debe usar la opción **"Desktop Install"** y **NO** la opción **"ros-base (Bare Bones)"**.
 
+## Hacer que ROS2 siempre este listo para usarse en terminal
 
-
-
-
+1. Abrir el terminal y usar el comando cd para ir a home
+```
+cd
+```
+2. En home usar el siguiente comando para abrir el archivo .bashrc y poder modificarlo
+```
+sudo gedit .bashrc
+```
+3. Al final del archivo .bashrc añadir el source con la ruta de ros2 instalado
+```
+#Inicializar siempre ros2 
+source /opt/ros/humble/setup.bash
+```
+4. Guardar el archivo y cerrarlo
