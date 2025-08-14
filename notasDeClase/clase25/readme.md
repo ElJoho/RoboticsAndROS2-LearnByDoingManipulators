@@ -1,43 +1,92 @@
-#25. Create and Activate a Workspace
+# 25. Create and Activate a Workspace
 
-## 1. Colcon build
-Usar el comando
-´´´
+## 1. Colcon Build
+Usar el comando:
+
+```bash
 colcon build
-´´´
+```
+
 para inicializar el workspace.
-NOTA: ES IMPORNTANTE QUE COLCON BUILD SE HAGA EN LA CARPETA INICIAL DEL WORKSPACE Y NUNCA DENTRO DE SRC U OTRA CARPETA INTERNA.
 
-## 2. Creando un paquete 
-### 2.1 Creando un paquete de python
-Irse a la carpeta src dentro del workspace y poner el comando:
+> ⚠️ **Importante:**
+> Ejecuta `colcon build` **únicamente** en la carpeta raíz del workspace
+> *(por ejemplo: `~/arduinobot_ws/`)* y **nunca** dentro de `src` u otra carpeta interna.
 
-´´´
-ros2 pkg create --build-type ament_python arduinobot_py_examples 
-´´´
+---
+
+## 2. Creando un paquete
+
+### 2.1 Creando un paquete de Python
+
+Ir a la carpeta `src` dentro del workspace y ejecutar:
+
+```bash
+cd src/
+ros2 pkg create --build-type ament_python arduinobot_py_examples
+```
+
+---
+
 ### 2.2 Creando un paquete de C++
-Irse a la carpeta src dentro del workspace y poner el comando 
 
-´´´
+Ir a la carpeta `src` dentro del workspace y ejecutar:
+
+```bash
+cd src/
 ros2 pkg create --build-type ament_cmake arduinobot_cpp_examples
-´´´
+```
 
-### 2.3 Usar colcon build para crear los paquetes
-volverse a la carpeta raiz del workspace
-´´´
+---
+
+### 2.3 Usar Colcon Build para crear los paquetes
+
+Volver a la carpeta raíz del workspace y ejecutar:
+
+```bash
+cd ..
 colcon build
-´´´
-### 2.4 Activar workspace
-Para hacer que el workspace actual (arduinobot_ws) se reconozca como un overlay para ros2 primero irse a la carpeta install y luego poner el comando de setup.bash
-´´´
+```
+
+---
+
+### 2.4 Activar el workspace
+
+Para que el workspace actual (`arduinobot_ws`) se reconozca como un **overlay** para ROS 2:
+
+```bash
 cd install/
 . setup.bash
-´´´
-### 2.5 Comprobar que el paquete esta en el listado
-Usar el siguiente comando:
-´´´
-ros2 pkg list
-´´´
-Revisar que los paquetes que hemos creado estan en el listado. Debera aparecer arduinobot_py_example y arduinobot_cpp_examples
+```
 
-Nota: El source command que se uso para hacer que el ambiente sea consciente del nuevo overlay solo se aplica para el terminal actual en que se uso el comando.
+💡 **Tip:** También puedes usar:
+
+```bash
+source install/setup.bash
+```
+
+---
+
+### 2.5 Comprobar que el paquete está en el listado
+
+Ejecutar:
+
+```bash
+ros2 pkg list
+```
+
+Verificar que aparecen:
+
+* `arduinobot_py_examples`
+* `arduinobot_cpp_examples`
+
+---
+
+> ℹ️ **Nota:**
+> El comando `source install/setup.bash` **solo afecta la terminal actual**.
+> Si abres una nueva terminal, deberás volver a ejecutarlo o añadirlo a tu `~/.bashrc`:
+>
+> ```bash
+> echo "source ~/arduinobot_ws/install/setup.bash" >> ~/.bashrc
+> ```
+
