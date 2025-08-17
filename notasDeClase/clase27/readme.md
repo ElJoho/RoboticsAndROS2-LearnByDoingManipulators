@@ -151,73 +151,93 @@ colcon build
 
 ## 5. Probar la funcionalidad del nodo y el paquete
 
-### 5.1 Ejecutar nodo
+Pruebe los siguientes comandos
 
-Estructura:
+# 5.1. **ros2 run**
+   Siguiendo las estructura:
 
-```bash
+```
 ros2 run nombre_paquete nombre_nodo
+```
+
+En este caso será:
+
+```
+ros2 run arduinobot_cpp_example simple_publisher
+```
+
+Y el output se vera como:
+
+```
+[INFO] [1755455168.488316641] [simple_publisher]: Publishing at 1 Hz
+```
+
+# 5.2. **ros2 topic**
+
+# 5.2.1
+Escriba en la consola
+
+```
+ros2 topic list
+```
+
+vera un listado de los topicos entre los cuales debe estar `/chatter` correspondiente al nodo `simple_publisher`.
+
+# 5.2.2 **echo**
+Luego en otra consola escriba:
+
+```
+ro2s topic echo /nombre_topico
 ```
 
 En este caso:
 
-```bash
-ros2 run arduinobot_cpp_examples simple_publisher
 ```
-
-Salida esperada:
-
-```output
-[INFO] [1755455168.488316641] [simple_publisher]: Publishing at 1 Hz
-```
-
-### 5.2 Verificar tópicos
-
-#### Listar tópicos
-
-```bash
-ros2 topic list
-```
-
-Deberá aparecer `/chatter`.
-
-#### Escuchar mensajes (`echo`)
-
-```bash
 ros2 topic echo /chatter
 ```
 
-Salida esperada:
+Vera lo siguiente:
 
-```output
+```
 data: 'Hello ROS 2 - counter: 96'
 ---
 data: 'Hello ROS 2 - counter: 97'
 ---
 ```
 
-#### Información del tópico (`info`)
+# 5.2.3 **info**
+Escribe en la consola
 
-```bash
+```
+ros2 topic info /nombre_topico
+ros2 topic info /nombre_topico --verbose
+```
+
+Al utilizar la bandera `--verbose` se obtiene mas información, En este caso use:
+
+```
 ros2 topic info /chatter
 ros2 topic info /chatter --verbose
 ```
 
-#### Frecuencia de publicación (`hz`)
+# 5.2.4 **hz**
+Para ver a que tasa se publica el topic use:
 
-```bash
+```
+ros2 topic hz /nombre_topico
+```
+
+En este caso:
+
+```
 ros2 topic hz /chatter
 ```
 
-Ejemplo de salida:
+output
 
-```output
-average rate: 1.000
-  min: 1.000s max: 1.000s std dev: 0.00026s window: 3
-average rate: 1.000
-  min: 1.000s max: 1.000s std dev: 0.00027s window: 5
 ```
-
----
-
-¿Quieres que te lo deje ahora mismo **en un archivo `.md` descargable** para que no tengas que copiar/pegar desde aquí?
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00026s window: 3
+average rate: 1.000
+	min: 1.000s max: 1.000s std dev: 0.00027s window: 5
+```
