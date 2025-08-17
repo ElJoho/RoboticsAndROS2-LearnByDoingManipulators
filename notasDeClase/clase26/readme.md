@@ -4,14 +4,14 @@
 Desde la carpeta raíz del *workspace*, ir a `src`, luego a la carpeta del paquete de Python y, dentro de esta, a una carpeta con el mismo nombre que el paquete. Ahí crear el script que contendrá el nodo en Python, siguiendo la estructura:
 
 ```
-workspace/src/paquete\_python/paquete\_python/nodo.py
+workspace/src/paquete_python/paquete_python/nodo.py
 
 ```
 
 En este caso:
 
 ```
-arduoinobot\_ws/src/arduinobot\_py\_examples/arduinobot\_py\_examples/simple\_publisher.py
+arduoinobot_ws/src/arduinobot_py_examples/arduinobot_py_examples/simple_publisher.py
 
 ```
 
@@ -21,7 +21,7 @@ arduoinobot\_ws/src/arduinobot\_py\_examples/arduinobot\_py\_examples/simple\_pu
 En el archivo `setup.py`, ubicar la sección `console_scripts` y añadir el script con la estructura:
 
 ```
-nombre\_script = nombre\_paquete.nombre\_script\:main
+nombre_script = nombre_paquete.nombre_script:main
 
 ```
 

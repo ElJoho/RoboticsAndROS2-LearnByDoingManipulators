@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-96a4899da2436721602e.json",
+					"jsonFile" : "directory-.-53a06562dc7b44b1fa63.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -17,7 +17,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -33,7 +34,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -44,6 +46,13 @@
 					"id" : "arduinobot_cpp_examples_uninstall::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-arduinobot_cpp_examples_uninstall-e3bef1b18ff99f93fc45.json",
 					"name" : "arduinobot_cpp_examples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_publisher-6ccf8fabc71b3d46b3c7.json",
+					"name" : "simple_publisher",
 					"projectIndex" : 0
 				},
 				{
