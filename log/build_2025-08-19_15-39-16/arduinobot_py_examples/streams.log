@@ -1,0 +1,41 @@
+[2.143s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/arduinobot_py_examples build --build-base /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build install --record /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
+[3.005s] running egg_info
+[3.006s] creating ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info
+[3.007s] writing ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/PKG-INFO
+[3.008s] writing dependency_links to ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/dependency_links.txt
+[3.008s] writing entry points to ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/entry_points.txt
+[3.009s] writing requirements to ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/requires.txt
+[3.009s] writing top-level names to ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/top_level.txt
+[3.010s] writing manifest file '../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[3.013s] reading manifest file '../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[3.016s] writing manifest file '../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info/SOURCES.txt'
+[3.016s] running build
+[3.017s] running build_py
+[3.017s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build
+[3.017s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib
+[3.018s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[3.018s] copying arduinobot_py_examples/__init__.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[3.018s] copying arduinobot_py_examples/simple_publisher.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[3.020s] copying arduinobot_py_examples/simple_subscriber.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples
+[3.022s] running install
+[3.022s] running install_lib
+[3.024s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[3.024s] copying /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples/__init__.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[3.025s] copying /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples/simple_publisher.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[3.026s] copying /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build/lib/arduinobot_py_examples/simple_subscriber.py -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples
+[3.026s] byte-compiling /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples/__init__.py to __init__.cpython-310.pyc
+[3.026s] byte-compiling /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples/simple_publisher.py to simple_publisher.cpython-310.pyc
+[3.028s] byte-compiling /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples/simple_subscriber.py to simple_subscriber.cpython-310.pyc
+[3.029s] running install_data
+[3.029s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/ament_index
+[3.030s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/ament_index/resource_index
+[3.030s] creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/ament_index/resource_index/packages
+[3.030s] copying resource/arduinobot_py_examples -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/ament_index/resource_index/packages
+[3.030s] copying package.xml -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples
+[3.031s] running install_egg_info
+[3.035s] Copying ../../../build/arduinobot_py_examples/arduinobot_py_examples.egg-info to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot_py_examples-0.0.0-py3.10.egg-info
+[3.038s] running install_scripts
+[3.089s] Installing simple_publisher script to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[3.090s] Installing simple_subscriber script to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[3.090s] writing list of installed files to '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/install.log'
+[3.156s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples' returned '0': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/arduinobot_py_examples build --build-base /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build install --record /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
