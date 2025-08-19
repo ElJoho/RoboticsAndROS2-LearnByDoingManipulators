@@ -1,0 +1,9 @@
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/uninstall.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/arduinobot_decription_uninstall.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/test.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/edit_cache.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/rebuild_cache.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/list_install_components.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/install.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/install/local.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_decription/CMakeFiles/install/strip.dir
