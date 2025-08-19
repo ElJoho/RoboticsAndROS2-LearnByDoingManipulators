@@ -83,6 +83,3 @@ Para comprobarlo, se puede correr el nodo `simple_publisher.py` y `simple_subscr
 ```bash
 ros2 run arduinobot_py_examples simple_publisher
 ```
-
-```
-```
