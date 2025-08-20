@@ -1,182 +1,149 @@
-# Clase 38 `simple_parameter` (C++ / ROS 2)
+# Clase 38: CLI de parámetros en ROS 2 (`simple_parameter`)
 
-Un nodo ROS 2 en C++ mínimo que declara parámetros configurables y reacciona a cambios de estos en tiempo de ejecución. Basado en la transcripción de clase, este README explica la estructura del nodo, las API de ROS 2 utilizadas y los cambios requeridos en **`CMakeLists.txt`** y **`package.xml`**.
-
----
-
-## 1) Qué hace este nodo
-
-* Declara dos parámetros al inicio:
-
-  * `simple_int_param` (entero, valor por defecto `28`)
-  * `simple_string_param` (cadena, valor por defecto `"Antonio"`)
-* Registra un callback que se ejecuta cuando uno o más parámetros cambian en tiempo de ejecución.
-* Imprime en el terminal los nuevos valores y confirma la actualización como exitosa.
+Este README explica, paso a paso, **cómo ejecutar el nodo** `simple_parameter` y cómo **gestionar sus parámetros** desde la línea de comandos usando `ros2 param`.
 
 ---
 
-## 2) Pseudocódigo de `simple_parameter.cpp`
+## 3) Ejecutar el nodo `simple_parameter`
 
-```pseudocode
-INICIO
+Puedes ejecutar la **implementación en C++** (paquete `arduinobot_cpp_examples`) o, si existe, la **implementación en Python** (paquete `arduinobot_py_examples`). Aquí usamos C++.
 
-INCLUIR rclcpp, rcl_interfaces/SetParametersResult, <string>, <vector>, <memory>
+### 3.1 Ejecución con valores por defecto
 
-CLASE SimpleParameter : Node
-  PÚBLICO:
-    CONSTRUCTOR SimpleParameter():
-      - Llama al constructor base Node con nombre "simple_parameter"
-      - declare_parameter<int>("simple_int_param", 28)
-      - declare_parameter<std::string>("simple_string_param", "Antonio")
-      - param_callback_handle_ = add_on_set_parameters_callback(
-          bind(this->paramChangeCallback, _1)
-        )
-
-  PRIVADO:
-    MIEMBRO param_callback_handle_: SharedPtr a OnSetParametersCallbackHandle
-
-    MÉTODO paramChangeCallback(parameters: vector<rclcpp::Parameter>) 
-      result := rcl_interfaces::msg::SetParametersResult()
-      PARA CADA param EN parameters:
-        SI param.name == "simple_int_param" Y param.type == INTEGER:
-          log "Param simple_int_param cambiado! Nuevo valor: <param.as_int()>"
-          result.successful = true
-        SI param.name == "simple_string_param" Y param.type == STRING:
-          log "Param simple_string_param cambiado! Nuevo valor: <param.as_string()>"
-          result.successful = true
-      RETORNAR result
-
-FUNCIÓN main(argc, argv):
-  rclcpp::init(argc, argv)
-  node := make_shared<SimpleParameter>()
-  rclcpp::spin(node)
-  rclcpp::shutdown()
-
-FIN
-```
-
----
-
-## 3) Funciones y tipos utilizados (explicación detallada)
-
-* **`rclcpp::Node`**
-  Clase base para nodos en C++. Proporciona APIs para parámetros, logging y ejecución.
-
-* **`declare_parameter<T>(nombre, valor_defecto)`**
-  Declara un parámetro de tipo `T` y asigna un valor inicial.
-  Usado aquí para:
-
-  * `simple_int_param` (int, 28)
-  * `simple_string_param` (string, "Antonio")
-
-* **`add_on_set_parameters_callback(cb)`**
-  Registra un callback que se ejecuta cuando se modifican parámetros. Retorna un `SharedPtr` que se debe guardar para mantener el callback activo.
-
-* **`std::bind` y `std::placeholders::_1`**
-  Permiten adaptar el método `paramChangeCallback` como callback válido para ROS 2.
-
-* **`rclcpp::Parameter`**
-  Representa un parámetro que cambia. Métodos:
-
-  * `get_name()` → nombre
-  * `get_type()` → tipo (`INTEGER`, `STRING`, etc.)
-  * `as_int()`, `as_string()` → obtiene valor con el tipo correcto
-
-* **`rcl_interfaces::msg::SetParametersResult`**
-  Tipo de retorno del callback. Campo relevante:
-
-  * `successful` → indica si la actualización fue aceptada.
-
-* **Logging**
-
-  * `get_logger()` obtiene el logger del nodo
-  * `RCLCPP_INFO(...)` / `RCLCPP_INFO_STREAM(...)` imprimen mensajes en terminal
-
-* **Ciclo de vida en `main`**
-
-  * `rclcpp::init()`
-  * `std::make_shared<SimpleParameter>()`
-  * `rclcpp::spin(node)` → mantiene el nodo activo
-  * `rclcpp::shutdown()`
-
----
-
-## 4) Cambios en los archivos de construcción
-
-### `CMakeLists.txt` (añadir nodo y dependencias)
-
-**Cambios requeridos**:
-
-* Incluir dependencia `rcl_interfaces`.
-* Añadir ejecutable `simple_parameter`.
-* Asociar dependencias correctas.
-* Instalar el nuevo ejecutable.
-
-```cmake
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(rcl_interfaces REQUIRED)  # NUEVO
-
-add_executable(simple_parameter src/simple_parameter.cpp)  # NUEVO
-
-ament_target_dependencies(simple_parameter  rclcpp rcl_interfaces)
-
-install(TARGETS
-  simple_publisher
-  simple_subscriber
-  simple_parameter    # NUEVO
-  DESTINATION lib/${PROJECT_NAME}
-)
-```
-
-### `package.xml` (declarar dependencia en runtime)
-
-**Agregar dependencia `rcl_interfaces`:**
-
-```xml
-<depend>rclcpp</depend>
-<depend>std_msgs</depend>
-<depend>rcl_interfaces</depend>  <!-- NUEVO -->
-```
-
----
-
-## 5) Compilar y ejecutar
+#### Comando
 
 ```bash
-# Desde la raíz del workspace
-colcon build --packages-select arduinobot_cpp_examples
-source install/setup.bash
-
-# Ejecutar nodo
 ros2 run arduinobot_cpp_examples simple_parameter
 ```
 
-### Consultar y modificar parámetros desde terminal
+#### ¿Qué hace?
+
+* Lanza el nodo `simple_parameter` con los **valores por defecto** de sus parámetros (por ejemplo, `simple_int_param = 28` y `simple_string_param = "Antonio"`).
+
+#### Notas
+
+* Para **detener** el nodo en la terminal donde corre: `Ctrl + C`.
+
+---
+
+### 3.2 Ejecución pasando parámetros al arrancar
+
+#### Comando
 
 ```bash
-# Listar parámetros
-ros2 param list
+ros2 run arduinobot_cpp_examples simple_parameter --ros-args -p simple_int_param:=30
+```
 
-# Obtener valores actuales
-ros2 param get /simple_parameter simple_int_param
-ros2 param get /simple_parameter simple_string_param
+#### ¿Qué hace?
 
-# Cambiar valores (dispara callback e imprime logs)
-ros2 param set /simple_parameter simple_int_param 99
-ros2 param set /simple_parameter simple_string_param "Hola"
+* Lanza el nodo **sobrescribiendo** el valor por defecto de `simple_int_param` a `30`.
+* La opción `--ros-args` permite pasar argumentos de ROS 2; `-p` se usa para **asignar parámetros** en el arranque.
+
+#### Ejemplo (Terminal 1)
+
+```
+ros2 run arduinobot_cpp_examples simple_parameter --ros-args -p simple_int_param:=30
+[INFO] [...] [simple_parameter]: Param simple_string_param cambiado! Nuevo valor: Hi ros2
 ```
 
 ---
 
-## 6) Ubicación sugerida de archivos
+## 4) Inspeccionar y gestionar parámetros con `ros2 param`
+
+Abre **otra terminal** (Terminal 2) y usa los siguientes comandos mientras el nodo está corriendo en la Terminal 1.
+
+### 4.1 Listar parámetros disponibles del nodo
+
+```bash
+ros2 param list
+```
+
+**Salida:**
 
 ```
-arduinobot_ws/
-└── src/
-    └── arduinobot_cpp_examples/
-        ├── CMakeLists.txt
-        ├── package.xml
-        └── src/
-            └── simple_parameter.cpp
+/simple_parameter:
+  simple_int_param
+  simple_string_param
+  use_sim_time
+  qos_overrides...
 ```
+
+---
+
+### 4.2 Leer (obtener) el valor de un parámetro
+
+```bash
+ros2 param get /simple_parameter simple_int_param
+```
+
+**Salida:**
+
+```
+Integer value is: 28
+```
+
+Si lo arrancaste con `-p simple_int_param:=30`:
+
+```
+Integer value is: 30
+```
+
+Otro ejemplo con string:
+
+```bash
+ros2 param get /simple_parameter simple_string_param
+# String value is: Antonio
+```
+
+---
+
+### 4.3 Cambiar el valor de un parámetro en caliente (runtime)
+
+```bash
+ros2 param set /simple_parameter simple_string_param "Hi ros2"
+```
+
+**Salida:**
+
+```
+Set parameter successful
+```
+
+Verificación:
+
+```bash
+ros2 param get /simple_parameter simple_string_param
+# String value is: Hi ros2
+```
+
+---
+
+## 5) Ayuda, subcomandos y autocompletado
+
+* Ver ayuda general:
+
+  ```bash
+  ros2 param
+  ```
+* Ver ayuda de un subcomando:
+
+  ```bash
+  ros2 param get -h
+  ros2 param set -h
+  ```
+* Autocompletado:
+
+  * Escribe `ros2 param ` y presiona **TAB** dos veces para listar los subcomandos disponibles.
+
+---
+
+## 6) Resumen rápido (cheat-sheet)
+
+| Tarea                           | Comando                                                          |
+| ------------------------------- | ---------------------------------------------------------------- |
+| Ejecutar nodo (C++)             | `ros2 run arduinobot_cpp_examples simple_parameter`              |
+| Ejecutar nodo pasando parámetro | `ros2 run ... --ros-args -p simple_int_param:=30`                |
+| Listar parámetros               | `ros2 param list`                                                |
+| Leer parámetro                  | `ros2 param get /simple_parameter simple_int_param`              |
+| Cambiar parámetro en caliente   | `ros2 param set /simple_parameter simple_string_param "Hi ros2"` |
+| Ver ayuda                       | `ros2 param -h`                                                  |

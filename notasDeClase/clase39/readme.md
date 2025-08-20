@@ -1,149 +1,92 @@
-# Clase 38: CLI de parámetros en ROS 2 (`simple_parameter`)
 
-Este README explica, paso a paso, **cómo ejecutar el nodo** `simple_parameter` y cómo **gestionar sus parámetros** desde la línea de comandos usando `ros2 param`.
+# Clase 39. Visualización del modelo URDF en Rviz con ROS 2
 
----
-
-## 3) Ejecutar el nodo `simple_parameter`
-
-Puedes ejecutar la **implementación en C++** (paquete `arduinobot_cpp_examples`) o, si existe, la **implementación en Python** (paquete `arduinobot_py_examples`). Aquí usamos C++.
-
-### 3.1 Ejecución con valores por defecto
-
-#### Comando
-
-```bash
-ros2 run arduinobot_cpp_examples simple_parameter
-```
-
-#### ¿Qué hace?
-
-* Lanza el nodo `simple_parameter` con los **valores por defecto** de sus parámetros (por ejemplo, `simple_int_param = 28` y `simple_string_param = "Antonio"`).
-
-#### Notas
-
-* Para **detener** el nodo en la terminal donde corre: `Ctrl + C`.
+En esta práctica se aplican los conceptos vistos en el curso para **visualizar el modelo URDF del robot en Rviz**.  
+Para lograrlo, utilizamos nodos de ROS 2 que publican la descripción del robot y nos permiten manipular sus articulaciones a través de una interfaz gráfica.
 
 ---
 
-### 3.2 Ejecución pasando parámetros al arrancar
-
-#### Comando
+## 1. Preparar el entorno
+Antes de ejecutar cualquier comando en ROS 2 es necesario **cargar las configuraciones del workspace**:
 
 ```bash
-ros2 run arduinobot_cpp_examples simple_parameter --ros-args -p simple_int_param:=30
+. install/setup.bash
 ```
 
-#### ¿Qué hace?
-
-* Lanza el nodo **sobrescribiendo** el valor por defecto de `simple_int_param` a `30`.
-* La opción `--ros-args` permite pasar argumentos de ROS 2; `-p` se usa para **asignar parámetros** en el arranque.
-
-#### Ejemplo (Terminal 1)
-
-```
-ros2 run arduinobot_cpp_examples simple_parameter --ros-args -p simple_int_param:=30
-[INFO] [...] [simple_parameter]: Param simple_string_param cambiado! Nuevo valor: Hi ros2
-```
+Este comando (`source`) asegura que las rutas del *workspace* queden configuradas en la sesión de terminal y que ROS 2 reconozca los paquetes y nodos instalados.
 
 ---
 
-## 4) Inspeccionar y gestionar parámetros con `ros2 param`
+## 2. Publicar el modelo del robot
 
-Abre **otra terminal** (Terminal 2) y usa los siguientes comandos mientras el nodo está corriendo en la Terminal 1.
-
-### 4.1 Listar parámetros disponibles del nodo
+Ejecutamos el nodo `robot_state_publisher` que se encarga de **publicar la descripción URDF del robot en un tópico** de ROS 2.
 
 ```bash
-ros2 param list
+ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(xacro ~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_description/urdf/arduinobot.urdf.xacro)"
 ```
 
-**Salida:**
+* `ros2 run <paquete> <ejecutable>`: corre un nodo de un paquete.
+* `--ros-args -p robot_description:=...`: asigna el parámetro `robot_description`.
+* `xacro ...`: convierte el archivo `.xacro` en un archivo URDF válido en tiempo de ejecución.
 
-```
-/simple_parameter:
-  simple_int_param
-  simple_string_param
-  use_sim_time
-  qos_overrides...
-```
+El nodo muestra en consola los segmentos (links) del robot que fueron cargados, confirmando que la descripción se publicó correctamente.
 
 ---
 
-### 4.2 Leer (obtener) el valor de un parámetro
+## 3. Controlar las articulaciones
+
+Abrimos una nueva terminal, volvemos a **cargar el entorno** (`. install/setup.bash`) y ejecutamos el nodo `joint_state_publisher_gui`:
 
 ```bash
-ros2 param get /simple_parameter simple_int_param
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
 ```
 
-**Salida:**
+Este nodo abre una interfaz gráfica con **deslizadores para mover las articulaciones** del robot.
+Inicialmente espera a que el parámetro `robot_description` esté disponible, publicado por el `robot_state_publisher`.
 
-```
-Integer value is: 28
-```
+> Nota: en caso de escribir mal el nombre del ejecutable (`join_state_publisher_gui`), ROS 2 devolverá el error *No executable found*.
 
-Si lo arrancaste con `-p simple_int_param:=30`:
+---
 
-```
-Integer value is: 30
-```
+## 4. Visualizar el robot en Rviz
 
-Otro ejemplo con string:
+En otra terminal ejecutamos:
 
 ```bash
-ros2 param get /simple_parameter simple_string_param
-# String value is: Antonio
+ros2 run rviz2 rviz2
+```
+
+Esto abre la ventana de Rviz, donde:
+
+1. Se debe configurar el **Fixed Frame** como `world` (el primer frame definido en el modelo).
+2. Se añaden dos visualizaciones:
+
+   * **TF** → muestra la posición y orientación de cada link.
+   * **Robot Model** → renderiza la geometría del robot leyendo el tópico `robot_description`.
+
+Ahora, al mover los deslizadores en la ventana de `joint_state_publisher_gui`, el modelo del robot se mueve en Rviz.
+
+---
+
+## 5. Guardar configuración en Rviz
+
+Podemos guardar la configuración de visualización (TF y Robot Model) en un archivo `.rviz` para no repetir los pasos cada vez:
+
+1. En Rviz ir a: `File → Save Config As`.
+2. Guardar el archivo como:
+
+```
+arduinobot_ws/src/arduinobot_description/rviz/display.rviz
 ```
 
 ---
 
-### 4.3 Cambiar el valor de un parámetro en caliente (runtime)
+## Conclusión
 
-```bash
-ros2 param set /simple_parameter simple_string_param "Hi ros2"
-```
+* Se usaron **tres terminales**:
 
-**Salida:**
+  1. `robot_state_publisher` → publica el modelo del robot.
+  2. `joint_state_publisher_gui` → permite manipular las articulaciones.
+  3. `rviz2` → visualiza el modelo y sus movimientos.
 
-```
-Set parameter successful
-```
-
-Verificación:
-
-```bash
-ros2 param get /simple_parameter simple_string_param
-# String value is: Hi ros2
-```
-
----
-
-## 5) Ayuda, subcomandos y autocompletado
-
-* Ver ayuda general:
-
-  ```bash
-  ros2 param
-  ```
-* Ver ayuda de un subcomando:
-
-  ```bash
-  ros2 param get -h
-  ros2 param set -h
-  ```
-* Autocompletado:
-
-  * Escribe `ros2 param ` y presiona **TAB** dos veces para listar los subcomandos disponibles.
-
----
-
-## 6) Resumen rápido (cheat-sheet)
-
-| Tarea                           | Comando                                                          |
-| ------------------------------- | ---------------------------------------------------------------- |
-| Ejecutar nodo (C++)             | `ros2 run arduinobot_cpp_examples simple_parameter`              |
-| Ejecutar nodo pasando parámetro | `ros2 run ... --ros-args -p simple_int_param:=30`                |
-| Listar parámetros               | `ros2 param list`                                                |
-| Leer parámetro                  | `ros2 param get /simple_parameter simple_int_param`              |
-| Cambiar parámetro en caliente   | `ros2 param set /simple_parameter simple_string_param "Hi ros2"` |
-| Ver ayuda                       | `ros2 param -h`                                                  |
+En siguientes lecciones se verá cómo simplificar todos estos pasos usando un **archivo de lanzamiento (launch file)** para ejecutar todo con un solo comando.
