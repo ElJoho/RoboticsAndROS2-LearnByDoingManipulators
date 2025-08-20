@@ -9,16 +9,20 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(rcl_interfaces REQUIRED)
 # 2. EJECUTABLES
 add_executable(simple_publisher src/simple_publisher.cpp)
 add_executable(simple_subscriber src/simple_subscriber.cpp)
+add_executable(simple_parameter src/simple_parameter.cpp)
 # 3. DEPENDENCIAS
 ament_target_dependencies(simple_publisher rclcpp std_msgs)
 ament_target_dependencies(simple_subscriber  rclcpp std_msgs)
+ament_target_dependencies(simple_parameter  rclcpp rcl_interfaces)
 # 4. INSTALACION
 install(TARGETS
   simple_publisher
   simple_subscriber
+  simple_parameter
   DESTINATION lib/${PROJECT_NAME}
 )
 

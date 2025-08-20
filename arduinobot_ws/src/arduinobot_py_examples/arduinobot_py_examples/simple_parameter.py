@@ -12,7 +12,7 @@ from rclpy.parameter import Parameter
 class SimpleParameter(Node):
     def __init__(self):
         # Inicializa el nodo con el nombre "simple_paramaeter"
-        super().__init__("simple_paramaeter")
+        super().__init__("simple_parameter")
 
         # Declara un parámetro entero llamado "simple_int_param" con valor por defecto 28
         self.declare_parameter("simple_int_param", 28)
