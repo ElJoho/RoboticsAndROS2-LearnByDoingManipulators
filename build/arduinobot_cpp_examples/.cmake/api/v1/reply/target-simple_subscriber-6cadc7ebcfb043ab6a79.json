@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "simple_publisher"
+			"path" : "simple_subscriber"
 		}
 	],
 	"backtrace" : 1,
@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 16,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
@@ -234,7 +234,7 @@
 			]
 		}
 	],
-	"id" : "simple_publisher::@6890427a1f51a3e7e1df",
+	"id" : "simple_subscriber::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -525,8 +525,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "simple_publisher",
-	"nameOnDisk" : "simple_publisher",
+	"name" : "simple_subscriber",
+	"nameOnDisk" : "simple_subscriber",
 	"paths" : 
 	{
 		"build" : ".",
@@ -547,7 +547,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/simple_publisher.cpp",
+			"path" : "src/simple_subscriber.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

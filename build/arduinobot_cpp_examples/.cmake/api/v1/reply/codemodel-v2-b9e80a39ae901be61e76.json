@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-2fd2cac832b764f2137e.json",
+					"jsonFile" : "directory-.-1fe0ed0cd3202999cf7f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -19,7 +19,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -37,7 +38,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -52,15 +54,22 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "simple_parameter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_parameter-8c9dead6f105f16b5a0d.json",
+					"name" : "simple_parameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "simple_publisher::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_publisher-f59033e1c55936ff9e17.json",
+					"jsonFile" : "target-simple_publisher-f4369a3b891800477689.json",
 					"name" : "simple_publisher",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_subscriber::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_subscriber-00425ded180d8f1eca7c.json",
+					"jsonFile" : "target-simple_subscriber-6cadc7ebcfb043ab6a79.json",
 					"name" : "simple_subscriber",
 					"projectIndex" : 0
 				},

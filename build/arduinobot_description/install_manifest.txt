@@ -1,6 +1,7 @@
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/forward_drive_arm.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/right_finger.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/round_plate.STL
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/pi_camera.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/link.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/servo_plate.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/basement.STL
@@ -12,6 +13,8 @@
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/base_plate.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/meshes/triangular_link.STL
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot.urdf.xacro
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/launch/display.launch.py
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/rviz/display.rviz
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh

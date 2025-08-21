@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="-0.5 -0.5 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://arduinobot_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
+        <mesh filename="${path}basement.STL" scale="0.01 0.01 0.01"/>
       </geometry>
     </visual>
   </link>
@@ -28,7 +28,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>
       <geometry>
-        <mesh filename="package://arduinobot_description/meshes/base_plate.STL" scale="0.01 0.01 0.01"/>
+        <mesh filename="${path}base_plate.STL" scale="0.01 0.01 0.01"/>
       </geometry>
     </visual>
   </link>
@@ -125,5 +125,18 @@
     <axis xyz="0 0 1" />
     <mimic joint="joint_4" multiplier="-1"/>
     <limit lower="0.0" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+  </joint>
+  <link name="rgb_camera">
+      <visual>
+          <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
+          <geometry>
+              <mesh filename="${path}pi_camera.STL" scale="${scale}"/>
+          </geometry>
+      </visual>
+  </link>
+  <joint name ="rgb_camera_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link = "rgb_camera"/>
+      <origin xyz="0 0.45 0.2" rpy="0 -0.5 1.57"/>
   </joint>
 </robot>
