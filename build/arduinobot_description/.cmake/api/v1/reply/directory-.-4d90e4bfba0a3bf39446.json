@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 19,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 32,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -226,26 +226,15 @@
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
-			"destination" : "lib/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"simple_publisher"
+				"meshes",
+				"urdf",
+				"launch",
+				"rviz"
 			],
-			"targetId" : "simple_publisher::@6890427a1f51a3e7e1df",
-			"targetIndex" : 1,
-			"type" : "target"
-		},
-		{
-			"backtrace" : 1,
-			"component" : "Unspecified",
-			"destination" : "lib/arduinobot_cpp_examples",
-			"paths" : 
-			[
-				"simple_subscriber"
-			],
-			"targetId" : "simple_subscriber::@6890427a1f51a3e7e1df",
-			"targetIndex" : 2,
-			"type" : "target"
+			"type" : "directory"
 		},
 		{
 			"backtrace" : 8,
@@ -253,7 +242,7 @@
 			"destination" : "share/ament_index/resource_index/package_run_dependencies",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_description"
 			],
 			"type" : "file"
 		},
@@ -263,14 +252,14 @@
 			"destination" : "share/ament_index/resource_index/parent_prefix_path",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arduinobot_description"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 15,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples/environment",
+			"destination" : "share/arduinobot_description/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
@@ -280,17 +269,17 @@
 		{
 			"backtrace" : 16,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples/environment",
+			"destination" : "share/arduinobot_description/environment",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 17,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples/environment",
+			"destination" : "share/arduinobot_description/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
@@ -300,60 +289,60 @@
 		{
 			"backtrace" : 18,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples/environment",
+			"destination" : "share/arduinobot_description/environment",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/path.dsv"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/path.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 20,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/local_setup.bash"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/local_setup.bash"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 21,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/local_setup.sh"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/local_setup.sh"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 22,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/local_setup.zsh"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/local_setup.zsh"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 23,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/local_setup.dsv"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/local_setup.dsv"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 24,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_environment_hooks/package.dsv"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_environment_hooks/package.dsv"
 			],
 			"type" : "file"
 		},
@@ -363,25 +352,25 @@
 			"destination" : "share/ament_index/resource_index/packages",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/packages/arduinobot_cpp_examples"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_index/share/ament_index/resource_index/packages/arduinobot_description"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 31,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples/cmake",
+			"destination" : "share/arduinobot_description/cmake",
 			"paths" : 
 			[
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_core/arduinobot_cpp_examplesConfig.cmake",
-				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples/ament_cmake_core/arduinobot_cpp_examplesConfig-version.cmake"
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_core/arduinobot_descriptionConfig.cmake",
+				"/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description/ament_cmake_core/arduinobot_descriptionConfig-version.cmake"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 32,
 			"component" : "Unspecified",
-			"destination" : "share/arduinobot_cpp_examples",
+			"destination" : "share/arduinobot_description",
 			"paths" : 
 			[
 				"package.xml"

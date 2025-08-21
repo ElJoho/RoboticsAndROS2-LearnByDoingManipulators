@@ -1,0 +1,500 @@
+[0.278s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.278s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x760907822560>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7609079a3bb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7609079a3bb0>>, mixin_verb=('build',))
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.747s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.748s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.748s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.748s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.748s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'ignore'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'ignore_ament_install'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['colcon_pkg']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'colcon_pkg'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['colcon_meta']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'colcon_meta'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['ros']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'ros'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['cmake', 'python']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'cmake'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'python'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extensions ['python_setup_py']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(Setup) by extension 'python_setup_py'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'ignore'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'ignore_ament_install'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['colcon_pkg']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'colcon_pkg'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['colcon_meta']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'colcon_meta'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['ros']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'ros'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['cmake', 'python']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'cmake'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'python'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extensions ['python_setup_py']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws) by extension 'python_setup_py'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/build) by extension 'ignore'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/build) ignored
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/install) by extension 'ignore'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/install) ignored
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/log) by extension 'ignore'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/log) ignored
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'ignore_ament_install'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['colcon_pkg']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'colcon_pkg'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['colcon_meta']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'colcon_meta'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['ros']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'ros'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['cmake', 'python']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'cmake'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'python'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extensions ['python_setup_py']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src) by extension 'python_setup_py'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extension 'ignore'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extension 'ignore_ament_install'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extensions ['colcon_pkg']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extension 'colcon_pkg'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extensions ['colcon_meta']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extension 'colcon_meta'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extensions ['ros']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_cpp_examples) by extension 'ros'
+[0.791s] DEBUG:colcon.colcon_core.package_identification:Package 'arduinobot_ws/src/arduinobot_cpp_examples' with type 'ros.ament_cmake' and name 'arduinobot_cpp_examples'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extension 'ignore'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extension 'ignore_ament_install'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extensions ['colcon_pkg']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extension 'colcon_pkg'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extensions ['colcon_meta']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extension 'colcon_meta'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extensions ['ros']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_description) by extension 'ros'
+[0.794s] DEBUG:colcon.colcon_core.package_identification:Package 'arduinobot_ws/src/arduinobot_description' with type 'ros.ament_cmake' and name 'arduinobot_description'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extension 'ignore'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extension 'ignore_ament_install'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extensions ['colcon_pkg']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extension 'colcon_pkg'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extensions ['colcon_meta']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extension 'colcon_meta'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extensions ['ros']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(arduinobot_ws/src/arduinobot_py_examples) by extension 'ros'
+[0.797s] DEBUG:colcon.colcon_core.package_identification:Package 'arduinobot_ws/src/arduinobot_py_examples' with type 'ros.ament_python' and name 'arduinobot_py_examples'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['ignore', 'ignore_ament_install']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'ignore'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'ignore_ament_install'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['colcon_pkg']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'colcon_pkg'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['colcon_meta']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'colcon_meta'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['ros']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'ros'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['cmake', 'python']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'cmake'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'python'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extensions ['python_setup_py']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase) by extension 'python_setup_py'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'ignore'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'ignore_ament_install'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['colcon_pkg']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'colcon_pkg'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['colcon_meta']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'colcon_meta'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['ros']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'ros'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['cmake', 'python']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'cmake'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'python'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extensions ['python_setup_py']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase25) by extension 'python_setup_py'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['ignore', 'ignore_ament_install']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'ignore'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'ignore_ament_install'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['colcon_pkg']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'colcon_pkg'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['colcon_meta']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['ros']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'ros'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['cmake', 'python']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'cmake'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'python'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extensions ['python_setup_py']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase26) by extension 'python_setup_py'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['ignore', 'ignore_ament_install']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'ignore'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'ignore_ament_install'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['colcon_pkg']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'colcon_pkg'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['colcon_meta']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'colcon_meta'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['ros']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'ros'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['cmake', 'python']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'cmake'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'python'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extensions ['python_setup_py']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase27) by extension 'python_setup_py'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['ignore', 'ignore_ament_install']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'ignore'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'ignore_ament_install'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['colcon_pkg']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'colcon_pkg'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['colcon_meta']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'colcon_meta'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['ros']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'ros'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['cmake', 'python']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'cmake'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'python'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extensions ['python_setup_py']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase28) by extension 'python_setup_py'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['ignore', 'ignore_ament_install']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'ignore'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'ignore_ament_install'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['colcon_pkg']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'colcon_pkg'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['colcon_meta']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'colcon_meta'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['ros']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'ros'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['cmake', 'python']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'cmake'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'python'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extensions ['python_setup_py']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase29) by extension 'python_setup_py'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['ignore', 'ignore_ament_install']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'ignore'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'ignore_ament_install'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['colcon_pkg']
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'colcon_pkg'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['colcon_meta']
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'colcon_meta'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['ros']
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'ros'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['cmake', 'python']
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'cmake'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'python'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extensions ['python_setup_py']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase31) by extension 'python_setup_py'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['ignore', 'ignore_ament_install']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'ignore'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'ignore_ament_install'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['colcon_pkg']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'colcon_pkg'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['colcon_meta']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'colcon_meta'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['ros']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'ros'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['cmake', 'python']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'cmake'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'python'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extensions ['python_setup_py']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase32) by extension 'python_setup_py'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'ignore'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'ignore_ament_install'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['colcon_pkg']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'colcon_pkg'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['colcon_meta']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'colcon_meta'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['ros']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'ros'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['cmake', 'python']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'cmake'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'python'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extensions ['python_setup_py']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase33) by extension 'python_setup_py'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['ignore', 'ignore_ament_install']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'ignore'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'ignore_ament_install'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['colcon_pkg']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'colcon_pkg'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['colcon_meta']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'colcon_meta'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['ros']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'ros'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['cmake', 'python']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'cmake'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'python'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extensions ['python_setup_py']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase36) by extension 'python_setup_py'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['ignore', 'ignore_ament_install']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'ignore'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'ignore_ament_install'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['colcon_pkg']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['colcon_meta']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'colcon_meta'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['ros']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'ros'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['cmake', 'python']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'cmake'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'python'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extensions ['python_setup_py']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase37) by extension 'python_setup_py'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['ignore', 'ignore_ament_install']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'ignore'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'ignore_ament_install'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['colcon_pkg']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'colcon_pkg'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['colcon_meta']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'colcon_meta'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['ros']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'ros'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['cmake', 'python']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'cmake'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'python'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extensions ['python_setup_py']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase38) by extension 'python_setup_py'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['ignore', 'ignore_ament_install']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'ignore'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'ignore_ament_install'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['colcon_pkg']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'colcon_pkg'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['colcon_meta']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'colcon_meta'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['ros']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'ros'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['cmake', 'python']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'cmake'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'python'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extensions ['python_setup_py']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase39) by extension 'python_setup_py'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['ignore', 'ignore_ament_install']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'ignore'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'ignore_ament_install'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['colcon_pkg']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'colcon_pkg'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['colcon_meta']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'colcon_meta'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['ros']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'ros'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['cmake', 'python']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'cmake'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'python'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extensions ['python_setup_py']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(notasDeClase/clase41) by extension 'python_setup_py'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['ignore', 'ignore_ament_install']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ignore'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ignore_ament_install'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['colcon_pkg']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'colcon_pkg'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['colcon_meta']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'colcon_meta'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['ros']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ros'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['cmake', 'python']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'cmake'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'python'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['python_setup_py']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'python_setup_py'
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.902s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install
+[0.907s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 395 installed packages in /opt/ros/humble
+[0.914s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.065s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_args' from command line to 'None'
+[1.065s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_target' from command line to 'None'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_clean_first' from command line to 'False'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'cmake_force_configure' from command line to 'False'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'ament_cmake_args' from command line to 'None'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_cpp_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.066s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_cpp_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples', 'merge_install': False, 'path': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_cpp_examples', 'symlink_install': False, 'test_result_base': None}
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_args' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_target' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.068s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description', 'merge_install': False, 'path': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_description', 'symlink_install': False, 'test_result_base': None}
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_args' from command line to 'None'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_target' from command line to 'None'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_clean_first' from command line to 'False'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'cmake_force_configure' from command line to 'False'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'ament_cmake_args' from command line to 'None'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_py_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.070s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_py_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples', 'merge_install': False, 'path': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples', 'symlink_install': False, 'test_result_base': None}
+[1.070s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.072s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.073s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_cpp_examples' with build type 'ament_cmake'
+[1.074s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_cpp_examples'
+[1.079s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.079s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.091s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_description' with build type 'ament_cmake'
+[1.092s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_description'
+[1.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.104s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples' with build type 'ament_python'
+[1.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_py_examples', 'ament_prefix_path')
+[1.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.ps1'
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.dsv'
+[1.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/ament_prefix_path.sh'
+[1.111s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.111s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples -- -j4 -l4
+[1.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description -- -j4 -l4
+[1.968s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples'
+[1.969s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.970s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description -- -j4 -l4
+[2.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description
+[2.081s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_description)
+[2.091s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description' for CMake module files
+[2.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_description
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description' for CMake config files
+[2.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_description', 'cmake_prefix_path')
+[2.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.ps1'
+[2.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.dsv'
+[2.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.sh'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/bin'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/lib/pkgconfig/arduinobot_description.pc'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/lib/python3.10/site-packages'
+[2.103s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/bin'
+[2.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.ps1'
+[2.108s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.dsv'
+[2.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.sh'
+[2.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.bash'
+[2.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.zsh'
+[2.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/colcon-core/packages/arduinobot_description)
+[2.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_description)
+[2.121s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description' for CMake module files
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description' for CMake config files
+[2.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_description', 'cmake_prefix_path')
+[2.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.ps1'
+[2.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.dsv'
+[2.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/hook/cmake_prefix_path.sh'
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/bin'
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/lib/pkgconfig/arduinobot_description.pc'
+[2.129s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/lib/python3.10/site-packages'
+[2.130s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/bin'
+[2.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.ps1'
+[2.133s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.dsv'
+[2.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.sh'
+[2.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.bash'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/arduinobot_description/package.zsh'
+[2.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_description/share/colcon-core/packages/arduinobot_description)
+[3.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/arduinobot_py_examples build --build-base /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build install --record /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
+[4.054s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples' for CMake module files
+[4.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_py_examples' returned '0': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/arduinobot_py_examples build --build-base /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/build install --record /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_py_examples/install.log --single-version-externally-managed install_data
+[4.060s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples' for CMake config files
+[4.061s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib'
+[4.063s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/bin'
+[4.064s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/pkgconfig/arduinobot_py_examples.pc'
+[4.065s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/lib/python3.10/site-packages'
+[4.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_py_examples', 'pythonpath')
+[4.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.ps1'
+[4.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.dsv'
+[4.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/hook/pythonpath.sh'
+[4.078s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/bin'
+[4.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_py_examples)
+[4.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/package.ps1'
+[4.081s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/package.dsv'
+[4.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/package.sh'
+[4.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/package.bash'
+[4.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/arduinobot_py_examples/package.zsh'
+[4.085s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_py_examples/share/colcon-core/packages/arduinobot_py_examples)
+[23.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples -- -j4 -l4
+[23.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples
+[23.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_cpp_examples)
+[23.361s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples' for CMake module files
+[23.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/build/arduinobot_cpp_examples
+[23.365s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples' for CMake config files
+[23.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_cpp_examples', 'cmake_prefix_path')
+[23.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.ps1'
+[23.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.dsv'
+[23.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.sh'
+[23.373s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib'
+[23.373s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/bin'
+[23.373s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib/pkgconfig/arduinobot_cpp_examples.pc'
+[23.374s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib/python3.10/site-packages'
+[23.375s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/bin'
+[23.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.ps1'
+[23.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv'
+[23.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.sh'
+[23.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.bash'
+[23.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.zsh'
+[23.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/colcon-core/packages/arduinobot_cpp_examples)
+[23.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_cpp_examples)
+[23.387s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples' for CMake module files
+[23.390s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples' for CMake config files
+[23.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_cpp_examples', 'cmake_prefix_path')
+[23.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.ps1'
+[23.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.dsv'
+[23.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/hook/cmake_prefix_path.sh'
+[23.396s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib'
+[23.397s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/bin'
+[23.397s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib/pkgconfig/arduinobot_cpp_examples.pc'
+[23.398s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/lib/python3.10/site-packages'
+[23.399s] Level 1:colcon.colcon_core.environment:checking '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/bin'
+[23.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.ps1'
+[23.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv'
+[23.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.sh'
+[23.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.bash'
+[23.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.zsh'
+[23.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/arduinobot_cpp_examples/share/colcon-core/packages/arduinobot_cpp_examples)
+[23.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[23.410s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.431s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.431s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.431s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.461s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.461s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/local_setup.ps1'
+[23.465s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/_local_setup_util_ps1.py'
+[23.471s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/setup.ps1'
+[23.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/local_setup.sh'
+[23.476s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/_local_setup_util_sh.py'
+[23.479s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/setup.sh'
+[23.483s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/local_setup.bash'
+[23.485s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/setup.bash'
+[23.488s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/local_setup.zsh'
+[23.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/install/setup.zsh'
