@@ -78,15 +78,3 @@ Podemos guardar la configuración de visualización (TF y Robot Model) en un arc
 ```
 arduinobot_ws/src/arduinobot_description/rviz/display.rviz
 ```
-
----
-
-## Conclusión
-
-* Se usaron **tres terminales**:
-
-  1. `robot_state_publisher` → publica el modelo del robot.
-  2. `joint_state_publisher_gui` → permite manipular las articulaciones.
-  3. `rviz2` → visualiza el modelo y sus movimientos.
-
-En siguientes lecciones se verá cómo simplificar todos estos pasos usando un **archivo de lanzamiento (launch file)** para ejecutar todo con un solo comando.
