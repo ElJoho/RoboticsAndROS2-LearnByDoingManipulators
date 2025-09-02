@@ -46,7 +46,9 @@ def generate_launch_description():                             # Punto de entrad
         executable="parameter_bridge",                        # Ejecutable que crea el bridge de parámetros/tópicos.
         arguments=[
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",   # Mapea /clock desde Gazebo hacia ROS 2 (gz -> rosgraph_msgs/Clock).
+            # Bridge de la imagen de la cámara hacia sensor_msgs/Image.
             "/image_raw@sensor_msgs/msg/Image[gz.msgs.Image",
+            # Bridge de la info intrínseca/extrínseca hacia sensor_msgs/CameraInfo.
             "/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo"
         ],
         output="screen",
