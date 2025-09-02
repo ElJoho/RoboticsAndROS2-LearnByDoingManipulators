@@ -30,6 +30,8 @@
     <!-- Fin del bloque inercial. -->
   </xacro:macro>
 
+  <xacro:arg name="is_ignition" default="true"/>
+
   <link name="world"/>
   <!-- Definición de un enlace rígido del robot: 'world'. -->
 

@@ -1,211 +1,458 @@
 <?xml version="1.0"?>
+<!-- Declaración XML estándar del documento. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
+<!-- Elemento raíz URDF; define el nombre del robot y el espacio de nombres de Xacro. -->
 
   <xacro:property name="PI" value="3.14159" />
+  <!-- Propiedad Xacro: constante PI para cálculos en radianes. -->
   <xacro:property name="effort" value="30.0"/>
+  <!-- Propiedad Xacro: esfuerzo máximo por defecto de juntas (p. ej., N·m). -->
   <xacro:property name="velocity" value="10.0"/>
+  <!-- Propiedad Xacro: velocidad máxima por defecto de juntas (rad/s). -->
   <xacro:property name="path" value="package://arduinobot_description/meshes/" />
+  <!-- Propiedad Xacro: ruta base a las mallas del robot (package://...). -->
   <xacro:property name="scale" value="0.01 0.01 0.01"/>
+  <!-- Propiedad Xacro: factor de escala aplicado a las mallas importadas. -->
   
   <xacro:macro name="default_inertial" params="mass">
+  <!-- Declaración de la macro Xacro 'default_inertial' para insertar bloques <inertial> reutilizables. -->
     <inertial>
+    <!-- Inicio del bloque inercial: define masa y tensor de inercia del enlace. -->
       <mass value="${mass}" />
+      <!-- Masa del enlace (en kilogramos). -->
       <inertia
         ixx="1.0" ixy="0.0" ixz="0.0" 
         iyy="1.0" iyz="0.0"
         izz="1.0"
       />
     </inertial>
+      <!-- Tensor de inercia (ixx, iyy, izz, etc.) respecto al centro de masa. -->
+    <!-- Fin del bloque inercial. -->
   </xacro:macro>
 
+  <xacro:arg name="is_ignition" default="true"/>
+
   <link name="world"/>
+  <!-- Definición de un enlace rígido del robot: 'world'. -->
 
   <link name="base_link">
+  <!-- Definición de un enlace rígido del robot: 'base_link'. -->
     <xacro:default_inertial mass="1.0" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="-0.5 -0.5 0" rpy="0 0 0"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}basement.STL" scale="0.01 0.01 0.01"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="-0.5 -0.5 0" rpy="0 0 0"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}basement.STL" scale="0.01 0.01 0.01"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
 
   <joint name="virtual_joint" type="fixed">
+  <!-- Articulación 'virtual_joint' de tipo 'fixed' que conecta dos enlaces. -->
     <parent link="world"/>
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="base_link"/>
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="0 0 0" rpy="0 0 0"/>
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
   </joint>
+  <!-- Fin de la articulación. -->
 
   <link name="base_plate">
+  <!-- Definición de un enlace rígido del robot: 'base_plate'. -->
     <xacro:default_inertial mass="0.1" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}base_plate.STL" scale="0.01 0.01 0.01"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}base_plate.STL" scale="0.01 0.01 0.01"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
   <joint name="joint_1" type="revolute">
+  <!-- Articulación 'joint_1' de tipo 'revolute' que conecta dos enlaces. -->
     <parent link="base_link" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="base_plate" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="0 0 0.307"/>
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
     <axis xyz="0 0 1" />
+    <!-- Eje de movimiento de la articulación (vector unitario). -->
     <limit lower="-${PI / 2}" upper="${PI / 2}" effort="${effort}" velocity="${velocity}"/>
+    <!-- Límites de la articulación: rango, esfuerzo y velocidad máximos. -->
   </joint>
+  <!-- Fin de la articulación. -->
 
   <link name="forward_drive_arm">
+  <!-- Definición de un enlace rígido del robot: 'forward_drive_arm'. -->
     <xacro:default_inertial mass="0.1" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="0.19 0.06 -0.08" rpy="0 -${PI/2} ${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}forward_drive_arm.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="0.19 0.06 -0.08" rpy="0 -${PI/2} ${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}forward_drive_arm.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
 
   <joint name="joint_2" type="revolute">
+  <!-- Articulación 'joint_2' de tipo 'revolute' que conecta dos enlaces. -->
     <parent link="base_plate" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="forward_drive_arm" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="-0.02 0 0.35" rpy="0 0 0"/>
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
     <axis xyz="1 0 0" />
+    <!-- Eje de movimiento de la articulación (vector unitario). -->
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+    <!-- Límites de la articulación: rango, esfuerzo y velocidad máximos. -->
   </joint>
+  <!-- Fin de la articulación. -->
 
   <link name="horizontal_arm">
+  <!-- Definición de un enlace rígido del robot: 'horizontal_arm'. -->
     <xacro:default_inertial mass="0.1" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="-0.03 -0.4 -0.06" rpy="${PI/2} 0 ${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}horizontal_arm.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
       <material name="material_name">
+      <!-- Definición de un material (nombre) para colorear/estilizar visualmente. -->
         <color rgba="1 1 1 1" />
+        <!-- Color RGBA asociado al material (valores entre 0 y 1). -->
       </material>
+      <!-- Fin de la definición del material. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="-0.03 -0.4 -0.06" rpy="${PI/2} 0 ${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}horizontal_arm.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
       <material name="material_name">
+      <!-- Definición de un material (nombre) para colorear/estilizar visualmente. -->
         <color rgba="1 1 1 1" />
+        <!-- Color RGBA asociado al material (valores entre 0 y 1). -->
       </material>
+      <!-- Fin de la definición del material. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
   
   <joint name="joint_3" type="revolute">
+  <!-- Articulación 'joint_3' de tipo 'revolute' que conecta dos enlaces. -->
     <parent link="forward_drive_arm" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="horizontal_arm" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <axis xyz="1 0 0" />
+    <!-- Eje de movimiento de la articulación (vector unitario). -->
     <origin rpy="0 0 0" xyz="0 0 0.8" />
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
     <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+    <!-- Límites de la articulación: rango, esfuerzo y velocidad máximos. -->
   </joint>
+  <!-- Fin de la articulación. -->
 
   <link name="claw_support">
+  <!-- Definición de un enlace rígido del robot: 'claw_support'. -->
     <xacro:default_inertial mass="0.05" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="0 -0.05 -0.15" rpy="0 0 ${PI/2}"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}claw_support.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="0 -0.05 -0.15" rpy="0 0 ${PI/2}"/>
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}claw_support.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
 
   <joint name="horizontal_arm_to_claw_support" type="fixed">
+  <!-- Articulación 'horizontal_arm_to_claw_support' de tipo 'fixed' que conecta dos enlaces. -->
     <parent link="horizontal_arm" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="claw_support" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="0 0.82 0" rpy="0 0 0" />
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
   </joint>
+  <!-- Fin de la articulación. -->
 
   <link name="gripper_right">
+  <!-- Definición de un enlace rígido del robot: 'gripper_right'. -->
     <xacro:default_inertial mass="0.01" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="-0.1 0.5 -0.1" rpy="0 0 -${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}right_finger.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="-0.1 0.5 -0.1" rpy="0 0 -${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}right_finger.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
 
 
   <link name="gripper_left">
+  <!-- Definición de un enlace rígido del robot: 'gripper_left'. -->
     <xacro:default_inertial mass="0.01" />
     <visual>
+    <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
       <origin xyz="-0.04 0.5 -0.1" rpy="0 0 -${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}left_finger.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </visual>
+    <!-- Fin del bloque 'visual'. -->
     <collision>
+    <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
       <origin xyz="-0.04 0.5 -0.1" rpy="0 0 -${PI/2}" />
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
       <geometry>
+      <!-- Inicio de la geometría asociada (malla o primitivas). -->
         <mesh filename="${path}left_finger.STL" scale="${scale}"/>
+        <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
       </geometry>
+      <!-- Fin de la geometría. -->
     </collision>
+    <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
 
   <joint name="joint_4" type="revolute">
+  <!-- Articulación 'joint_4' de tipo 'revolute' que conecta dos enlaces. -->
     <parent link="claw_support" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="gripper_right" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="-0.04 0.13 -0.1" rpy="0 0 0" />
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
     <axis xyz="0 0 1" />
+    <!-- Eje de movimiento de la articulación (vector unitario). -->
     <limit lower="-${PI/2}" upper="0.0" effort="${effort}" velocity="${velocity}" />
+    <!-- Límites de la articulación: rango, esfuerzo y velocidad máximos. -->
   </joint>
+  <!-- Fin de la articulación. -->
   <joint name="joint_5" type="revolute">
+  <!-- Articulación 'joint_5' de tipo 'revolute' que conecta dos enlaces. -->
     <parent link="claw_support" />
+    <!-- Especifica el enlace padre conectado por esta articulación. -->
     <child link="gripper_left" />
+    <!-- Especifica el enlace hijo conectado por esta articulación. -->
     <origin xyz="-0.22 0.13 -0.1" rpy="0 0 0" />
+    <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
     <axis xyz="0 0 1" />
+    <!-- Eje de movimiento de la articulación (vector unitario). -->
     <mimic joint="joint_4" multiplier="-1"/>
     <limit lower="0.0" upper="${PI/2}" effort="${effort}" velocity="${velocity}" />
+    <!-- Límites de la articulación: rango, esfuerzo y velocidad máximos. -->
   </joint>
+  <!-- Fin de la articulación. -->
   <link name="rgb_camera">
+  <!-- Definición de un enlace rígido del robot: 'rgb_camera'. -->
       <visual>
+      <!-- Bloque 'visual': cómo se renderiza el enlace en pantalla. -->
           <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
+          <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
           <geometry>
+          <!-- Inicio de la geometría asociada (malla o primitivas). -->
               <mesh filename="${path}pi_camera.STL" scale="${scale}"/>
+              <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
           </geometry>
+          <!-- Fin de la geometría. -->
       </visual>
+      <!-- Fin del bloque 'visual'. -->
       <collision>
+      <!-- Bloque 'collision': geometría usada por el motor físico para detección de colisiones. -->
         <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
+        <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
         <geometry>
+        <!-- Inicio de la geometría asociada (malla o primitivas). -->
             <mesh filename="${path}pi_camera.STL" scale="${scale}"/>
+            <!-- Carga una malla (STL) desde el paquete; 'scale' ajusta sus dimensiones. -->
         </geometry>
+        <!-- Fin de la geometría. -->
       </collision>
+      <!-- Fin del bloque 'collision'. -->
   </link>
+  <!-- Fin de la definición del enlace. -->
   <joint name ="rgb_camera_joint" type="fixed">
+  <!-- Articulación 'rgb_camera_joint' de tipo 'fixed' que conecta dos enlaces. -->
       <parent link="base_link"/>
+      <!-- Especifica el enlace padre conectado por esta articulación. -->
       <child link = "rgb_camera"/>
+      <!-- Especifica el enlace hijo conectado por esta articulación. -->
       <origin xyz="0 0.45 0.2" rpy="0 -0.5 1.57"/>
-  </joint> 
+      <!-- Transformación del elemento: posición (xyz en m) y orientación (rpy en rad) respecto al marco padre. -->
+  </joint>
+  <!-- Fin de la articulación. -->
+<gazebo reference="rgb_camera">
+<!-- Extensión específica de Gazebo aplicada a un enlace o al modelo. -->
+    <sensor name="camera" type="camera">
+    <!-- Definición de un sensor simulado por Gazebo (p. ej., cámara). -->
+        <always_on>true</always_on>
+        <!-- Indica si el sensor se ejecuta siempre (true) o según eventos. -->
+        <update_rate>30.0</update_rate>
+        <!-- Frecuencia de actualización del sensor (Hz). -->
+        <visualize>true</visualize>
+        <!-- Permite visualizar el sensor en el cliente de Gazebo. -->
+        <topic>/image_raw</topic>
+        <!-- Nombre base del tópico de Gazebo para el sensor (se puede puentear a ROS 2). -->
+        <gz_frame_id>/rgb_camera</gz_frame_id>
+        <!-- Frame ID que se usará para etiquetar datos del sensor (útil para bridges/consumidores). -->
+        <camera name="camera">
+        <!-- Parámetros de la cámara simulada; 'name' nombra la cámara. -->
+          <horizontal_fov>1.21126</horizontal_fov>
+          <!-- Campo de visión horizontal (radianes) de la cámara. -->
+          <image>
+          <!-- Bloque de resolución/formato de la imagen de la cámara. -->
+            <width>2304</width>
+            <!-- Ancho (pixeles) de la imagen generada por la cámara. -->
+            <height>1296</height>
+            <!-- Alto (pixeles) de la imagen generada por la cámara. -->
+            <format>R8G8B8</format>
+            <!-- Formato de color de la imagen (por ejemplo, R8G8B8). -->
+          </image>
+          <!-- Fin del bloque de parámetros de imagen. -->
+          <distortion>
+            <k1>0.0</k1>
+            <k2>0.0</k2>
+            <k3>0.0</k3>
+            <p1>0.0</p1>
+            <p2>0.0</p2>
+            <center>0.5 0.5</center>
+          </distortion>
+        </camera>
+    </sensor>   
+    <!-- Fin del sensor. -->
+</gazebo>
+<!-- Fin del bloque específico de Gazebo. -->
+<gazebo>
+  <!-- ROS 2 Humble -->
+  <xacro:if value="$(arg is_ignition)">
+    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+      <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+    </plugin>
+    <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+  </xacro:if>
+
+  <!-- ROS 2 Iron or above -->
+  <xacro:unless value="$(arg is_ignition)">
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+    </plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+  </xacro:unless>
+</gazebo>
+<!-- Fin del bloque específico de Gazebo. -->
 </robot>
+<!-- Cierre del elemento raíz del robot. -->
