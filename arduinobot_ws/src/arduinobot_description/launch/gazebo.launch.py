@@ -45,8 +45,11 @@ def generate_launch_description():                             # Punto de entrad
         package="ros_gz_bridge",                              # Paquete del bridge.
         executable="parameter_bridge",                        # Ejecutable que crea el bridge de parámetros/tópicos.
         arguments=[
-            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"    # Mapea /clock desde Gazebo hacia ROS 2 (gz -> rosgraph_msgs/Clock).
-        ]
+            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",   # Mapea /clock desde Gazebo hacia ROS 2 (gz -> rosgraph_msgs/Clock).
+            "/image_raw@sensor_msgs/msg/Image[gz.msgs.Image",
+            "/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo"
+        ],
+        output="screen",
     )
 
     model_arg = DeclareLaunchArgument(                        # Declara un argumento de launch llamado "model".
