@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- Declaración XML estándar del documento. -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
+    <gazebo>
+        <xacro:if value="$(arg is_ignition)">
+            <plugin filename="ign_ros2_control-system" name="ign_ro2_control::IgnitionROS2ControlPlugin">
+                <parameters></parameters>
+            </plugin>
+        </xacro:if>
+        <xacro:unless value="$(arg is_ignition)">
+            <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+                <parameters></parameters>
+            </plugin>
+        </xacro:unless>
+    </gazebo>
+    
+    <gazebo reference="rgb_camera">
+        <!-- Extensión específica de Gazebo aplicada a un enlace o al modelo. -->
+        <sensor name="camera" type="camera">
+            <!-- Definición de un sensor simulado por Gazebo (p. ej., cámara). -->
+            <always_on>true</always_on>
+            <!-- Indica si el sensor se ejecuta siempre (true) o según eventos. -->
+            <update_rate>30.0</update_rate>
+            <!-- Frecuencia de actualización del sensor (Hz). -->
+            <visualize>true</visualize>
+            <!-- Permite visualizar el sensor en el cliente de Gazebo. -->
+            <topic>/image_raw</topic>
+            <!-- Nombre base del tópico de Gazebo para el sensor (se puede puentear a ROS 2). -->
+            <gz_frame_id>/rgb_camera</gz_frame_id>
+            <!-- Frame ID que se usará para etiquetar datos del sensor (útil para
+            bridges/consumidores). -->
+            <camera name="camera">
+                <!-- Parámetros de la cámara simulada; 'name' nombra la cámara. -->
+                <horizontal_fov>1.21126</horizontal_fov>
+                <!-- Campo de visión horizontal (radianes) de la cámara. -->
+                <image>
+                    <!-- Bloque de resolución/formato de la imagen de la cámara. -->
+                    <width>2304</width>
+                    <!-- Ancho (pixeles) de la imagen generada por la cámara. -->
+                    <height>1296</height>
+                    <!-- Alto (pixeles) de la imagen generada por la cámara. -->
+                    <format>R8G8B8</format>
+                    <!-- Formato de color de la imagen (por ejemplo, R8G8B8). -->
+                </image>
+                <!-- Fin del bloque de parámetros de imagen. -->
+                <distortion>
+                    <k1>0.0</k1>
+                    <k2>0.0</k2>
+                    <k3>0.0</k3>
+                    <p1>0.0</p1>
+                    <p2>0.0</p2>
+                    <center>0.5 0.5</center>
+                </distortion>
+            </camera>
+        </sensor>
+        <!-- Fin del sensor. -->
+    </gazebo>
+    <!-- Fin del bloque específico de Gazebo. -->
+    <gazebo>
+        <!-- ROS 2 Humble -->
+        <xacro:if value="$(arg is_ignition)">
+            <plugin filename="ign_ros2_control-system"
+                name="ign_ros2_control::IgnitionROS2ControlPlugin">
+                <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+            </plugin>
+            <plugin filename="ignition-gazebo-sensors-system"
+                name="ignition::gazebo::systems::Sensors">
+                <render_engine>ogre2</render_engine>
+            </plugin>
+        </xacro:if>
+
+        <!-- ROS 2 Iron or above -->
+        <xacro:unless value="$(arg is_ignition)">
+            <plugin filename="gz_ros2_control-system"
+                name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+                <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+            </plugin>
+            <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+                <render_engine>ogre2</render_engine>
+            </plugin>
+        </xacro:unless>
+    </gazebo>
+    <!-- Fin del bloque específico de Gazebo. -->
+</robot>
