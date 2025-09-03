@@ -229,7 +229,8 @@
 			"destination" : "share/arduinobot_controller",
 			"paths" : 
 			[
-				"config"
+				"config",
+				"launch"
 			],
 			"type" : "directory"
 		},
