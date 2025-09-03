@@ -12,6 +12,10 @@ def generate_launch_description():                             # Punto de entrad
 
     arduinobot_description_dir = get_package_share_directory("arduinobot_description")  # Localiza el directorio 'share' del paquete con los archivos del robot.
 
+    ros_distro = os.environ["ROS_DISTRO"]                      # Devuelve la distribucion de ros2
+    is_ignition = "True" if ros_distro == "humble"  else "False" # Si es humble devuelve verdadero
+    physics_engine = "" if ros_distro == "humble" else "--physics-engine gz-physics-bullet-featherstone-plugin"
+
     gazebo_resource_path = SetEnvironmentVariable(             # Define/ajusta la variable de entorno para que Gazebo encuentre recursos (models, meshes, worlds).
         name="GZ_SIM_RESOURCE_PATH",                           # Nombre correcto de la variable de entorno usada por Gazebo (GZ/Fortress+).
         value=[
@@ -68,7 +72,9 @@ def generate_launch_description():                             # Punto de entrad
         Command(                                              # Ejecuta un comando del sistema en tiempo de lanzamiento y toma su salida.
             [                                                 # La salida de este comando será el contenido URDF generado por xacro.
                 "xacro ",                                     # Comando 'xacro' con un espacio final para evitar que se pegue a la ruta.
-                LaunchConfiguration("model")                  # Sustitución: toma el valor actual del argumento 'model' (ruta del Xacro).
+                LaunchConfiguration("model"),                 # Sustitución: toma el valor actual del argumento 'model' (ruta del Xacro).
+                " is_ignition:=",                              
+                is_ignition                                   # Variable que indica si se tiene o no ros2 humble
             ]
         ),
         value_type=str                                        # Indica que el resultado del comando se tratará como cadena (string).
