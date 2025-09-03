@@ -27,7 +27,7 @@ def generate_launch_description():                             # Función obliga
         value_type=str                                         # Indica que el resultado del comando se tratará como cadena (string).
     )
 
-    robot_state_publisher = Node(                              # Define el nodo que publicará el URDF en /robot_description y TF.
+    robot_state_publisher_node = Node(                         # Define el nodo que publicará el URDF en /robot_description y TF.
         package="robot_state_publisher",                       # Paquete donde vive el ejecutable.
         executable="robot_state_publisher",                    # Nombre del ejecutable a lanzar.
         parameters=[{"robot_description": robot_description}]  # Pasa el parámetro 'robot_description' ya resuelto (URDF plano).
@@ -55,7 +55,7 @@ def generate_launch_description():                             # Función obliga
 
     return LaunchDescription([                                 # Devuelve la descripción del lanzamiento con todas las acciones/nodos.
         model_arg,                                             # 1) El argumento 'model' (para poder sobreescribir la ruta del Xacro).
-        robot_state_publisher,                                 # 2) Nodo que publica el modelo y los frames.
+        robot_state_publisher_node,                                 # 2) Nodo que publica el modelo y los frames.
         joint_state_publisher_gui,                             # 3) Nodo GUI para manipular articulaciones virtualmente.
         rviz_node                                              # 4) Nodo de RViz2 para visualizar el robot y sus transformaciones.
     ])
