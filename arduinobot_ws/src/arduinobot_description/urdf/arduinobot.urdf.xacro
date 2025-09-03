@@ -2,10 +2,10 @@
 <!-- Declaración XML estándar del documento. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
 <!-- Elemento raíz URDF; define el nombre del robot y el espacio de nombres de Xacro. -->
-
-  <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_gazebo.urdf" />
-  <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_ros2_control.urdf" />
   <xacro:arg name="is_ignition" default="true"/>
+
+  <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_gazebo.xacro" />
+  <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_ros2_control.xacro" />
 
   <xacro:property name="PI" value="3.14159" />
   <!-- Propiedad Xacro: constante PI para cálculos en radianes. -->
