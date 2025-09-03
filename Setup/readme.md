@@ -80,3 +80,93 @@ sudo gedit .bashrc
 source /opt/ros/humble/setup.bash
 ```
 4. Guardar el archivo y cerrarlo
+
+---
+
+## 🧰 Instalación y configuración adicionales  (“Configure the Development Environment in Ubuntu 22.04”)
+
+> Estas instrucciones complementan las ya presentes en este repositorio. No reemplazan ni modifican nada de lo anterior; solo añaden los pasos de instalación que se usan en las clases.
+
+### 1) Actualizar el sistema
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+- **¿Qué hace?** Actualiza el índice de paquetes de Ubuntu y aplica las actualizaciones disponibles para mantener el sistema al día.
+
+### 2) Instalar un terminal mejorado (Terminator)
+```bash
+sudo apt-get install terminator
+```
+- **¿Qué hace?** Instala **Terminator**, un emulador de terminal que permite dividir paneles, guardar disposiciones y trabajar con varias consolas en una sola ventana.
+
+### 3) Paquetes ROS 2 necesarios usados en el curso
+Ejecuta cada línea (puedes pegarlas una por una o todas juntas).
+
+```bash
+sudo apt-get install ros-humble-ros2-control
+sudo apt-get install ros-humble-ros2-controllers
+sudo apt-get install ros-humble-xacro
+sudo apt-get install ros-humble-ros-gz-*
+sudo apt-get install ros-humble-*-ros2-control
+sudo apt-get install ros-humble-joint-state-publisher-gui
+sudo apt-get install ros-humble-tf-transformations
+sudo apt-get install ros-humble-moveit*
+```
+- **ros-humble-ros2-control**: Framework para administrar hardware y controladores en ROS 2 (back-end de `ros2_control`).
+- **ros-humble-ros2-controllers**: Conjunto de controladores listos (p. ej., `joint_state_broadcaster`, `joint_trajectory_controller`) que usarás en simulación y/o hardware real.
+- **ros-humble-xacro**: Procesador de macros Xacro para generar URDF a partir de archivos `.xacro`.
+- **ros-humble-ros-gz-***: Paquetes de integración entre ROS 2 y Gazebo (puentes de tópicos, utilidades, etc.). El comodín `*` instala los subpaquetes relevantes.
+- **ros-humble-*-ros2-control**: Instala paquetes relacionados con `ros2_control` para diferentes integraciones (plugins/adaptadores). El comodín `*` permite que APT resuelva todos los que apliquen.
+- **ros-humble-joint-state-publisher-gui**: Interfaz gráfica para publicar estados de articulaciones y probar cinemática sin hardware.
+- **ros-humble-tf-transformations**: Utilidades para transformaciones espaciales (TF) en Python.
+- **ros-humble-moveit***: Instala MoveIt y sus componentes (planificación de movimiento, RViz plugins, etc.).
+
+> 💡 **Instalación en un solo comando (opcional):**
+> ```bash
+> sudo apt-get install -y \
+>   ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-xacro \
+>   ros-humble-ros-gz-* ros-humble-*-ros2-control \
+>   ros-humble-joint-state-publisher-gui ros-humble-tf-transformations \
+>   ros-humble-moveit*
+> ```
+
+### 4) Paquetes de Python necesarios (Alexa e interconexión)
+```bash
+sudo apt-get install python3-pip
+pip install transforms3d
+pip install flask
+pip install pyserial
+pip install flask-ask-sdk
+pip install ask-sdk
+```
+- **python3-pip**: Gestor de paquetes para Python.
+- **transforms3d**: Transformaciones 3D (rotaciones, cuaterniones, matrices) útiles para robótica.
+- **flask**: Micro‑framework web para crear servicios y dashboards ligeros.
+- **pyserial**: Comunicación serie en Python; útil para hablar con microcontroladores (p. ej., Arduino).
+- **flask-ask-sdk / ask-sdk**: SDKs para integrar Alexa Skills con aplicaciones Python/Flask.
+
+> ⚠️ Si tu `pip` apunta a Python 2 (poco común en 22.04), usa `pip3` en su lugar.
+
+### 5) Paquetes adicionales para comunicación serie en C++
+```bash
+sudo apt-get install libserial-dev
+```
+- **¿Qué hace?** Instala los headers y librerías de **libserial** para aplicaciones C++ que se comuniquen por puerto serie (p. ej., ROS 2 ↔ Arduino).
+
+---
+
+### 📌 Referencia de “¿Qué hace cada línea?” (resumen rápido)
+- `sudo apt-get update && sudo apt-get upgrade`: sincroniza índices e instala actualizaciones.
+- `sudo apt-get install terminator`: emulador de terminal con paneles múltiples.
+- `sudo apt-get install ros-humble-ros2-control`: instala el back‑end de `ros2_control`.
+- `sudo apt-get install ros-humble-ros2-controllers`: controladores genéricos (broadcasters/controladores de articulaciones).
+- `sudo apt-get install ros-humble-xacro`: utilidades Xacro para generar URDF.
+- `sudo apt-get install ros-humble-ros-gz-*`: puente e integración ROS 2 ↔ Gazebo.
+- `sudo apt-get install ros-humble-*-ros2-control`: complementos vinculados a `ros2_control`.
+- `sudo apt-get install ros-humble-joint-state-publisher-gui`: GUI para publicar estados articulares.
+- `sudo apt-get install ros-humble-tf-transformations`: helpers de transformaciones TF en Python.
+- `sudo apt-get install ros-humble-moveit*`: instala MoveIt y sus componentes.
+- `sudo apt-get install python3-pip`: gestor de paquetes Python 3.
+- `pip install ...`: instala paquetes Python listados (transforms3d, flask, pyserial, Alexa SDKs).
+- `sudo apt-get install libserial-dev`: librería C++ para comunicación serie.
+
