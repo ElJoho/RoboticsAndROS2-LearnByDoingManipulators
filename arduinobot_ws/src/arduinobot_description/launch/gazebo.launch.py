@@ -23,8 +23,8 @@ def generate_launch_description():                             # Punto de entrad
         ]
     )
 
-    gazebo = IncludeLaunchDescription(                         # Incluye el launch oficial de ros_gz_sim para levantar el servidor/cliente de Gazebo.
-        PythonLaunchDescriptionSource([                        # Especifica la fuente (un archivo .py) del launch a incluir.
+    gazebo = IncludeLaunchDescription(                        # Incluye el launch oficial de ros_gz_sim para levantar el servidor/cliente de Gazebo.
+        PythonLaunchDescriptionSource([                       # Especifica la fuente (un archivo .py) del launch a incluir.
             os.path.join(                                     # Une partes de la ruta de forma portable.
                 get_package_share_directory("ros_gz_sim"),    # Busca el 'share' del paquete ros_gz_sim.
                 "launch"                                      # Carpeta donde están los launch files de ese paquete.
@@ -41,7 +41,7 @@ def generate_launch_description():                             # Punto de entrad
         executable="create",                                  # Ejecutable CLI que realiza el spawn del modelo.
         output="screen",                                      # Muestra salida en pantalla para depuración.
         arguments=["-topic", "robot_description",             # Toma el URDF desde el tópico 'robot_description'.
-                    "-name","arduinobot"                     # Asigna el nombre de la entidad en el mundo de Gazebo.
+                    "-name","arduinobot"                      # Asigna el nombre de la entidad en el mundo de Gazebo.
         ]
     )
 
