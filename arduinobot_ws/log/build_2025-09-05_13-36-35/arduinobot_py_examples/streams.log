@@ -1,0 +1,21 @@
+[2.550s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/build --no-deps symlink_data --force
+[3.503s] running develop
+[4.080s] running egg_info
+[4.080s] writing arduinobot_py_examples.egg-info/PKG-INFO
+[4.080s] writing dependency_links to arduinobot_py_examples.egg-info/dependency_links.txt
+[4.081s] writing entry points to arduinobot_py_examples.egg-info/entry_points.txt
+[4.084s] writing requirements to arduinobot_py_examples.egg-info/requires.txt
+[4.084s] writing top-level names to arduinobot_py_examples.egg-info/top_level.txt
+[4.096s] reading manifest file 'arduinobot_py_examples.egg-info/SOURCES.txt'
+[4.099s] writing manifest file 'arduinobot_py_examples.egg-info/SOURCES.txt'
+[4.103s] running build_ext
+[4.106s] Creating /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages/arduinobot-py-examples.egg-link (link to .)
+[4.107s] Installing simple_parameter script to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[4.109s] Installing simple_publisher script to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[4.110s] Installing simple_subscriber script to /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/arduinobot_py_examples
+[4.111s] 
+[4.111s] Installed /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples
+[4.112s] running symlink_data
+[4.113s] symbolically linking /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/resource/arduinobot_py_examples -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/share/ament_index/resource_index/packages
+[4.114s] symbolically linking /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/package.xml -> /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/share/arduinobot_py_examples
+[4.214s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples' returned '0': PYTHONPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_py_examples/build --no-deps symlink_data --force

@@ -1,38 +1,38 @@
 controller_manager:
-  ros__parameters:                        # Siempre debe usarse 'ros__parameters' en ROS 2
-    update_rate: 10                       # Frecuencia de actualización de los controladores
+  ros__parameters: # Siempre debe usarse 'ros__parameters' en ROS 2
+    update_rate: 10 # Frecuencia de actualización de los controladores
 
     arm_controller:
-      type: joint_trajectory_controller/JointTrajectoryController   # Controlador de trayectorias de las articulaciones
+      type: joint_trajectory_controller/JointTrajectoryController # Controlador de trayectorias de las articulaciones
 
     gripper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
-    
+
     joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster           # Publica estados de todas las articulaciones
-    
+      type: joint_state_broadcaster/JointStateBroadcaster # Publica estados de todas las articulaciones
+
 arm_controller:
   ros__parameters:
     joints:
       - joint_1
       - joint_2
       - joint_3
-    
-    command_interfaces:
-      - position                 # Interfaz de comandos: posición
-    state_interfaces:
-      - position                 # Interfaz de estados: posición
 
-    open_loop_control: true      # Permite control en lazo abierto
-    allow_integration_in_goal_trajectories: true   # Permite integración en trayectorias de objetivos
+    command_interfaces:
+      - position # Interfaz de comandos: posición
+    state_interfaces:
+      - position # Interfaz de estados: posición
+
+    open_loop_control: true # Permite control en lazo abierto
+    allow_integration_in_goal_trajectories: true # Permite integración en trayectorias de objetivos
 
 gripper_controller:
   ros__parameters:
     joints:
-      - joint_4                  # Gripper controlado como una sola articulación
+      - joint_4 # Gripper controlado como una sola articulación
 
     command_interfaces:
-     - position
+      - position
 
     state_interfaces:
       - position
