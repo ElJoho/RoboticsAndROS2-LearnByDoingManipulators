@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-643276f8b98d1ec53c08.json",
+					"jsonFile" : "directory-.-20b681ac3fb6247fb5c5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -21,7 +21,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -41,7 +42,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -57,28 +59,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_parameter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_parameter-fc0627d9e11d45d8b765.json",
+					"jsonFile" : "target-simple_parameter-9591e6e7e98a4515ce04.json",
 					"name" : "simple_parameter",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_publisher::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_publisher-83168419decc41101866.json",
+					"jsonFile" : "target-simple_publisher-cbf4f9a99e69d60d9b3a.json",
 					"name" : "simple_publisher",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "simple_service_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_service_client-771df66fbf5e359827e7.json",
+					"name" : "simple_service_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "simple_service_server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_service_server-7c917e37c17deab10c9c.json",
+					"jsonFile" : "target-simple_service_server-9a8e89e3cd12571d488e.json",
 					"name" : "simple_service_server",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_subscriber::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_subscriber-9fc923c6f1401e11b69f.json",
+					"jsonFile" : "target-simple_subscriber-f1849f4e522079eb1acc.json",
 					"name" : "simple_subscriber",
 					"projectIndex" : 0
 				},
