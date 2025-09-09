@@ -16,7 +16,7 @@ def generate_launch_description():
     )
 
     is_sim = LaunchConfiguration("is_sim")
-    
+
     robot_description = ParameterValue(
         Command(
             [
@@ -30,6 +30,7 @@ def generate_launch_description():
         ),
         value_type=str
     )
+    
     robot_state_publisher_node = Node(                         # Define el nodo que publicará el URDF en /robot_description y TF.
         package="robot_state_publisher",                       # Paquete donde vive el ejecutable.
         executable="robot_state_publisher",                    # Nombre del ejecutable a lanzar.
