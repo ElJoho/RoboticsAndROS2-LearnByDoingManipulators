@@ -1,1 +1,1 @@
-/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+urdf;xacro;robot_state_publisher;joint_state_publisher_gui;ros2launch;rviz2;ros_gz_sim;ros_gz_bridge;ign_ros2_control;ament_lint_auto;ament_lint_common
