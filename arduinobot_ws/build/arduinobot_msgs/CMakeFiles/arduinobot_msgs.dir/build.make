@@ -69,6 +69,12 @@ include CMakeFiles/arduinobot_msgs.dir/progress.make
 CMakeFiles/arduinobot_msgs: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/srv/AddTwoInts.srv
 CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/AddTwoInts_Request.msg
 CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/AddTwoInts_Response.msg
+CMakeFiles/arduinobot_msgs: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/srv/EulerToQuaternion.srv
+CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/EulerToQuaternion_Request.msg
+CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/EulerToQuaternion_Response.msg
+CMakeFiles/arduinobot_msgs: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/srv/QuaternionToEuler.srv
+CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/QuaternionToEuler_Request.msg
+CMakeFiles/arduinobot_msgs: rosidl_cmake/srv/QuaternionToEuler_Response.msg
 
 arduinobot_msgs: CMakeFiles/arduinobot_msgs
 arduinobot_msgs: CMakeFiles/arduinobot_msgs.dir/build.make
