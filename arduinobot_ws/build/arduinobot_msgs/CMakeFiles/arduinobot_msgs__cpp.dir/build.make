@@ -71,6 +71,16 @@ CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail
 CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__struct.hpp
 CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__traits.hpp
 CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__type_support.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/euler_to_quaternion.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__builder.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__struct.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__traits.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__type_support.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/quaternion_to_euler.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__builder.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__struct.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__traits.hpp
+CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__type_support.hpp
 CMakeFiles/arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -89,6 +99,8 @@ rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: /opt/ros/humble/share
 rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: rosidl_adapter/arduinobot_msgs/srv/AddTwoInts.idl
+rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: rosidl_adapter/arduinobot_msgs/srv/EulerToQuaternion.idl
+rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp: rosidl_adapter/arduinobot_msgs/srv/QuaternionToEuler.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp__arguments.json
 
@@ -104,12 +116,52 @@ rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__traits.hpp: rosidl
 rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__type_support.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__type_support.hpp
 
+rosidl_generator_cpp/arduinobot_msgs/srv/euler_to_quaternion.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/euler_to_quaternion.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__builder.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__builder.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__struct.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__struct.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__traits.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__traits.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__type_support.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__type_support.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/quaternion_to_euler.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/quaternion_to_euler.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__builder.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__builder.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__struct.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__struct.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__traits.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__traits.hpp
+
+rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__type_support.hpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__type_support.hpp
+
 arduinobot_msgs__cpp: CMakeFiles/arduinobot_msgs__cpp
 arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/add_two_ints.hpp
 arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__builder.hpp
 arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__struct.hpp
 arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__traits.hpp
 arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/add_two_ints__type_support.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__builder.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__struct.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__traits.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/euler_to_quaternion__type_support.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__builder.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__struct.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__traits.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/detail/quaternion_to_euler__type_support.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/euler_to_quaternion.hpp
+arduinobot_msgs__cpp: rosidl_generator_cpp/arduinobot_msgs/srv/quaternion_to_euler.hpp
 arduinobot_msgs__cpp: CMakeFiles/arduinobot_msgs__cpp.dir/build.make
 .PHONY : arduinobot_msgs__cpp
 
