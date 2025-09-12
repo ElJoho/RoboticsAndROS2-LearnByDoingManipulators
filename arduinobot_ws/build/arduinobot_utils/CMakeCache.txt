@@ -272,7 +272,7 @@ SITE:STRING=joho-X550DP
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib/libarduinobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libtf2.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -341,6 +341,9 @@ ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
 ament_cmake_xmllint_DIR:PATH=/opt/ros/humble/share/ament_cmake_xmllint/cmake
 
 //Path to a program.
+ament_cppcheck_BIN:FILEPATH=/opt/ros/humble/bin/ament_cppcheck
+
+//Path to a program.
 ament_flake8_BIN:FILEPATH=/opt/ros/humble/bin/ament_flake8
 
 //The directory containing a CMake configuration file for ament_index_cpp.
@@ -360,6 +363,9 @@ ament_pep257_BIN:FILEPATH=/opt/ros/humble/bin/ament_pep257
 
 //The directory containing a CMake configuration file for ament_python.
 ament_python_DIR:PATH=ament_python_DIR-NOTFOUND
+
+//Path to a program.
+ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
 
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint

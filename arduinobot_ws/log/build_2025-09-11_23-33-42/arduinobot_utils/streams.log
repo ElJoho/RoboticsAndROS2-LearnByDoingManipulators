@@ -1,0 +1,72 @@
+[1.612s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils -- -j4 -l4
+[1.792s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.751s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[2.752s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[3.030s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.051s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.109s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.322s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.589s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.602s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.139s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.579s] -- Found arduinobot_msgs: 0.0.0 (/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/share/arduinobot_msgs/cmake)
+[4.653s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[5.104s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.422s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.426s] -- Configured cppcheck include dirs: 
+[5.426s] -- Configured cppcheck exclude dirs and/or files: 
+[5.432s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.435s] -- Added test 'lint_cmake' to check CMake code style
+[5.438s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.443s] -- Added test 'uncrustify' to check C / C++ code style
+[5.446s] -- Configured uncrustify additional arguments: 
+[5.448s] -- Added test 'xmllint' to check XML markup files
+[5.458s] -- Configuring done
+[5.535s] -- Generating done
+[5.567s] -- Build files have been written to: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils
+[5.718s] [ 50%] [32mBuilding CXX object CMakeFiles/angle_conversion.dir/src/angle_conversion.cpp.o[0m
+[19.080s] [100%] [32m[1mLinking CXX executable angle_conversion[0m
+[20.059s] [100%] Built target angle_conversion
+[20.154s] [100%] Built target ament_cmake_python_copy_arduinobot_utils
+[20.988s] running egg_info
+[20.991s] writing arduinobot_utils.egg-info/PKG-INFO
+[20.992s] writing dependency_links to arduinobot_utils.egg-info/dependency_links.txt
+[20.992s] writing top-level names to arduinobot_utils.egg-info/top_level.txt
+[21.001s] reading manifest file 'arduinobot_utils.egg-info/SOURCES.txt'
+[21.003s] writing manifest file 'arduinobot_utils.egg-info/SOURCES.txt'
+[21.084s] [100%] Built target ament_cmake_python_build_arduinobot_utils_egg
+[21.114s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils' returned '0': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils -- -j4 -l4
+[21.118s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils
+[21.139s] -- Install configuration: ""
+[21.139s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/pythonpath.sh
+[21.140s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/pythonpath.dsv
+[21.141s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils-0.0.0-py3.10.egg-info
+[21.144s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils-0.0.0-py3.10.egg-info/dependency_links.txt
+[21.144s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils-0.0.0-py3.10.egg-info/PKG-INFO
+[21.144s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils-0.0.0-py3.10.egg-info/top_level.txt
+[21.145s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils-0.0.0-py3.10.egg-info/SOURCES.txt
+[21.146s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils
+[21.146s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils/__init__.py
+[21.146s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils/angle_conversion.py
+[21.265s] Listing '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils'...
+[21.265s] Compiling '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages/arduinobot_utils/angle_conversion.py'...
+[21.281s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/lib/arduinobot_utils/angle_conversion
+[21.285s] -- Set runtime path of "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/lib/arduinobot_utils/angle_conversion" to ""
+[21.286s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/lib/arduinobot_utils/angle_conversion.py
+[21.287s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/ament_index/resource_index/package_run_dependencies/arduinobot_utils
+[21.287s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/ament_index/resource_index/parent_prefix_path/arduinobot_utils
+[21.287s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/ament_prefix_path.sh
+[21.288s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/ament_prefix_path.dsv
+[21.288s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/path.sh
+[21.289s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/environment/path.dsv
+[21.289s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/local_setup.bash
+[21.289s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/local_setup.sh
+[21.289s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/local_setup.zsh
+[21.290s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/local_setup.dsv
+[21.290s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/package.dsv
+[21.291s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/ament_index/resource_index/packages/arduinobot_utils
+[21.291s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/cmake/arduinobot_utilsConfig.cmake
+[21.292s] -- Up-to-date: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/cmake/arduinobot_utilsConfig-version.cmake
+[21.293s] -- Installing: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/share/arduinobot_utils/package.xml
+[21.298s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils' returned '0': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_utils
