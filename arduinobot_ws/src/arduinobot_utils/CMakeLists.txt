@@ -9,10 +9,20 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)  # fixed
 find_package(rclpy REQUIRED)
+find_package(rclcpp REQUIRED)
 find_package(arduinobot_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 
+add_executable(angle_conversion src/angle_conversion.cpp)
+
+ament_target_dependencies(angle_conversion rclcpp arduinobot_msgs tf2)
 # install the Python package (directory must exist and contain __init__.py)
 ament_python_install_package(${PROJECT_NAME})  # fixed
+
+install(TARGETS
+  angle_conversion
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # install executable node(s) (ensure the file exists and is +x and has a shebang)
 install(PROGRAMS
