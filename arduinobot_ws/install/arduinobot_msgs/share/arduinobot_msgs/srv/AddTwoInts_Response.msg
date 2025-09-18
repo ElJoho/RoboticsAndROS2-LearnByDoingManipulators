@@ -1,3 +1,1 @@
-
-# Response
-int64 sum
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_cmake/srv/AddTwoInts_Response.msg

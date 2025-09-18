@@ -1,5 +1,1 @@
-# Request
-float64 x
-float64 y
-float64 z
-float64 w
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_cmake/srv/QuaternionToEuler_Request.msg

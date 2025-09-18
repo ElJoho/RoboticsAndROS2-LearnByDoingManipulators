@@ -1,43 +1,128 @@
-Given the information
-moveit.launch.py
-<CLASSNOTES>
+# Clase 74 Integración de Moveit2
 
-    <TERMINAL1>
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ colcon build
-Starting >>> arduinobot_msgs
-Starting >>> arduinobot_controller
-Starting >>> arduinobot_description
-Starting >>> arduinobot_moveit
-Finished <<< arduinobot_moveit [0.71s]                                                                                                                                                
-Finished <<< arduinobot_description [0.79s]                                                                                                        
-Finished <<< arduinobot_controller [0.87s]
-Finished <<< arduinobot_msgs [2.13s]                     
-Starting >>> arduinobot_cpp_examples
-Starting >>> arduinobot_py_examples                   
-Starting >>> arduinobot_utils
-Finished <<< arduinobot_cpp_examples [1.36s]                                                                                              
-Finished <<< arduinobot_utils [2.87s]                                                                 
-Finished <<< arduinobot_py_examples [4.36s]          
+Este documento resume **lo que se hizo en clase** para integrar MoveIt 2 con el robot *Arduinobot*, los **comandos de terminal** utilizados y la **lógica de los archivos** de configuración y *launch*. Está pensado para que puedas **reproducir el flujo** desde cero y entender para qué sirve cada fichero.
 
-Summary: 7 packages finished [7.75s]
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ . install/setup.bash
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ ros2 launch arduinobot_description gazebo.launch.py
+---
 
-    </TERMINAL1>
+## Objetivos de la sesión
+- Configurar el paquete `arduinobot_moveit` y **exponer** (instalar) sus carpetas `config/` y `launch/`.  
+- Crear el *launch* `moveit.launch.py` para iniciar **Move Group** (backend de MoveIt 2) y **RViz2** con la configuración del robot.  
+- Conectar MoveIt 2 con los **controladores** del brazo y la garra configurados en ROS 2 Control / Gazebo.
 
-    <TERMINAL2>
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ . install/setup.bash
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ ros2 launch arduinobot_controller controller.launch.py 
+---
 
-    </TERMINAL2>
+## Comandos de terminal usados
 
-    <TERMINAL3>
-    joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ . install/setup.bash
-joho@joho-X550DP:~/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws$ ros2 launch arduinobot_moveit moveit.launch.py
-    </TERMINAL3>
-</CLASSNOTES>
-Given the information in the TRANSCRIPTION, add comments in front of each line of code in moveit.launch.py explaining what does that line of code and logic of the code
-<TRANSCRIPTION>
-At this point, Moveit 2 is configured and also supports our robot. So now we can finally start using its amazing features to move the robots and the vector from the starting point to the end point. And so to plan and execute trajectories to launch this software with the configuration that we have created in the previous lesson, we need to create a new launch file inside the Arduino Moveit package that we create in the last lesson. So let's create a new folder and let's call this one launch. And within this folder let's create a new file called move it dot launch dot pi. As this is a launch file and a Python file, its purpose is to create an object of type launch description. So let's import from the launch library the launch description class. And let's define a new function called generate Launch. Description and the purpose of this function is to declare a list of instructions that needs to be executed when we start this launch file. So when we start the application and all these instructions needs to be listed within the constructor of the launch description class. So let's call the constructor. And this receives a list of instructions or a list of application that needs to be executed. Let's start by declaring a new argument for this launch file. So here. And so let's first import the declare launch argument. So from the launch library and from the actions module let's import the declare launch argument. And now let's use this one to create a new object. Let's call it is sim arg. So is sim argument. And this is an instance of the declare launch argument. Let's use this class to declare the argument is same, which indicates whether or not we are starting the moveit functionalities for the simulation and gazebo, or for the real robot. And so let's set by default. So let's set the default value to true. And this means that basically by default we are saying that we are starting the simulation. So we are starting move it for the simulated robot. Let's also import the launch configuration class. So from launch substitutions let's import the launch configuration class. And let's use it to create a new variable called is SIM. And this is an instance of the launch configuration class. And this contains the value that we assign at runtime. So when we start the launch file to the argument is same. And so this takes the value that we assigned to the is same argument at runtime. So when we start the launch file now we can finally start to move it. But before that we need to create its configuration. So we need to basically to declare this configuration file based on the file that we created in the previous lesson. So in order to create a moved configuration let's import from the move it config util package. Let's import the move it config builder. So let's import this class here and let's use it to create a new object of this class. Let's call it for example move it config. And this is an instance of the move it config builder. And we can use this object to customize the move it launch file for our robot. So let's start by assigning the name of our robot, which is. Arduino bot, and also the name of the package that contains the Moveit configuration for our robot. So let's use a comma and then the package name. So the one that contains the Moveit configuration is the Arduino bot move it package. And also now we need to specify where is located the Urdf model of our robot. So let's use Dot. And then let's set the robot description. So now we need to set the path to the Urdf model of our robot. So where it is located. And so to declare the path where the Urdf model is located, let's start by importing the OS library of Python. And then let's set the file path. Let's take the OS path. So let's take the join function. And now we need to specify where is located. So in which package we can find our robot description. So our Urdf model. So in order to specify the package let's import from the amend index Python library and from the packages module let's import the get package share directory. And now let's use this function here within the parentheses. So get package share directory. And the Urdf model of our robot is in the Arduino bot description package. Let's make this in a new line. And also let's add some parentheses here. And let's close this one okay. So now we can read it better. So let's adjust the formatting. Perfect. So now we said that our Urdf model of the robot was in the Arduino bot description package. Then it's within the Urdf folder and then it's called Arduino bot dot Urdf dot zero. Then we also need to declare the directory where the SDF file with the robot description semantics is located. So basically this file here that we created in the previous lesson. To do so let's add also. So here at the end of this file let's add the robot description semantic. So with the robot description we set for the MoveIt config builder the directory of our Urdf model. And now with robot description semantic we set the directory of our SDF file. We can do the same. So we can still use the Os.path.join function. And in this case we can access to the file path. So to the file which contains the URDF directly accessing to the config folder and to the Arduino bot dot s URDF. Since basically this file is in the same package in which we are creating the launch file. Next, let's also configure the robot's execution of the trajectories with the trajectory execution, and we configured the trajectory execution of the robot within the Moveit controllers YAML file. So again the file path is in the config folder and is called move it controllers dot YAML. So it is going to use this YAML file to configure the trajectory execution. Finally let's take the configuration from this class. So from this Moveit configuration builder object that we have created in order to configure move it. So let's use the function to move it. Configuration. And so basically this will convert this object. So the object of this class into a configuration that we can provide directly to the move it to node and so directly to the executable. So let's start move it. So let's start the move it executable. And first let's import from launch Ros. And from the actions module let's import the node module. And now we can start the core of move it. So the move group node of move it as a new empty node. And so this node starts from the package. Move it Ros move group. So from move it Ros move group. From this package it starts the executable that is called. move group. And as you remember, this is the core of the move with two functionalities. Then let's also display the output. So any log message that basically this node will print. Let's display all of these messages in the terminal. By setting output to screen. And then let's configure and pass some parameters. So let's pass some parameters. And these parameters are exactly the configuration parameters of move it that we have just created with the move it configuration builder. And that we have stored in the move it. So this here we are missing an E in the move it config variable. So let's copy this variable and let's paste it within the parameters. And let's take a dictionary. And then let's also set another parameter which is the parameter. Use same time. And let's set this one equal to the value is sim. So basically equal to the value that is assigned to the sim argument of the launch file. So basically if when we start this launch file we pass the argument is sim and we set it to true. Then the use sim time of the move group will be set to true as well. Otherwise it will be set to false. Let's also set one more parameter as another dictionary. And this is the publish robot description semantic. And let's set this one to true as well. And this basically will allow us the name of this parameter says this will allow to publish in our Ros2 topic. Also this here. So also this configuration here that is the SDF file that we created in the previous lesson. Let's also provide some more arguments to this node. So let's use Arguments. And then let's pass the Ross arguments. So Ross args and let's set for example the Loglevel flag to info. So let's set the log level to be info so that all the informative messages that this node. So the move group node is printing are displayed correctly in the window. So are displayed correctly in the terminal. Next we can finally start also RVs. And we can do this as a normal ros2 node. So let's call this one RVs node. And this is an instance of the node class. And from the package that is called RVs two let's start the executable that is also called RVs two and let's call it. So let's give it a name that we call RVs two as well. Let's set also the output argument to be screen. In order for the log messages to be printed in the terminal. And then let's pass some more arguments to this log file, and let's use the flag minus d to to visualize by default. So when we start out with a predefined configuration. So instead of loading the empty service window it will load a Pre-created and a predefined service configuration. And so let's for example store this one within a new variable that we are going to call RV config. So now let's create this variable before using it actually here and here let's indicate the full path of the RV configuration that we want to launch at the startup of this node. So again let's use the function join from the US path library. And here let's use the Get Package share directory. In order to access to the directory of the Arduino bot move it package. So here there is a mistake Arduino bot move it package. And then within this package let's access to the config folder. And then within this config folder we want our service to be loaded with the configuration. Move it dot RVs. For this moment. This configuration is not yet created. So as we can see there is no such configuration that is called MoveIt dot RVs in the config folder. And so at the startup, at the first startup of all these functionalities, we will see the classic empty window of RVs. And then we will save the configuration and we will save the configuration of service under the name of move it service, so that every time you are going to launch again this node in the future, you will start by using by default, this visualization instead of adding all the plugins one by one. Then let's continue the setup of the RVIZ node. So here let's pass some parameters. So this is a list. And from the move it configuration that is from the move it config object. From this one. Let's pass the robot description. So here let's take this parameter and let's pass the robot description. So let's take the robot description. And also let's take the steel from the move it config. Let's take the robot description semantic. And so basically the file as URDF and also as a parameter still from the MoveIt config. Let's take the robot description kinematics and also the joint limits. So let's take the joint limits. All of these configuration parameters that we are passing to RVIZ are needed when we start RVs. And when we display the move, it to interface that is available in RVs. Now with this set, we have declared all the components that we need to start in order to use it with our robot. So all that it remains is to declare all these components. So to list all of these components here within the launch description constructor. So let's start by declaring the is sim argument. And this will be an argument of this launch file. So you can start this launch file. Setting this argument to true or false depending on whether you are starting to move it for the real robot or for the simulated one. Then let's start the move group node that is the core of move it. And then let's also start the RVs node that will allow us to interact with the graphical user interface with move it before moving on. So let's save this launch file and then let's go into the Cmakelists.txt in order to install. Also the launch folder. So in order to install the config and the launch folder and so that they these two folders are recognized in Ros2. So here before the build testing let's use a new install instruction. And let's install the directory launch and also the directory config. And then now we need to set the destination. So the destination in which we want to install these two folders is the share folder. And then the subfolder that has the same name of the package. So Arduino bot move it. And we can access to this name through the project name variable. So let's use the project name variable. Let's save this file and let's finally modify also the package dot XML file in order to add the missing dependencies. So here let's add an execution dependency from the Ros2 launch library since we have created our launch file, then another execution dependency from harvest two. Since in our launch file, we started harvest two and then another execution dependency from the move it config utils from which we have used the move it config builder. So now also the package dot XML is completed. And now we can finally build our workspace and launch this file. So let's open a new window of the terminal here. Let's go to the workspace and let's build it with Qualcomm Build. So this is compiling our Arduino bot move it package. And so it's installing the launch file that we have created. And also all the configuration files that we have created. And then we can finally start the simulation of our robot. So in a new terminal let's source the file setup bash and let's launch from the Arduino bot description package, the gazebo launch dot Pi. So this is launching the simulation of our robot in the empty environment. Here we go. And this is also loading the Ros2 control library for the simulated robot. And so basically we will be able to use this library in order to interact with the simulated motors. So with the simulated actuators in the gazebo simulation. And so to move our robot here in the simulated environment, in order to do so we also need to start the control system of the robot. So in a new terminal again let's source the workspace and let's launch with Ros2 launch and this time from the Arduino bot controller. Let's start the controller launch dot Pi. So let's press enter. So this is starting the control system of the robot. And also we have here the configuration that we have correctly configured. And activated both the ARM controller and also the gripper controller. And so finally everything is set. In order to start, move it and in fact move it will use actually these two controllers. So the gripper controller and the ARM controller in order to send commands. And so in order to move the robot from the current position to the desired one. So let's finally start to move it. So again in a new window, let's source the file setup and let's launch with Ros2. Launch from the Arduino board. Move it package. Let's start the launch file that is called move it launch dot Pi. So let's press enter. And now it is apart from starting all the move it functionalities and the configuration that we have set, it also starts the service window. And so as we can see here this is just an empty window that now we can configure in order to interact with the robot. And so in order to set the desired pose of the robot. And so to move the robot from the current pose to the desired one. To do so, the first thing that we need to do is to change the fixed frame to the world frame. So this is the starting frame that Moovit is using in order to link our robot. So this one here to the world, so to the empty world for the moment. And then we can also add from the MoveIt cross visualization this one here the motion planning plugin. So let's add it. And this is adding quite a lot of information. So we can see that we have now here a new panel that we can use in order to interact with the robot. And also here we can already see that our robot is being displayed in the service window. So this is the model of our robot in its current position. So as we can see they perfectly match. And also we can see that here we have a sphere that is attached to the arm of the robot that we can use in order to move our robot around. And so in order to set a goal state for the robot before doing so, we need to select a planner. So let's go to the context here and let's change here. The planning library that we are going to use for our robot is the Ompl library. So take care of choosing this library here. And if you don't have it installed, you can just open a new window of the terminal. Select this and let's use the command sudo apt get install and from the Ros followed by the version of ros2 that you are using. That in my case it is Jessie. Let's install the move it planners. And then if we press tab twice we can see that here we have the move it planners ompl. So I'm not going to install it as I have already it here. So I can close this one. So here make sure that you have the Ompl library loaded. And then back in the planning. Let's also enable this checkbox here. So the approx. Inverse kinematics solution as this will make the calculation much faster. Perfect. So now we can actually grab this sphere here. And so we can see that as we grab this sphere all the robot moves. So the robot that this this one here. So the orange one is representative of the goal state of the robot. So we are moving the goal state of the robot. And this instead is the current status of the robot. So as we can see this is the current position. And this orange one here is instead the goal position. So the position in which we want the robot to be after the movement. So now once we have selected our goal position that is this one, here we can simply plan and execute a path. So let's press on plan and execute. And we can see that as we press on this button here. Both the robot here in service. And also the simulated robot are moving. And then we can see that perfectly. So the red position. So the red robot here in service perfectly matches the orange one. And so this confirms us that the movement was completed successfully. So the current position of the robot is exactly equal to the desired position. Also apart from moving the arm we can also move the gripper. And in order to do so. So if we change the visualization in order to see the gripper here, we can change the planning group. And here we have the two planning groups that we have set for move it. And so for example let's select now the planning group for the gripper. Also in gazebo. Let's visualize it a little bit better so we can see the gripper moving. And now also for the gripper. So here make sure that you have the planning group gripper. And also for the gripper we want to use as a planning library. So back in the context we want to use the Ompl library. So let's choose this library here. Perfect. And now for the gripper. For example, we can set the start state as the current state. So the gripper is closed. And as the goal state we can set just a random valid state. So let's press this one so we can see that this orange one will be the new state. So the gripper will slightly open. And this red one is the current state. So now if we press plan and execute also for the gripper we can see that in the simulation the gripper is now opening. And also here we can see that in RVs the red arm. So the red gripper is perfectly matching the orange one. So this means that the current state of the robot is perfectly matching the goal state that we have set. Now, feel free to continue playing with this tool, and to send the robot in new position, and to create your own movements.
+### Terminal 1 — Compilar y lanzar simulación vacía en Gazebo
+```bash
+colcon build
+. install/setup.bash
+ros2 launch arduinobot_description gazebo.launch.py
+```
 
-</TRANSCRIPTION>
+### Terminal 2 — Iniciar el sistema de control (ros2_control)
+```bash
+. install/setup.bash
+ros2 launch arduinobot_controller controller.launch.py
+```
+
+### Terminal 3 — Iniciar MoveIt (Move Group + RViz2)
+```bash
+. install/setup.bash
+ros2 launch arduinobot_moveit moveit.launch.py
+```
+
+> Estos pasos siguen el flujo descrito en la transcripción: primero **simulación**, luego **controladores**, y por último **MoveIt** (planificación y ejecución).
+
+---
+
+## Archivos clave y propósito
+
+- `CMakeLists.txt`: instala las carpetas `launch` y `config` dentro de `share/${PROJECT_NAME}` para que ROS 2 las encuentre al ejecutar *launch files*.  fileciteturn0file0
+
+- `package.xml`: declara dependencias de ejecución necesarias para el lanzamiento y visualización: `ros2launch`, `rviz2`, `moveit_configs_utils`, `moveit_ros_move_group` y la descripción del robot `arduinobot_description`.  fileciteturn0file1
+
+- `launch/moveit.launch.py`: inicia el nodo `move_group` (núcleo de MoveIt 2), configura parámetros (URDF/SRDF, cinemática, límites, controladores) y lanza `rviz2` con una sesión preconfigurada.  fileciteturn0file2
+
+- `config/initial_positions.yaml`: posiciones iniciales del sistema *fake* de `ros2_control` para *Arduinobot* durante pruebas/simulación.  fileciteturn0file3
+
+- `config/joint_limits.yaml`: escalados por defecto para velocidad y aceleración y límites por articulación (habilita/ajusta `has_velocity_limits`, `max_velocity`, etc.).  fileciteturn0file4
+
+- `config/kinematics.yaml`: define el *plugin* y parámetros de cinemática inversa (KDL).  fileciteturn0file5
+
+- `config/moveit_controllers.yaml`: integra MoveIt con los controladores de seguimiento de trayectorias (`arm_controller`, `gripper_controller`) y lista las *joints* asociadas.  fileciteturn0file6
+
+- `config/pilz_cartesian_limits.yaml`: límites cartesianos para el planificador Pilz (velocidades y aceleraciones máximas de traslación/rotación).  fileciteturn0file7
+
+> Con estos ficheros, MoveIt 2 conoce el **modelo del robot** (URDF/SRDF), su **cinemática**, sus **límites**, y cómo **enviar trayectorias** a los controladores activos.
+
+---
+
+## Flujo de ejecución (resumen)
+
+1. **Simulación**: `gazebo.launch.py` inicia el mundo vacío y carga `ros2_control` del robot.
+2. **Control**: `controller.launch.py` activa `arm_controller` y `gripper_controller` (necesarios para que MoveIt pueda ejecutar).  
+3. **Planificación/Ejecución**: `moveit.launch.py` levanta:
+   - `move_group` (servicios de planificación y ejecución).
+   - `rviz2` con el *Motion Planning* plugin y la configuración (URDF/SRDF/IK/límites).  fileciteturn0file2
+
+En RViz2:
+- Cambiar *Fixed Frame* a `world`.
+- Cargar el panel de **Motion Planning**.
+- Seleccionar planificador **OMPL** y (opcional) *Approx. IK Solution* para acelerar.  
+- Definir estados objetivo (brazo/garra) y usar **Plan and Execute** para mover el robot (tal como se describió en clase).
+
+---
+
+## Notas sobre el *build system* (CMake y Package)
+
+- `CMakeLists.txt`:
+  - Requiere `ament_cmake` y **instala** `launch/` y `config/` en `share/${PROJECT_NAME}` para que `ros2 launch` pueda encontrarlos.  fileciteturn0file0
+
+- `package.xml`:
+  - Dependencias clave:
+    - `moveit_configs_utils`: se utiliza el **MoveItConfigsBuilder** para componer parámetros desde archivos (`URDF/SRDF`, YAMLs).  fileciteturn0file1
+    - `moveit_ros_move_group`: binario `move_group` (backend MoveIt 2).  fileciteturn0file1
+    - `rviz2` y `ros2launch` para la visualización y el sistema de lanzadores.  fileciteturn0file1
+    - `arduinobot_description` para resolver la ruta del URDF/Xacro.  fileciteturn0file1
+
+---
+
+## ¿Qué hace exactamente `moveit.launch.py`?
+
+- Declara el argumento `is_sim` (por defecto `True`) para usar **tiempo simulado** (`use_sim_time`) cuando se integre con Gazebo.
+- Construye un objeto de configuración con `MoveItConfigsBuilder` indicando:
+  - **URDF/Xacro** (`robot_description`) desde `arduinobot_description`.
+  - **SRDF** (`robot_description_semantic`).
+  - **Controladores** (`trajectory_execution` → `moveit_controllers.yaml`).  fileciteturn0file2
+- Lanza:
+  - `move_group` con parámetros resultantes.
+  - `rviz2` con un `.rviz` predefinido y parámetros de robot/semántica/cinemática/límites.  fileciteturn0file2
+
+> En el archivo adjunto **`moveit.launch.comentado.py`** encontrarás **comentario por línea** explicando la lógica completa.
+
+---
+
+## Reproducción rápida
+
+1. Compila e instala:
+   ```bash
+   colcon build
+   . install/setup.bash
+   ```
+2. Lanza Gazebo:
+   ```bash
+   ros2 launch arduinobot_description gazebo.launch.py
+   ```
+3. Lanza controladores:
+   ```bash
+   ros2 launch arduinobot_controller controller.launch.py
+   ```
+4. Lanza MoveIt:
+   ```bash
+   ros2 launch arduinobot_moveit moveit.launch.py
+   ```
+
+¡Listo! Ya puedes planificar y ejecutar movimientos desde RViz2 con **MoveIt 2**.
+
+---

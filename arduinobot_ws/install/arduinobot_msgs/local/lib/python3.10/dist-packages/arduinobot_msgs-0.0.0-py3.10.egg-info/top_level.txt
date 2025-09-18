@@ -1,1 +1,1 @@
-arduinobot_msgs
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/ament_cmake_python/arduinobot_msgs/arduinobot_msgs.egg-info/top_level.txt

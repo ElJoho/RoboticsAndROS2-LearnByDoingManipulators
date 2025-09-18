@@ -3,6 +3,7 @@
   "non_idl_tuples": [
     "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs:srv/AddTwoInts.srv",
     "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs:srv/EulerToQuaternion.srv",
-    "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs:srv/QuaternionToEuler.srv"
+    "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs:srv/QuaternionToEuler.srv",
+    "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs:action/Fibonacci.action"
   ]
 }
