@@ -1,4 +1,1 @@
-# Request
-float64 roll
-float64 pitch
-float64 yaw
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_cmake/srv/EulerToQuaternion_Request.msg
