@@ -313,11 +313,14 @@ message(STATUS "Execute custom install script")
 # install("TARGETS" "simple_action_server_node" "DESTINATION" "lib/arduinobot_cpp_examples")
 include("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "simple_publisher" "simple_subscriber" "simple_parameter" "simple_service_server" "simple_service_client" "DESTINATION" "lib/arduinobot_cpp_examples")
+# install("TARGETS" "simple_action_client_node" "DESTINATION" "lib/arduinobot_cpp_examples")
 include("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "simple_action_server" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+# install("TARGETS" "simple_publisher" "simple_subscriber" "simple_parameter" "simple_service_server" "simple_service_client" "DESTINATION" "lib/arduinobot_cpp_examples")
 include("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "simple_action_server" "simple_action_client" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_cpp_examples" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
