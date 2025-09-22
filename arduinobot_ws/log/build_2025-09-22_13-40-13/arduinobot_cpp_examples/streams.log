@@ -1,0 +1,89 @@
+[0.053s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples -- -j4 -l4
+[0.880s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.880s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.881s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.881s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.881s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.881s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.882s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.882s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.883s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.883s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.886s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.933s] -- Found arduinobot_msgs: 0.0.0 (/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/share/arduinobot_msgs/cmake)
+[1.098s] -- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.132s] -- Found rclcpp_components: 16.0.14 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.197s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.235s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.716s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.806s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.833s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.902s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.998s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.104s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.395s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[2.479s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.558s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.694s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.906s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.908s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_cpp_examples/include>
+[2.908s] -- Configured cppcheck exclude dirs and/or files: 
+[2.910s] -- Added test 'lint_cmake' to check CMake code style
+[2.913s] -- Added test 'uncrustify' to check C / C++ code style
+[2.916s] -- Configured uncrustify additional arguments: 
+[2.918s] -- Added test 'xmllint' to check XML markup files
+[2.925s] -- Configuring done
+[3.131s] -- Generating done
+[3.179s] -- Build files have been written to: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples
+[3.261s] [35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[3.261s] [35m[1mConsolidate compiler generated dependencies of target simple_parameter[0m
+[3.263s] [35m[1mConsolidate compiler generated dependencies of target simple_service_server[0m
+[3.267s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[3.335s] [ 10%] Built target simple_parameter
+[3.345s] [ 20%] Built target simple_subscriber
+[3.374s] [ 30%] Built target simple_publisher
+[3.393s] [ 40%] Built target simple_service_server
+[3.449s] [35m[1mConsolidate compiler generated dependencies of target simple_service_client[0m
+[3.464s] [35m[1mConsolidate compiler generated dependencies of target simple_action_server[0m
+[3.476s] [35m[1mConsolidate compiler generated dependencies of target simple_action_server_node[0m
+[3.536s] [ 45%] [32mBuilding CXX object CMakeFiles/simple_moveit_interface.dir/src/simple_moveit_interface.cpp.o[0m
+[3.582s] [ 55%] Built target simple_action_server
+[3.622s] [ 65%] Built target simple_service_client
+[3.630s] [35m[1mConsolidate compiler generated dependencies of target simple_action_client[0m
+[3.640s] [ 75%] Built target simple_action_server_node
+[3.680s] [35m[1mConsolidate compiler generated dependencies of target simple_action_client_node[0m
+[3.695s] [ 85%] Built target simple_action_client
+[3.742s] [ 95%] Built target simple_action_client_node
+[22.479s] [100%] [32m[1mLinking CXX executable simple_moveit_interface[0m
+[23.761s] [100%] Built target simple_moveit_interface
+[23.789s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples -- -j4 -l4
+[23.794s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples
+[23.810s] -- Install configuration: ""
+[23.812s] -- Execute custom install script
+[23.813s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_action_server_node
+[23.814s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_action_client_node
+[23.815s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher
+[23.815s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber
+[23.816s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_parameter
+[23.817s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_service_server
+[23.818s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_service_client
+[23.818s] -- Symlinking: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_moveit_interface
+[23.841s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/libsimple_action_server.so
+[23.841s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib/libsimple_action_client.so
+[23.842s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples
+[23.842s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples
+[23.843s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh
+[23.843s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv
+[23.844s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh
+[23.844s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv
+[23.845s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash
+[23.845s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh
+[23.846s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh
+[23.846s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv
+[23.846s] -- Symlinking: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv
+[23.869s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples
+[23.870s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/rclcpp_components/arduinobot_cpp_examples
+[23.871s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake
+[23.871s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake
+[23.872s] -- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml
+[23.879s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble LD_LIBRARY_PATH=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples

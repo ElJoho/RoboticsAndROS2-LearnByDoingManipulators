@@ -5,6 +5,7 @@
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_parameter.dir
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_service_server.dir
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_service_client.dir
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_moveit_interface.dir
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_action_server.dir
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_action_server_node.dir
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_cpp_examples/CMakeFiles/simple_action_client.dir
