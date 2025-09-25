@@ -216,4 +216,7 @@ CMakeFiles/arduinobot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_c/arduinobot_msgs/action/detail/fibonacci__functions.h
+ /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_c/arduinobot_msgs/action/detail/fibonacci__functions.h \
+ /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_c/arduinobot_msgs/action/detail/arduinobot_task__type_support.h \
+ /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_c/arduinobot_msgs/action/detail/arduinobot_task__struct.h \
+ /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_c/arduinobot_msgs/action/detail/arduinobot_task__functions.h

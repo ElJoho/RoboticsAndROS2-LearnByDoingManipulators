@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/arduinobot_msgs__cpp"
+  "rosidl_generator_cpp/arduinobot_msgs/action/arduinobot_task.hpp"
+  "rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__builder.hpp"
+  "rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__struct.hpp"
+  "rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__traits.hpp"
+  "rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__type_support.hpp"
   "rosidl_generator_cpp/arduinobot_msgs/action/detail/fibonacci__builder.hpp"
   "rosidl_generator_cpp/arduinobot_msgs/action/detail/fibonacci__struct.hpp"
   "rosidl_generator_cpp/arduinobot_msgs/action/detail/fibonacci__traits.hpp"

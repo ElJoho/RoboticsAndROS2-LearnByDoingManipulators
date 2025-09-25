@@ -370,6 +370,9 @@ ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByD
 # install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_adapter/arduinobot_msgs/action/Fibonacci.idl" "DESTINATION" "share/arduinobot_msgs/action")
 ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_adapter/arduinobot_msgs/action/Fibonacci.idl" "DESTINATION" "share/arduinobot_msgs/action")
 
+# install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_adapter/arduinobot_msgs/action/ArduinobotTask.idl" "DESTINATION" "share/arduinobot_msgs/action")
+ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_adapter/arduinobot_msgs/action/ArduinobotTask.idl" "DESTINATION" "share/arduinobot_msgs/action")
+
 # install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/srv/AddTwoInts.srv" "DESTINATION" "share/arduinobot_msgs/srv")
 ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/srv/AddTwoInts.srv" "DESTINATION" "share/arduinobot_msgs/srv")
 
@@ -399,6 +402,9 @@ ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByD
 
 # install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/action/Fibonacci.action" "DESTINATION" "share/arduinobot_msgs/action")
 ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/action/Fibonacci.action" "DESTINATION" "share/arduinobot_msgs/action")
+
+# install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/action/ArduinobotTask.action" "DESTINATION" "share/arduinobot_msgs/action")
+ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs/action/ArduinobotTask.action" "DESTINATION" "share/arduinobot_msgs/action")
 
 # install(FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_msgs" FILES "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arduinobot_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
