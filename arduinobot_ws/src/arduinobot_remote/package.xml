@@ -12,6 +12,10 @@
 
   <depend>rclpy</depend>
   <depend>arduinobot_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclpp_components</depend>
+  <depend>moveit_ros_planning_interface</depend>
 
   <exec_depend condition="$ROS_DISTRO >= iron">moveit_py</exec_depend>
   <test_depend>ament_lint_auto</test_depend>

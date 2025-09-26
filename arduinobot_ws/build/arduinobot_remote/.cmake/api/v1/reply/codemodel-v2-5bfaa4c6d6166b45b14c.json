@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-c913c6fbffa5ca596a0b.json",
+					"jsonFile" : "directory-.-4952802d602836cbad9e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -17,7 +17,11 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -33,7 +37,11 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -41,9 +49,37 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_arduinobot_remote_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_arduinobot_remote_egg-8f79294ee8e1b74a4a0a.json",
+					"name" : "ament_cmake_python_build_arduinobot_remote_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_arduinobot_remote::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_arduinobot_remote-eb7a08342f5193911d6d.json",
+					"name" : "ament_cmake_python_copy_arduinobot_remote",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "arduinobot_remote_uninstall::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-arduinobot_remote_uninstall-d0b5dfa7b31ee89739fb.json",
 					"name" : "arduinobot_remote_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task_server-3a6f09ce65b6cc570ede.json",
+					"name" : "task_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task_server_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task_server_node-8257cfee38a6aa3f60a3.json",
+					"name" : "task_server_node",
 					"projectIndex" : 0
 				},
 				{
