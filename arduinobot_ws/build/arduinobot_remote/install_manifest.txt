@@ -5,6 +5,7 @@
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages/arduinobot_remote-0.0.0-py3.10.egg-info/top_level.txt
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages/arduinobot_remote-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages/arduinobot_remote/__init__.py
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages/arduinobot_remote/alexa_interface.py
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages/arduinobot_remote/task_server.py
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib/arduinobot_remote/task_server_node
 /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib/libtask_server.so
