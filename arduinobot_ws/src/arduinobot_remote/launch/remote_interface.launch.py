@@ -48,6 +48,11 @@ def generate_launch_description():  # Launch entrypoint function expected by ROS
         ]
     )
     
+    alexa_interface_node = Node(
+        package="arduinobot_remote",
+        executable="alexa_interface.py",
+        parameters=[{"use_sim_time":is_sim}]
+    )
 
     task_server_node = Node(
         package="arduinobot_remote",
@@ -64,4 +69,5 @@ def generate_launch_description():  # Launch entrypoint function expected by ROS
         is_sim_arg,
         task_server_node,
         task_server_node_py,
+        alexa_interface_node
     ])

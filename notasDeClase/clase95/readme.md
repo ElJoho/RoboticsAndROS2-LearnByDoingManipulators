@@ -1,0 +1,41 @@
+<FILES>
+</FILES>
+<CLASSNOTES>
+    <TERMINAL1>
+    </TERMINAL1>
+    <TERMINAL2>
+    </TERMINAL2>
+    <TERMINAL3>
+    </TERMINAL3>
+</CLASSNOTES>
+<TRANSCRIPTION>
+Hi robotic enthusiasts. In this lesson, we will finally put together all the pieces of our robot and see in this simulation how they interact with each other, coordinated and interconnected by ROS2. This is also the last lesson in which we are going to add functionalities to our robot, as the focus in the next section will be on making all these functionalities compatible with the real robot. To start all the robot's functionalities, let's create one last package inside our workspace. So inside the source folder here, let's create the package with the ROS2 package create and let's use as a build type ament and CMake. As we are not going to insert any Python or C++ file in this package, but we just want to develop some launch files, let's call this package arduinobot_bringup. So let's press enter, and this created our new last package — the arduinobot_bringup package. Now back in the workspace, let's run colcon build command so that the arduinobot_bringup package is recognized and compiled.
+
+Now back in Visual Studio Code, close the terminal. Back in Visual Studio Code, in the arduinobot_bringup, let's start by creating a new launch file. So by convention, let's insert this one in the launch folder, and within this folder let's create a new file called simulated_robot.launch.py. In this one, since this is a ROS2 launch file, let's start by importing the LaunchDescription class. So from the launch library, let's import the LaunchDescription. Then let's define the generate_launch_description function, which returns an object of type LaunchDescription, and the constructor of this class requires as input a list — the list of the functionalities that this launch file is going to start.
+
+The objective of this launch file is to declare all the applications, all the functionalities that we want to be started for the simulated robot. So let's start by launching Gazebo. We have already inserted and launched all the simulation components in another launch file, so basically we want to start this one here: the gazebo.launch.py. In order to start another launch file from this one, we need to import another library. So from launch.actions we need to import IncludeLaunchDescription. Let's use this one to launch Gazebo. Let's create a new instance of this class IncludeLaunchDescription.
+
+Also, let's import from the ament_index_python.packages module the get_package_share_directory function, and let's use it within this one to get the directory of the package that contains the launch file we want to start. We want to start gazebo.launch.py, which is in the arduinobot_description package. Then within this package, we want to access the launch folder. So let's import the os library of Python in order to access our file system. Now let's use here the function os.path.join, so we can access the arduinobot_description package, its launch folder, and the file gazebo.launch.py.
+
+After the simulation, we want also to start the controller of our robot. For this one, there is already a launch file ready that we have already created — this one: controller.launch.py. So basically we can copy the same instructions, paste them, and change the parameters accordingly. The controller.launch.py file is in the arduinobot_controller package. To this launch file, we can pass some arguments. Let's pass a dictionary, setting the argument "is_sim" to True, since we want to start the control system of the robot for the simulated robot.
+
+Then we also need to start MoveIt. Again, let's copy these lines, since the MoveIt launch file is already created and is in the arduinobot_moveit package. So let's change the name of the package to arduinobot_moveit and the file to moveit.launch.py. Also in this case, let's set the argument "is_sim" to True.
+
+Finally, we only need to start one last component — one last functionality — which is the remote interface. This is in charge of communicating with the Amazon Alexa assistant and with the MoveIt APIs. Let's use another IncludeLaunchDescription. Let's copy and paste since, for the arduinobot_remote, we already created this launch file called remote_interface.launch.py. This file is in the arduinobot_remote package, inside the launch folder. In this case, we don't need to provide any launch arguments.
+
+With this, we have declared and initialized all the components — all the applications — that this launch file (the simulated_robot.launch.py) must start. Now we just need to add them within the LaunchDescription so that they execute when we run this file. So let's add them in order: Gazebo, Controller, MoveIt, and finally the Remote Interface. Let's save. With this launch file, we have started all the functionalities of the robot that we have developed so far during the course. For now, we only start them for the simulated robot — that's why this is called simulated_robot.launch.py. In the next section of the course, we are going to make all these functionalities compatible also with the real robot. You can also use this launch file as a starting point for your future experiments by adding new nodes or launch files that implement new functionalities for your robot.
+
+Before executing it, let's remember to install it. So back in the CMakeLists.txt, we need to add an install statement to install the "launch" directory. The destination in which we want to install this folder is the shared directory and the subfolder that has the same name as the package, arduinobot_bringup, which we can access using the variable PROJECT_NAME. Now let's save this file. Let's also remember to add the dependency from ROS2 launch within the package.xml since we created our launch file.
+
+Now we are ready to start and see the result of our work — the outcome of what we have learned throughout the course. Let's open a new terminal, go to the workspace, and start by building it. So we compile the arduinobot_bringup package and the new launch file we have created. Now, if we open a new terminal window, source the setup.bash file, we can start all the functionalities of the robot — all the software we developed in this course — with just one command:
+
+ros2 launch arduinobot_bringup simulated_robot.launch.py
+
+Let's press Enter. This command starts the simulation of our robot in Gazebo. It also starts the control system of the robot, and as we can see, it starts RViz with MoveIt, so we can interact with the robot using the RViz graphical interface. However, now we are not going to use it; we will use Alexa, the voice assistant, to send commands to our robot — to move it into a pick position or a rest position.
+
+To do so, we need to start Ngrok, the web server that runs on our PC and allows us to connect to the Alexa interface. To do this, go to the Downloads folder where we downloaded Ngrok, and use the command ngrok http 5000. Perfect — now we have a new address. Let's copy it. This address must be set in the Alexa Developer Console. Let's open it and place Gazebo and the console side by side so that we can see that when we send commands using the Alexa interface, our robot moves in simulation.
+
+First, in the Developer Console, go to the “Endpoint” section and change the endpoint to the new one provided by Ngrok. Save it. Perfect. Now we can start testing our model and interaction with the robot. In the Test section, we can start interacting with Alexa. For example, we can use the invocation name “Wake up Arduinobot.” Alexa responds: “Hi, how can I help?” — and we see the robot opening its gripper to welcome us. Now we can say, for example, “Pick that pen.” Alexa replies, “Okay, I’m moving,” and we can see the robot picking an invisible object in the Gazebo simulation, and the gripper closing.
+
+Now we have confirmation that all the tasks we developed throughout this course are working perfectly — from the Alexa interface to the robot simulation, including MoveIt and the MoveIt APIs that make all of this possible.
+</TRANSCRIPTION>

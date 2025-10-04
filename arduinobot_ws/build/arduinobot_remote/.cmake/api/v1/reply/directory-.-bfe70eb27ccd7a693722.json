@@ -123,13 +123,13 @@
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 51,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 3,
-				"line" : 63,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
@@ -413,7 +413,8 @@
 			"destination" : "lib/arduinobot_remote",
 			"paths" : 
 			[
-				"arduinobot_remote/task_server.py"
+				"arduinobot_remote/task_server.py",
+				"arduinobot_remote/alexa_interface.py"
 			],
 			"type" : "file"
 		},
