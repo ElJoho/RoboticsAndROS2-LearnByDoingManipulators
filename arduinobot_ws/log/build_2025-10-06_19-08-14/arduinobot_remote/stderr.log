@@ -1,0 +1,205 @@
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:3:10:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+    3 | #include [01;35m[K"[m[Karduinobot_msgs/action/arduinobot_task.hpp> // Mensaje de acción personalizado ArduinobotTask
+      |          [01;35m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:3:10:[m[K [01;31m[Kerror: [m[K#include expects "FILENAME" or <FILENAME>
+    3 | #include [01;31m[K"arduinobot_msgs/action/arduinobot_task.hpp> // Mensaje de acción personalizado ArduinobotTask[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:35:32:[m[K [01;31m[Kerror: [m[K‘[01m[Karduinobot_msgs[m[K’ does not name a type
+   35 |         using ArduinobotTask = [01;31m[Karduinobot_msgs[m[K::action::ArduinobotTask;
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:36:60:[m[K [01;31m[Kerror: [m[K‘[01m[KArduinobotTask[m[K’ was not declared in this scope
+   36 |         using GoalHandle = rclcpp_action::ServerGoalHandle<[01;31m[KArduinobotTask[m[K>;
+      |                                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:36:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   36 |         using GoalHandle = rclcpp_action::ServerGoalHandle<ArduinobotTask[01;31m[K>[m[K;
+      |                                                                          [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:49:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   41 |             std::shared_ptr<const ArduinobotTask[01;31m[K::[m[KGoal> goal)
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   41 |             std::shared_ptr<const ArduinobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:49:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   41 |             std::shared_ptr<const ArduinobotTask[01;31m[K::[m[KGoal> goal)
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   41 |             std::shared_ptr<const ArduinobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:49:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   41 |             std::shared_ptr<const ArduinobotTask[01;31m[K::[m[KGoal> goal)
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   41 |             std::shared_ptr<const ArduinobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   41 |             [01;31m[Kstd[m[K::shared_ptr<const ArduinobotTask::Goal> goal)
+      |             [01;31m[K^~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:49:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   41 |             std::shared_ptr<const ArduinobotTask[01;31m[K::[m[KGoal> goal)
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   41 |             std::shared_ptr<[01;31m[Kconst[m[K ArduinobotTask::Goal> goal)
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:41:13:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   41 |             [01;31m[Kstd[m[K::shared_ptr<const ArduinobotTask::Goal> goal)
+      |             [01;31m[K^~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:49:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandle[m[K’ was not declared in this scope
+   49 |             const std::shared_ptr<[01;31m[KGoalHandle[m[K> /*goal_handle*/)
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:49:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   49 |             const std::shared_ptr<GoalHandle[01;31m[K>[m[K /*goal_handle*/)
+      |                                             [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:55:52:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandle[m[K’ was not declared in this scope
+   55 |         void handle_accepted(const std::shared_ptr<[01;31m[KGoalHandle[m[K> goal_handle)
+      |                                                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:55:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   55 |         void handle_accepted(const std::shared_ptr<GoalHandle[01;31m[K>[m[K goal_handle)
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:61:44:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandle[m[K’ was not declared in this scope
+   61 |         void execute(const std::shared_ptr<[01;31m[KGoalHandle[m[K> goal_handle)
+      |                                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:61:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   61 |         void execute(const std::shared_ptr<GoalHandle[01;31m[K>[m[K goal_handle)
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:145:31:[m[K [01;31m[Kerror: [m[K‘[01m[Karduinobot_msgs[m[K’ was not declared in this scope; did you mean ‘[01m[Karduinobot_remote[m[K’?
+  145 |         rclcpp_action::Server<[01;31m[Karduinobot_msgs[m[K::action::ArduinobotTask>::SharedPtr action_server_;
+      |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                               [32m[Karduinobot_remote[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:145:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  145 |         rclcpp_action::Server<arduinobot_msgs::action::ArduinobotTask[01;31m[K>[m[K::SharedPtr action_server_;
+      |                                                                      [01;31m[K^[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:145:73:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  145 |         rclcpp_action::Server<arduinobot_msgs::action::ArduinobotTask>::[01;31m[KSharedPtr[m[K action_server_;
+      |                                                                         [01;31m[K^~~~~~~~~[m[K
+      |                                                                                  [32m[K;[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:145:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ does not name a type; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+  145 |         rclcpp_action::Server<arduinobot_msgs::action::ArduinobotTask>::SharedPtr [01;31m[Kaction_server_[m[K;
+      |                                                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                                   [32m[Krcl_action_server_t[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:[m[K In constructor ‘[01m[Karduinobot_remote::TaskServer::TaskServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+   22 |             [01;31m[Kaction_server_[m[K = rclcpp_action::create_server<arduinobot_msgs::action::ArduinobotTask>(
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[Krcl_action_server_t[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:59:[m[K [01;31m[Kerror: [m[K‘[01m[Karduinobot_msgs[m[K’ was not declared in this scope; did you mean ‘[01m[Karduinobot_remote[m[K’?
+   22 |             action_server_ = rclcpp_action::create_server<[01;31m[Karduinobot_msgs[m[K::action::ArduinobotTask>(
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                           [32m[Karduinobot_remote[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:45:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   22 |             action_server_ = rclcpp_action::[01;31m[Kcreate_server<arduinobot_msgs::action::ArduinobotTask>[m[K(
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:99:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(arduinobot_remote::TaskServer*, const char [16], std::_Bind_helper<false, rclcpp_action::GoalResponse (arduinobot_remote::TaskServer::*)(...), arduinobot_remote::TaskServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (arduinobot_remote::TaskServer::*)(int), arduinobot_remote::TaskServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (arduinobot_remote::TaskServer::*)(int), arduinobot_remote::TaskServer*, const std::_Placeholder<1>&>::type)[m[K’
+   22 |             action_server_ = [01;31m[Krclcpp_action::create_server<arduinobot_msgs::action::ArduinobotTask>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K                this,[m[K
+      |                 [01;31m[K~~~~~[m[K                                                                              
+   24 | [01;31m[K                "arduinobot_task",[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~[m[K                                                                 
+   25 | [01;31m[K                std::bind(&TaskServer::handle_goal, this, _1, _2),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                 
+   26 | [01;31m[K                std::bind(&TaskServer::handle_cancel, this, _1),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+   27 | [01;31m[K                std::bind(&TaskServer::handle_accepted, this, _1)[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   28 | [01;31m[K            )[m[K;
+      |             [01;31m[K~[m[K                                                                                      
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:99:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |             action_server_ = [01;31m[Krclcpp_action::create_server<arduinobot_msgs::action::ArduinobotTask>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K                this,[m[K
+      |                 [01;31m[K~~~~~[m[K                                                                              
+   24 | [01;31m[K                "arduinobot_task",[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~[m[K                                                                 
+   25 | [01;31m[K                std::bind(&TaskServer::handle_goal, this, _1, _2),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                 
+   26 | [01;31m[K                std::bind(&TaskServer::handle_cancel, this, _1),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+   27 | [01;31m[K                std::bind(&TaskServer::handle_accepted, this, _1)[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   28 | [01;31m[K            )[m[K;
+      |             [01;31m[K~[m[K                                                                                      
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:22:99:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |             action_server_ = [01;31m[Krclcpp_action::create_server<arduinobot_msgs::action::ArduinobotTask>([m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K                this,[m[K
+      |                 [01;31m[K~~~~~[m[K                                                                              
+   24 | [01;31m[K                "arduinobot_task",[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~[m[K                                                                 
+   25 | [01;31m[K                std::bind(&TaskServer::handle_goal, this, _1, _2),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                 
+   26 | [01;31m[K                std::bind(&TaskServer::handle_cancel, this, _1),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+   27 | [01;31m[K                std::bind(&TaskServer::handle_accepted, this, _1)[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                  
+   28 | [01;31m[K            )[m[K;
+      |             [01;31m[K~[m[K                                                                                      
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:1[m[K:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse arduinobot_remote::TaskServer::handle_goal(...)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:44:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+   44 |             RCLCPP_INFO(get_logger(), "Received goal request with task_number: %d", [01;31m[Kgoal[m[K->task_number);
+      |                                                                                     [01;31m[K^~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid arduinobot_remote::TaskServer::execute(int)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:71:42:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   71 |             const auto goal = goal_handle[01;31m[K->[m[Kget_goal();
+      |                                          [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:72:44:[m[K [01;31m[Kerror: [m[K‘[01m[KArduinobotTask[m[K’ was not declared in this scope
+   72 |             auto result = std::make_shared<[01;31m[KArduinobotTask[m[K::Result>();
+      |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:72:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   72 |             auto result = std::[01;31m[Kmake_shared<ArduinobotTask::Result>[m[K();
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:72:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   72 |             auto result = [01;31m[Kstd::make_shared<ArduinobotTask::Result>()[m[K;
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:72:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   72 |             auto result = [01;31m[Kstd::make_shared<ArduinobotTask::Result>()[m[K;
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:110:36:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  110 |                         goal_handle[01;31m[K->[m[Kabort(result);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:120:36:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  120 |                         goal_handle[01;31m[K->[m[Kabort(result);
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:128:32:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  128 |                     goal_handle[01;31m[K->[m[Kabort(result);
+      |                                [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:133:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  133 |                 goal_handle[01;31m[K->[m[Ksucceed(result);
+      |                            [01;31m[K^~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_remote/src/task_server.cpp:140:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  140 |             goal_handle[01;31m[K->[m[Kabort(result);
+      |                        [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

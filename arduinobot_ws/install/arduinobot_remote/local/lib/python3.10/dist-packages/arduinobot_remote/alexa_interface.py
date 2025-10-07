@@ -1,4 +1,4 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 from flask import Flask
 from ask_sdk_core.skill_builder import SkillBuilder
 from flask_ask_sdk.skill_adapter import SkillAdapter
@@ -8,15 +8,36 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 from ask_sdk_model.ui import SimpleCard
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
+
+# --- ROS 2 imports ---
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
-from arduinobot_msgs import ArduinobotTask
+
+# FIX 1: correct action import path (ROS 2 actions live under <pkg>.action)
+from arduinobot_msgs.action import ArduinobotTask  # was: from arduinobot_msgs import ArduinobotTask
+
 import threading
 
+# --- ROS 2 init & node spin in background ---
+# FIX 2: create a persistent node and spin it so ActionClient can work.
+rclpy.init(args=None)
+_alexa_node = Node("alexa_interface")  # keep a strong reference so it isn't GC'd
 
-threading.Thread(target=lambda: rclpy.init()).start()
-action_client = ActionClient(Node("alexa_interface"), ArduinobotTask, "task_server")
+def _spin_node():
+    # spinning in a daemon thread lets Flask run in the main thread
+    try:
+        rclpy.spin(_alexa_node)
+    except Exception as _e:
+        # optional: print for visibility if something goes wrong spinning
+        print(_e)
+
+threading.Thread(target=_spin_node, daemon=True).start()
+
+# Action client bound to the persistent node
+action_client = ActionClient(_alexa_node, ArduinobotTask, "task_server")
+
+# --- Flask / Alexa ---
 app = Flask(__name__)
 
 class LaunchRequestHandler(AbstractRequestHandler):
@@ -34,13 +55,14 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
         goal = ArduinobotTask.Goal()
         goal.task_number = 0
+        # send goal asynchronously; completion handled by the action server
         action_client.send_goal_async(goal)
         return handler_input.response_builder.response
 
 class PickIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("PinckIntent")(handler_input)
+        return is_intent_name("PickIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
@@ -117,10 +139,8 @@ skill_builder.add_exception_handler(AllExceptionHandler())
 skill_adapter = SkillAdapter(
     skill=skill_builder.create(), skill_id="amzn1.ask.skill.666ccb70-55dd-4916-93cf-0e63beb79b4d", app=app)
 
-@app.route("/")
-def invoke_skill():
-    return skill_adapter.dispatch_request( )
-
+# Keep only the SkillAdapter route (avoids double-binding "/" in Flask).
+# If you also had a custom @app.route("/") view, remove it.
 skill_adapter.register(app=app, route="/")
 
 

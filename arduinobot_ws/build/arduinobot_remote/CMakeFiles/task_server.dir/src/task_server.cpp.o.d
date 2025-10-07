@@ -678,6 +678,18 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: \
  /opt/ros/humble/include/rcl_action/rcl_action/goal_state_machine.h \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader.hpp \
+ /usr/include/c++/11/cstddef /usr/include/console_bridge/console.h \
+ /usr/include/console_bridge_export.h \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/exceptions.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp \
+ /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp \
  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/arduinobot_task.hpp \
  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__struct.hpp \
  /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
@@ -694,18 +706,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: \
  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__traits.hpp \
  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__type_support.hpp \
  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp \
- /opt/ros/humble/include/class_loader/class_loader/class_loader.hpp \
- /usr/include/c++/11/cstddef /usr/include/console_bridge/console.h \
- /usr/include/console_bridge_export.h \
- /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp \
- /opt/ros/humble/include/class_loader/class_loader/exceptions.hpp \
- /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp \
- /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
- /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp \
- /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp \
- /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp \
- /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp \
  /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
  /opt/ros/humble/include/moveit/macros/class_forward.h \
  /opt/ros/humble/include/moveit/macros/declare_ptr.h \
