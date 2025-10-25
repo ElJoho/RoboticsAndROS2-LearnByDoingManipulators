@@ -14,6 +14,7 @@ find_package(arduinobot_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
 # 2. EJECUTABLES
 add_executable(simple_publisher src/simple_publisher.cpp)
 add_executable(simple_subscriber src/simple_subscriber.cpp)

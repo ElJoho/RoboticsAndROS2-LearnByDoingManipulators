@@ -52,7 +52,7 @@ cdr_deserialize(
   cdr >> ros_message.b;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_arduinobot_msgs
@@ -280,7 +280,7 @@ cdr_deserialize(
   cdr >> ros_message.sum;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_arduinobot_msgs

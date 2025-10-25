@@ -1,0 +1,7 @@
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:[m[K In member function ‘[01m[Kvoid SimpleSerialTransmitter::msgCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_firmware/src/simple_serial_transmitter.cpp:43:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   43 |         arduino_.Write(msg.[01;31m[Kdata[m[K);
+      |                            [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_serial_transmitter.dir/build.make:76: CMakeFiles/simple_serial_transmitter.dir/src/simple_serial_transmitter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/simple_serial_transmitter.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

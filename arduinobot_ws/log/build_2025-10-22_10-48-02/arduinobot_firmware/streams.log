@@ -1,0 +1,35 @@
+[0.038s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware
+[0.283s] -- The C compiler identification is GNU 11.4.0
+[0.502s] -- The CXX compiler identification is GNU 11.4.0
+[0.527s] -- Detecting C compiler ABI info
+[0.720s] -- Detecting C compiler ABI info - done
+[0.746s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.747s] -- Detecting C compile features
+[0.749s] -- Detecting C compile features - done
+[0.765s] -- Detecting CXX compiler ABI info
+[1.004s] -- Detecting CXX compiler ABI info - done
+[1.029s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.029s] -- Detecting CXX compile features
+[1.031s] -- Detecting CXX compile features - done
+[1.047s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.488s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.885s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[1.886s]   By not providing "Findrclpp.cmake" in CMAKE_MODULE_PATH this project has
+[1.886s]   asked CMake to find a package configuration file provided by "rclpp", but
+[1.886s]   CMake did not find one.
+[1.887s] 
+[1.887s]   Could not find a package configuration file provided by "rclpp" with any of
+[1.887s]   the following names:
+[1.887s] 
+[1.887s]     rclppConfig.cmake
+[1.888s]     rclpp-config.cmake
+[1.888s] 
+[1.888s]   Add the installation prefix of "rclpp" to CMAKE_PREFIX_PATH or set
+[1.888s]   "rclpp_DIR" to a directory containing one of the above files.  If "rclpp"
+[1.889s]   provides a separate development package or SDK, be sure it has been
+[1.889s]   installed.
+[1.889s] 
+[1.889s] [0m
+[1.889s] -- Configuring incomplete, errors occurred!
+[1.890s] See also "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware/CMakeFiles/CMakeOutput.log".
+[1.906s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_firmware -DCMAKE_INSTALL_PREFIX=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware

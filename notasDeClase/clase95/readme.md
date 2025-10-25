@@ -168,3 +168,32 @@ Con el lanzamiento `simulated_robot_launch.py` se logra iniciar **toda la arquit
 ### 🏁 Conclusión
 
 Esta clase marcó el cierre de la fase de simulación del curso. A partir de este punto, el siguiente paso será adaptar todo el sistema para funcionar con el robot físico, manteniendo la misma estructura modular y escalable implementada con ROS2.
+Nombre de la chica: Juliana Jiménez
+Webs: 
+https://www.photoprepagos.com/prepagos/bogota-dc/usaquen/una-hembra-muy-apasionada-fina-y-con-un-cuerpo-perfecto-id-r8xb9
+https://co.mileroticos.com/escorts/juliana-jimenez-la-mujer-que-mezcla-pasion-elegancia-y-placer-en-cada-encuentr/26096104/
+
+Teléfono: 3118650739 - 3227851539 (Admin si lees esto, por favor añade estos numeros al asunto de estas reseñas)
+
+Forma de contacto (amable, grosera, etc): Tiene un plantilla, contesta rapido , no es amable ni grosera
+Lugar y zona de atención: Santa Bárbara
+Instalaciones (Descripción): Discreto, es en una casa aunque su cuarto queda hasta el fondo y hay que pasar como por sala y cocina. Habian otras personas pero nada muy molesto
+Origen: NO soy bueno adivinado eso, me ire con lo que dijo la anterior reseña y dire que es rola.
+Edad aproximada: Yo le pongo 28 años
+Fecha aproximada de la experiencia: 7 octubre
+Tarifas aplicadas: 400 mil por hora
+Adicional cobra 30 mil por besos de lengua
+Descripción de su físico: Es atractivo y atletico, se le ven los abdominales. La cola es firme.
+Cicatrices: (cesárea, cosmética, etc.) Tiene tatuajes, pocos. Se le ven los adbominales pero hacia la parte baja del vientre tiene un poco suelta (no mucho) la piel (seguramente producto de alguna liposuccion), por eso es que en todas las fotas que sale la ropa le cubre esa parte o sale de lado. En general se ve bastante ignorando lo de la piel en el abdomen
+Valoración de su físico: 8 de 10
+Descripción de su rostro: Es morenita cabello negro, esta bien de cara
+Valoración de su rostro: 8 de 10
+Estatura aproximada de la chica: El compañero anterior le puso 1.65 aunque a mi se me hace que es de 1.68
+Oral (Con condón, sin, GP, etc) Con condon, es normal
+Anal: No pregunte
+Besos en la boca: Si en labios, con lengua es pago y vale 30 mil mas
+
+Experiencia: El cuerpo es como se ve en las fotos, la cara esta bien. Me parece bastante bonita con la unica pega que la piel del abdomen bajo se nota que se hizo liposucción pero no es nada que afecte y no se ve mal. Respecto a la experiencia,en mi caso supongo que fue mala suerte o ella estaba de mal humor pero la experiencia fue pesima. Le pague por una hora, me dijo que llegara a xx:30 , debi llegar a las xx:31 creo. Y entre a su cuarto a las xx:35, para lelgar a su cuarto hay que recorrer toda la casa. Habian otras personas y abre un muchacho. Luego se sube por unas escaleras a su cuarto. Iniciamos bien, los besos que da son buenos y el cuerpo tambien estaba bien. Tenia de esos condones baratos y usamos el mio. Me hizo sexo oral con condon, normal ahi, y luego ya la penetre en misionero. Me habia dicho que tenia el pene grande (no considero que sea tan grande como lo hacia sonar, creo que lo dijo como excusa luego explico porque). Cuando inicio en misionero me dice que le duele un poco y que no vaya rapido entonces empiezo a hacerlo lento. Cambiamos de posicion 4 veces. En cada cambio me decia que le dolia y ya en las ultimas dos posiciones me pedia que me viniera. Pasados unos 20 minutos (como mucho) desde que la penetre en misionero ya me estaba pidiendo que me viniera pero de mala gana. Con ese poco tiempo y tomando en cuenta que pague una hora entenderan que yo aun estaba bien de estamina, luego me critico porque no le estaba dando rapido y que asi no me iba a venir pero no le estaba dando rapido porque ella me lo pidio al inicio desde que la penetre en misionero que le diera despacio (cosa que hice). A las XX:58 yo tambien me indispuse por su actitud y decidi irme. Creo que es el peor sexo que he tenido en mi vida. Mas que nada por su actitud, respecto a que si lo tenia muy grande lo dudo porque no soy alto (apenas 1 o 2 cm mas alto que ella) y pues nunca antes me habian dicho que les doliera tanto como para que quieran parar. Yo creo que habia aceptado otro cliente (cuando me iba tomo el celular para concretar la cita con otro cliente) y queria que yo terminara rapido  por eso. Me molesto particularmente que me dijera que le yo le estaba haciendo perder el tiempo cuando yo soy el que pago por 1 hora y ella me queria despachar en 15 o 20 minutos. Como esta es mi segunda experiencia con una prepago lo voy a comparar con la primera que fue Agatha. Agatha tambien ofrecia masajes, o bailaba, etc. En cambio Juliana no ofrecia nada de eso, solo queria hacerme terminar pronto. Incluso le ofreci que decansara y que solo me besara pero eso la molesto mas jajaja. Como anecdota es algo chistoso porque la primera vez fue muy buena y ahora con esta que es la segunda fue muy mala jajaja.
+Implicación: 2 de 10, le dejo 2 y no uno porque los 10 primeros minutos estuvo bien.
+Valoración del servicio: 3/10, 3.5 de 10 como mucho por el cuerpo y aun asi no creo que lo valga con tan mala implicacion
+¿Chica recomendable?: En general NO, si consideran que tienen pene grande DEFINITIVAMENTE NO. Si se quieren arriesgar y viendo que la reseña anterior fue mejor la experiencia entonces paguen solo media hora, aun asi, no me arriegaria porque le ha subid 100 mil pesos (paso de 300 mil pesos en la primera publicación de pasionprepagos a 400 mil en las que hizo con photprepagos y mileroticos, de ahi que cambiara el numero)

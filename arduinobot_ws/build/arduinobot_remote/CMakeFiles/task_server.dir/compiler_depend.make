@@ -758,6 +758,22 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
   /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp \
   /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory.hpp \
   /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/arduinobot_task.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__struct.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
+  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__builder.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__traits.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__type_support.hpp \
+  /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
   /opt/ros/humble/include/moveit/macros/class_forward.h \
   /opt/ros/humble/include/moveit/macros/declare_ptr.h \
@@ -1295,16 +1311,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planning_scene_world__struct.hpp \
   /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap_with_pose__struct.hpp \
   /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__struct.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
-  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__builder.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__traits.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__traits.hpp \
@@ -1465,20 +1471,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/detail/move_group__traits.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp:
-
 /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_scale__struct.hpp:
@@ -1635,8 +1627,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
 /opt/ros/humble/include/moveit/transforms/transforms.h:
@@ -1685,6 +1675,26 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
+/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
+/usr/include/eigen3/Eigen/src/misc/Kernel.h:
+
+/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
@@ -1714,6 +1724,10 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
@@ -1808,6 +1822,10 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/usr/include/eigen3/Eigen/LU:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp:
 
@@ -2213,6 +2231,8 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -2220,6 +2240,8 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
+
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__struct.hpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
@@ -2231,9 +2253,9 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/c++/11/bits/range_access.h:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp:
-
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp:
 
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
@@ -2266,6 +2288,10 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/unistd.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
+
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__type_support.hpp:
 
 /usr/include/boost/exception/exception.hpp:
 
@@ -2497,13 +2523,11 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__builder.hpp:
+
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
 /usr/include/stdc-predef.h:
 
@@ -2538,6 +2562,10 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/boost/integer/integer_log2.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
 /usr/include/c++/11/tr1/special_function_util.h:
 
@@ -2735,9 +2763,9 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
-
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/position_constraint__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
@@ -3019,8 +3047,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
 
-/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
-
 /usr/include/c++/11/cstdlib:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
@@ -3044,6 +3070,10 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/c++/11/codecvt:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
@@ -3130,8 +3160,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -3273,8 +3301,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
 
 /usr/include/c++/11/thread:
@@ -3359,8 +3385,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
 
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
 /usr/include/boost/config.hpp:
@@ -3392,6 +3416,14 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_service.hpp:
+
+/usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -3446,6 +3478,8 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__functions.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__struct.hpp:
+
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/arduinobot_task.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.h:
 
@@ -3509,14 +3543,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/linux/limits.h:
 
-/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
-
-/opt/ros/humble/include/rcl/rcl/error_handling.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
-
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp:
@@ -3567,6 +3593,34 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_instance_wrapper.hpp:
 
+/opt/ros/humble/include/rcl/rcl/error_handling.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp:
+
+/usr/include/boost/type_traits/is_floating_point.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp:
+
+/usr/include/boost/random/normal_distribution.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_msgs/rosidl_generator_cpp/arduinobot_msgs/action/detail/arduinobot_task__traits.hpp:
+
 /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
@@ -3600,14 +3654,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/urdfdom_headers/urdf_model/utils.h:
 
 /opt/ros/humble/include/srdfdom/srdfdom/visibility_control.h:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
-
-/usr/include/eigen3/Eigen/src/LU/Determinant.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp:
 
@@ -3681,8 +3727,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
-/usr/include/boost/type_traits/is_floating_point.hpp:
-
 /usr/include/boost/mpl/aux_/config/adl.hpp:
 
 /usr/include/boost/mpl/aux_/config/intel.hpp:
@@ -3752,8 +3796,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp:
 
@@ -3881,8 +3923,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/boost/random/detail/generator_seed_seq.hpp:
 
-/usr/include/boost/random/normal_distribution.hpp:
-
 /usr/include/eigen3/Eigen/Geometry:
 
 /usr/include/eigen3/Eigen/Core:
@@ -3934,8 +3974,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
-
-/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
 
@@ -4047,10 +4085,6 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
-
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
-
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
@@ -4092,19 +4126,3 @@ CMakeFiles/task_server.dir/src/task_server.cpp.o: /home/joho/Documents/RoboticsA
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
 /usr/include/eigen3/Eigen/src/Householder/Householder.h:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/include/eigen3/Eigen/LU:
-
-/usr/include/eigen3/Eigen/src/misc/Kernel.h:
-
-/usr/include/eigen3/Eigen/src/misc/Image.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:

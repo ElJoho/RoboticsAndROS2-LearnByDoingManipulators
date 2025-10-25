@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.002369] (-) JobUnselected: {'identifier': 'arduinobot_bringup'}
+[0.002540] (-) JobUnselected: {'identifier': 'arduinobot_controller'}
+[0.002605] (-) JobUnselected: {'identifier': 'arduinobot_cpp_examples'}
+[0.002667] (-) JobUnselected: {'identifier': 'arduinobot_description'}
+[0.002729] (-) JobUnselected: {'identifier': 'arduinobot_moveit'}
+[0.002791] (-) JobUnselected: {'identifier': 'arduinobot_msgs'}
+[0.002852] (-) JobUnselected: {'identifier': 'arduinobot_py_examples'}
+[0.002911] (-) JobUnselected: {'identifier': 'arduinobot_remote'}
+[0.002971] (-) JobUnselected: {'identifier': 'arduinobot_utils'}
+[0.003038] (arduinobot_firmware) JobQueued: {'identifier': 'arduinobot_firmware', 'dependencies': OrderedDict()}
+[0.003106] (arduinobot_firmware) JobStarted: {'identifier': 'arduinobot_firmware'}
+[0.037497] (arduinobot_firmware) JobProgress: {'identifier': 'arduinobot_firmware', 'progress': 'cmake'}
+[0.038802] (arduinobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_firmware', '-DCMAKE_INSTALL_PREFIX=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware'], 'cwd': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joho'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joho'), ('OLDPWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1150'), ('SYSTEMD_EXEC_PID', '1461'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5315'), ('COLCON_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'joho'), ('JOURNAL_STREAM', '8:10469'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joho'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/joho/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joho/.dotnet/tools'), ('SESSION_MANAGER', 'local/joho-X550DP:@/tmp/.ICE-unix/1408,unix/joho-X550DP:/tmp/.ICE-unix/1408'), ('INVOCATION_ID', 'c76e0abe996e4f2184fbe5f91cb1ce73'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/joho/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51eb83a9-e6a8-41e1-88f2-1849caca4e2d'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/joho/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble')]), 'shell': False}
+[0.099891] (-) TimerEvent: {}
+[0.200387] (-) TimerEvent: {}
+[0.285863] (arduinobot_firmware) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.301438] (-) TimerEvent: {}
+[0.402046] (-) TimerEvent: {}
+[0.502747] (-) TimerEvent: {}
+[0.504633] (arduinobot_firmware) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.529687] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.602959] (-) TimerEvent: {}
+[0.703468] (-) TimerEvent: {}
+[0.722902] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.748807] (arduinobot_firmware) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.749454] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.752000] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.767525] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.805565] (-) TimerEvent: {}
+[0.906069] (-) TimerEvent: {}
+[1.007045] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.007427] (-) TimerEvent: {}
+[1.031772] (arduinobot_firmware) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.032367] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.033673] (arduinobot_firmware) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.049681] (arduinobot_firmware) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.107567] (-) TimerEvent: {}
+[1.208156] (-) TimerEvent: {}
+[1.308984] (-) TimerEvent: {}
+[1.409542] (-) TimerEvent: {}
+[1.490706] (arduinobot_firmware) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.509733] (-) TimerEvent: {}
+[1.610299] (-) TimerEvent: {}
+[1.710897] (-) TimerEvent: {}
+[1.811378] (-) TimerEvent: {}
+[1.887959] (arduinobot_firmware) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[1.888771] (arduinobot_firmware) StderrLine: {'line': b'  By not providing "Findrclpp.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.889049] (arduinobot_firmware) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "rclpp", but\n'}
+[1.889259] (arduinobot_firmware) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.889507] (arduinobot_firmware) StderrLine: {'line': b'\n'}
+[1.889714] (arduinobot_firmware) StderrLine: {'line': b'  Could not find a package configuration file provided by "rclpp" with any of\n'}
+[1.889921] (arduinobot_firmware) StderrLine: {'line': b'  the following names:\n'}
+[1.890123] (arduinobot_firmware) StderrLine: {'line': b'\n'}
+[1.890339] (arduinobot_firmware) StderrLine: {'line': b'    rclppConfig.cmake\n'}
+[1.890554] (arduinobot_firmware) StderrLine: {'line': b'    rclpp-config.cmake\n'}
+[1.890745] (arduinobot_firmware) StderrLine: {'line': b'\n'}
+[1.890937] (arduinobot_firmware) StderrLine: {'line': b'  Add the installation prefix of "rclpp" to CMAKE_PREFIX_PATH or set\n'}
+[1.891280] (arduinobot_firmware) StderrLine: {'line': b'  "rclpp_DIR" to a directory containing one of the above files.  If "rclpp"\n'}
+[1.891493] (arduinobot_firmware) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.891683] (arduinobot_firmware) StderrLine: {'line': b'  installed.\n'}
+[1.891874] (arduinobot_firmware) StderrLine: {'line': b'\n'}
+[1.892062] (arduinobot_firmware) StderrLine: {'line': b'\x1b[0m\n'}
+[1.892249] (arduinobot_firmware) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.892486] (arduinobot_firmware) StdoutLine: {'line': b'See also "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_firmware/CMakeFiles/CMakeOutput.log".\n'}
+[1.908901] (arduinobot_firmware) CommandEnded: {'returncode': 1}
+[1.913351] (-) TimerEvent: {}
+[1.974982] (arduinobot_firmware) JobEnded: {'identifier': 'arduinobot_firmware', 'rc': 1}
+[1.986976] (-) EventReactorShutdown: {}

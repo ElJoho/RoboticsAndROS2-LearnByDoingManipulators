@@ -11,6 +11,7 @@ setup.py
 arduinobot_py_examples/__init__.py
 arduinobot_py_examples/simple_action_client.py
 arduinobot_py_examples/simple_action_server.py
+arduinobot_py_examples/simple_lifecycle_node.py
 arduinobot_py_examples/simple_moveit_interface.py
 arduinobot_py_examples/simple_parameter.py
 arduinobot_py_examples/simple_publisher.py
