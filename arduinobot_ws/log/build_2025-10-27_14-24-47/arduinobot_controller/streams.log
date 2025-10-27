@@ -1,0 +1,11 @@
+[0.088s] Invoking command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller -- -j4 -l4
+[0.308s] [35m[1mConsolidate compiler generated dependencies of target arduinobot_controller[0m
+[0.464s] [ 50%] [32mBuilding CXX object CMakeFiles/arduinobot_controller.dir/src/arduinobot_interface.cpp.o[0m
+[11.806s] [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual arduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[11.806s] [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:68:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_selected_[m[K’ was not declared in this scope
+[11.806s]    68 |   [01;31m[Kbaudrate_selected_[m[K = baud_param;  // store in a local member we define in the header?
+[11.806s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[14.396s] gmake[2]: *** [CMakeFiles/arduinobot_controller.dir/build.make:76: CMakeFiles/arduinobot_controller.dir/src/arduinobot_interface.cpp.o] Error 1
+[14.397s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/arduinobot_controller.dir/all] Error 2
+[14.397s] gmake: *** [Makefile:146: all] Error 2
+[14.407s] Invoked command in '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller -- -j4 -l4

@@ -1,0 +1,88 @@
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual arduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_[m[K’ was not declared in this scope
+   54 |     [01;31m[Kbaudrate_[m[K = std::stoi(info_.hardware_parameters.at("baudrate"));
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_[m[K’ was not declared in this scope
+   56 |     [01;31m[Kbaudrate_[m[K = 115200;
+      |     [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:8[m[K:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:84:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_[m[K’ was not declared in this scope
+   84 |               port_.c_str(), [01;31m[Kbaudrate_[m[K, n_j);
+      |                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K At global scope:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:119:16:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Karduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_configure(const rclcpp_lifecycle::State&)[m[K’
+  119 | CallbackReturn [01;31m[KArduinobotInterface[m[K::on_configure(const rclcpp_lifecycle::State &)
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:119:16:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Karduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_configure(const rclcpp_lifecycle::State&)[m[K’
+In file included from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:14[m[K:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/include/arduinobot_controller/arduinobot_interface.hpp:16:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass arduinobot_controller::ArduinobotInterface[m[K’ defined here
+   16 |     class [01;36m[KArduinobotInterface[m[K : public hardware_interface::SystemInterface{
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual arduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:136:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LibSerial::SerialPort[m[K’ has no member named ‘[01m[KSetDevice[m[K’
+  136 |       arduino_.[01;31m[KSetDevice[m[K(port_);
+      |                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:137:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_[m[K’ was not declared in this scope
+  137 |       arduino_.SetBaudRate([01;31m[Kbaudrate_[m[K);
+      |                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:138:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLibSerial::SerialPort::Open()[m[K’
+  138 |       [01;31m[Karduino_.Open()[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/include/arduinobot_controller/arduinobot_interface.hpp:7[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:14[m[K:
+[01m[K/usr/include/libserial/SerialPort.h:116:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid LibSerial::SerialPort::Open(const string&, const openmode&)[m[K’
+  116 |         void [01;36m[KOpen[m[K(const std::string& fileName,
+      |              [01;36m[K^~~~[m[K
+[01m[K/usr/include/libserial/SerialPort.h:116:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:141:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass LibSerial::SerialPort[m[K’ has no member named ‘[01m[KSetTimeout[m[K’; did you mean ‘[01m[KSetVTime[m[K’?
+  141 |       try { arduino_.[01;31m[KSetTimeout[m[K(100); } catch (...) {}
+      |                      [01;31m[K^~~~~~~~~~[m[K
+      |                      [32m[KSetVTime[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:8[m[K:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:145:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kbaudrate_[m[K’ was not declared in this scope
+  145 |                 "Serial port '%s' opened @ %d", port_.c_str(), [01;31m[Kbaudrate_[m[K);
+      |                                                                [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:8[m[K:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type arduinobot_controller::ArduinobotInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:204:27:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Krcl_clock_type_t[m[K’ {aka ‘[01m[Krcl_clock_type_e[m[K’})
+  204 |                           [01;31m[K*rclcpp::Clock().get_clock_type()[m[K,
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:[m[K In lambda function:
+[01m[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:203:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+  203 |     [01;31m[KRCLCPP_ERROR_THROTTLE[m[K(rclcpp::get_logger("ArduinobotInterface"),
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/arduinobot_controller.dir/build.make:76: CMakeFiles/arduinobot_controller.dir/src/arduinobot_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/arduinobot_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -6,9 +6,21 @@
     <ros2_control name="RobotSystem" type="system">
 
         <xacro:if value="$(arg is_sim)">
-            <hardware>
-                <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-            </hardware>
+            <!-- ros2_control Gazebo -->
+            <!-- ROS 2 Humble -->
+            <xacro:if value="$(arg is_ignition)">
+                <hardware>
+                    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+                </hardware>
+            </xacro:if>
+
+            <!-- ROS 2 Iron or above -->
+            <xacro:unless value="$(arg is_ignition)">
+                <hardware>
+                    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+                </hardware>
+            </xacro:unless>
+
             <!-- lO SIGUIENTE ES SOLO PARA LA SIMULACION-->
             <joint name="joint_5">
                 <param name="mimic">joint_4</param>
@@ -23,22 +35,7 @@
         <xacro:unless value="$(arg is_sim)">
             <hardware>
                 <plugin>arduinobot_controller/ArduinobotInterface</plugin>
-                <param nmae="port">/dev/ttyUSB0</param>
-            </hardware>
-        </xacro:unless>
-
-        <!-- ros2_control Gazebo -->
-        <!-- ROS 2 Humble -->
-        <xacro:if value="$(arg is_ignition)">
-            <hardware>
-                <plugin>ign_ros2_control/IgnitionSystem</plugin>
-            </hardware>
-        </xacro:if>
-
-        <!-- ROS 2 Iron or above -->
-        <xacro:unless value="$(arg is_ignition)">
-            <hardware>
-                <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+                <param name="port">/dev/ttyUSB0</param>
             </hardware>
         </xacro:unless>
 

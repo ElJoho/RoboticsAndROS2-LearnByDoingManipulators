@@ -1,0 +1,270 @@
+[0.000000] (-) TimerEvent: {}
+[0.001436] (-) JobUnselected: {'identifier': 'arduinobot_bringup'}
+[0.001522] (-) JobUnselected: {'identifier': 'arduinobot_cpp_examples'}
+[0.001584] (-) JobUnselected: {'identifier': 'arduinobot_description'}
+[0.001645] (-) JobUnselected: {'identifier': 'arduinobot_firmware'}
+[0.001705] (-) JobUnselected: {'identifier': 'arduinobot_moveit'}
+[0.001766] (-) JobUnselected: {'identifier': 'arduinobot_msgs'}
+[0.001824] (-) JobUnselected: {'identifier': 'arduinobot_py_examples'}
+[0.001884] (-) JobUnselected: {'identifier': 'arduinobot_remote'}
+[0.001944] (-) JobUnselected: {'identifier': 'arduinobot_utils'}
+[0.002009] (arduinobot_controller) JobQueued: {'identifier': 'arduinobot_controller', 'dependencies': OrderedDict()}
+[0.002074] (arduinobot_controller) JobStarted: {'identifier': 'arduinobot_controller'}
+[0.024089] (arduinobot_controller) JobProgress: {'identifier': 'arduinobot_controller', 'progress': 'cmake'}
+[0.026355] (arduinobot_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_INSTALL_PREFIX=/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller'], 'cwd': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joho'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joho'), ('OLDPWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1214'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3388'), ('COLCON_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'joho'), ('JOURNAL_STREAM', '8:10847'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joho'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/joho/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joho/.dotnet/tools'), ('SESSION_MANAGER', 'local/joho-X550DP:@/tmp/.ICE-unix/1475,unix/joho-X550DP:/tmp/.ICE-unix/1475'), ('INVOCATION_ID', '7f615bbaaa0f4aa091dc2b6c3a761424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/joho/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:bc241fb7-e21d-4048-a19a-266dd6dc8f62'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/joho/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble')]), 'shell': False}
+[0.061099] (arduinobot_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099584] (-) TimerEvent: {}
+[0.200242] (-) TimerEvent: {}
+[0.300747] (-) TimerEvent: {}
+[0.399474] (arduinobot_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.400912] (-) TimerEvent: {}
+[0.417883] (arduinobot_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.491175] (arduinobot_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.498314] (arduinobot_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.501020] (-) TimerEvent: {}
+[0.513660] (arduinobot_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.541564] (arduinobot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.576618] (arduinobot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601187] (-) TimerEvent: {}
+[0.666083] (arduinobot_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.671067] (arduinobot_controller) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.701273] (-) TimerEvent: {}
+[0.721427] (arduinobot_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.801422] (-) TimerEvent: {}
+[0.856547] (arduinobot_controller) StdoutLine: {'line': b'-- Found hardware_interface: 2.52.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[0.901562] (-) TimerEvent: {}
+[1.002006] (-) TimerEvent: {}
+[1.102525] (-) TimerEvent: {}
+[1.203360] (-) TimerEvent: {}
+[1.230950] (arduinobot_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.303537] (-) TimerEvent: {}
+[1.404092] (-) TimerEvent: {}
+[1.419544] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.420241] (arduinobot_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/include;/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/\n'}
+[1.420634] (arduinobot_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.421105] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.421834] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.422557] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.424780] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.425210] (arduinobot_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.425584] (arduinobot_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.429834] (arduinobot_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.460876] (arduinobot_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[1.472712] (arduinobot_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller\n'}
+[1.491378] (arduinobot_controller) CommandEnded: {'returncode': 0}
+[1.496111] (arduinobot_controller) JobProgress: {'identifier': 'arduinobot_controller', 'progress': 'build'}
+[1.496499] (arduinobot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller', '--', '-j4', '-l4'], 'cwd': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joho'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joho'), ('OLDPWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1214'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3388'), ('COLCON_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'joho'), ('JOURNAL_STREAM', '8:10847'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joho'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/joho/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joho/.dotnet/tools'), ('SESSION_MANAGER', 'local/joho-X550DP:@/tmp/.ICE-unix/1475,unix/joho-X550DP:/tmp/.ICE-unix/1475'), ('INVOCATION_ID', '7f615bbaaa0f4aa091dc2b6c3a761424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/joho/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:bc241fb7-e21d-4048-a19a-266dd6dc8f62'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/joho/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble')]), 'shell': False}
+[1.504205] (-) TimerEvent: {}
+[1.597110] (arduinobot_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target arduinobot_controller\x1b[0m\n'}
+[1.604352] (-) TimerEvent: {}
+[1.637372] (arduinobot_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arduinobot_controller.dir/src/arduinobot_interface.cpp.o\x1b[0m\n'}
+[1.704513] (-) TimerEvent: {}
+[1.805058] (-) TimerEvent: {}
+[1.905592] (-) TimerEvent: {}
+[2.006112] (-) TimerEvent: {}
+[2.106590] (-) TimerEvent: {}
+[2.207121] (-) TimerEvent: {}
+[2.307783] (-) TimerEvent: {}
+[2.408288] (-) TimerEvent: {}
+[2.508794] (-) TimerEvent: {}
+[2.609277] (-) TimerEvent: {}
+[2.709837] (-) TimerEvent: {}
+[2.810447] (-) TimerEvent: {}
+[2.911060] (-) TimerEvent: {}
+[3.011787] (-) TimerEvent: {}
+[3.112456] (-) TimerEvent: {}
+[3.212937] (-) TimerEvent: {}
+[3.313465] (-) TimerEvent: {}
+[3.414107] (-) TimerEvent: {}
+[3.514615] (-) TimerEvent: {}
+[3.615235] (-) TimerEvent: {}
+[3.715724] (-) TimerEvent: {}
+[3.816230] (-) TimerEvent: {}
+[3.916706] (-) TimerEvent: {}
+[4.017227] (-) TimerEvent: {}
+[4.117720] (-) TimerEvent: {}
+[4.218219] (-) TimerEvent: {}
+[4.318681] (-) TimerEvent: {}
+[4.419323] (-) TimerEvent: {}
+[4.519871] (-) TimerEvent: {}
+[4.620363] (-) TimerEvent: {}
+[4.720835] (-) TimerEvent: {}
+[4.821342] (-) TimerEvent: {}
+[4.922114] (-) TimerEvent: {}
+[5.022618] (-) TimerEvent: {}
+[5.123091] (-) TimerEvent: {}
+[5.223580] (-) TimerEvent: {}
+[5.324043] (-) TimerEvent: {}
+[5.424526] (-) TimerEvent: {}
+[5.524996] (-) TimerEvent: {}
+[5.625514] (-) TimerEvent: {}
+[5.726000] (-) TimerEvent: {}
+[5.826606] (-) TimerEvent: {}
+[5.927291] (-) TimerEvent: {}
+[6.027960] (-) TimerEvent: {}
+[6.128564] (-) TimerEvent: {}
+[6.229231] (-) TimerEvent: {}
+[6.329797] (-) TimerEvent: {}
+[6.430279] (-) TimerEvent: {}
+[6.530754] (-) TimerEvent: {}
+[6.631239] (-) TimerEvent: {}
+[6.732019] (-) TimerEvent: {}
+[6.832519] (-) TimerEvent: {}
+[6.932988] (-) TimerEvent: {}
+[7.033477] (-) TimerEvent: {}
+[7.133930] (-) TimerEvent: {}
+[7.234611] (-) TimerEvent: {}
+[7.335261] (-) TimerEvent: {}
+[7.435735] (-) TimerEvent: {}
+[7.536254] (-) TimerEvent: {}
+[7.636734] (-) TimerEvent: {}
+[7.737296] (-) TimerEvent: {}
+[7.837762] (-) TimerEvent: {}
+[7.938358] (-) TimerEvent: {}
+[8.038889] (-) TimerEvent: {}
+[8.139591] (-) TimerEvent: {}
+[8.240246] (-) TimerEvent: {}
+[8.340682] (-) TimerEvent: {}
+[8.441212] (-) TimerEvent: {}
+[8.541674] (-) TimerEvent: {}
+[8.642181] (-) TimerEvent: {}
+[8.742651] (-) TimerEvent: {}
+[8.817875] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual arduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_activate(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.818661] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:87:85:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kprevious_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.819003] (arduinobot_controller) StderrLine: {'line': b'   87 |     CallbackReturn ArduinobotInterface::on_activate(\x1b[01;35m\x1b[Kconst rclcpp_lifecycle::State & previous_state\x1b[m\x1b[K){\n'}
+[8.819340] (arduinobot_controller) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.822256] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual arduinobot_controller::CallbackReturn arduinobot_controller::ArduinobotInterface::on_deactivate(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.822966] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:105:87:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kprevious_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.823304] (arduinobot_controller) StderrLine: {'line': b'  105 |     CallbackReturn ArduinobotInterface::on_deactivate(\x1b[01;35m\x1b[Kconst rclcpp_lifecycle::State & previous_state\x1b[m\x1b[K){\n'}
+[8.823605] (arduinobot_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.823921] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type arduinobot_controller::ArduinobotInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.824245] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:121:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.824561] (arduinobot_controller) StderrLine: {'line': b'  121 |     hardware_interface::return_type ArduinobotInterface::read(\x1b[01;35m\x1b[Kconst rclcpp::Time & time\x1b[m\x1b[K, const rclcpp::Duration & period){\n'}
+[8.824849] (arduinobot_controller) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.825204] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:121:115:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kperiod\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.825533] (arduinobot_controller) StderrLine: {'line': b'  121 |     hardware_interface::return_type ArduinobotInterface::read(const rclcpp::Time & time, \x1b[01;35m\x1b[Kconst rclcpp::Duration & period\x1b[m\x1b[K){\n'}
+[8.826035] (arduinobot_controller) StderrLine: {'line': b'      |                                                                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[8.827965] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type arduinobot_controller::ArduinobotInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.828309] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:125:86:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.828587] (arduinobot_controller) StderrLine: {'line': b'  125 |     hardware_interface::return_type  ArduinobotInterface::write(\x1b[01;35m\x1b[Kconst rclcpp::Time & time\x1b[m\x1b[K, const rclcpp::Duration & period){\n'}
+[8.828824] (arduinobot_controller) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[8.829058] (arduinobot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/src/arduinobot_controller/src/arduinobot_interface.cpp:125:117:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kperiod\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.829323] (arduinobot_controller) StderrLine: {'line': b'  125 |     hardware_interface::return_type  ArduinobotInterface::write(const rclcpp::Time & time, \x1b[01;35m\x1b[Kconst rclcpp::Duration & period\x1b[m\x1b[K){\n'}
+[8.829557] (arduinobot_controller) StderrLine: {'line': b'      |                                                                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[8.842921] (-) TimerEvent: {}
+[8.943618] (-) TimerEvent: {}
+[9.044124] (-) TimerEvent: {}
+[9.144668] (-) TimerEvent: {}
+[9.245253] (-) TimerEvent: {}
+[9.345826] (-) TimerEvent: {}
+[9.446442] (-) TimerEvent: {}
+[9.546948] (-) TimerEvent: {}
+[9.647535] (-) TimerEvent: {}
+[9.748121] (-) TimerEvent: {}
+[9.848690] (-) TimerEvent: {}
+[9.949257] (-) TimerEvent: {}
+[10.049729] (-) TimerEvent: {}
+[10.150349] (-) TimerEvent: {}
+[10.251004] (-) TimerEvent: {}
+[10.351653] (-) TimerEvent: {}
+[10.452326] (-) TimerEvent: {}
+[10.552964] (-) TimerEvent: {}
+[10.653537] (-) TimerEvent: {}
+[10.754076] (-) TimerEvent: {}
+[10.854578] (-) TimerEvent: {}
+[10.955091] (-) TimerEvent: {}
+[11.055578] (-) TimerEvent: {}
+[11.156202] (-) TimerEvent: {}
+[11.256757] (-) TimerEvent: {}
+[11.357360] (-) TimerEvent: {}
+[11.457887] (-) TimerEvent: {}
+[11.558411] (-) TimerEvent: {}
+[11.659000] (-) TimerEvent: {}
+[11.759517] (-) TimerEvent: {}
+[11.859978] (-) TimerEvent: {}
+[11.960472] (-) TimerEvent: {}
+[12.060936] (-) TimerEvent: {}
+[12.161531] (-) TimerEvent: {}
+[12.261991] (-) TimerEvent: {}
+[12.362526] (-) TimerEvent: {}
+[12.463046] (-) TimerEvent: {}
+[12.563514] (-) TimerEvent: {}
+[12.664000] (-) TimerEvent: {}
+[12.764464] (-) TimerEvent: {}
+[12.864974] (-) TimerEvent: {}
+[12.965623] (-) TimerEvent: {}
+[13.066329] (-) TimerEvent: {}
+[13.166885] (-) TimerEvent: {}
+[13.267420] (-) TimerEvent: {}
+[13.368050] (-) TimerEvent: {}
+[13.468561] (-) TimerEvent: {}
+[13.569205] (-) TimerEvent: {}
+[13.669772] (-) TimerEvent: {}
+[13.770352] (-) TimerEvent: {}
+[13.870908] (-) TimerEvent: {}
+[13.971477] (-) TimerEvent: {}
+[14.072019] (-) TimerEvent: {}
+[14.172572] (-) TimerEvent: {}
+[14.273227] (-) TimerEvent: {}
+[14.373862] (-) TimerEvent: {}
+[14.474430] (-) TimerEvent: {}
+[14.575072] (-) TimerEvent: {}
+[14.675706] (-) TimerEvent: {}
+[14.776272] (-) TimerEvent: {}
+[14.877022] (-) TimerEvent: {}
+[14.977631] (-) TimerEvent: {}
+[15.078195] (-) TimerEvent: {}
+[15.178760] (-) TimerEvent: {}
+[15.279236] (-) TimerEvent: {}
+[15.379676] (-) TimerEvent: {}
+[15.480125] (-) TimerEvent: {}
+[15.580685] (-) TimerEvent: {}
+[15.681285] (-) TimerEvent: {}
+[15.781943] (-) TimerEvent: {}
+[15.882534] (-) TimerEvent: {}
+[15.983125] (-) TimerEvent: {}
+[16.083754] (-) TimerEvent: {}
+[16.184535] (-) TimerEvent: {}
+[16.282609] (arduinobot_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libarduinobot_controller.so\x1b[0m\n'}
+[16.284702] (-) TimerEvent: {}
+[16.385195] (-) TimerEvent: {}
+[16.485828] (-) TimerEvent: {}
+[16.586462] (-) TimerEvent: {}
+[16.687470] (-) TimerEvent: {}
+[16.780056] (arduinobot_controller) StdoutLine: {'line': b'[100%] Built target arduinobot_controller\n'}
+[16.787429] (-) TimerEvent: {}
+[16.806980] (arduinobot_controller) CommandEnded: {'returncode': 0}
+[16.808710] (arduinobot_controller) JobProgress: {'identifier': 'arduinobot_controller', 'progress': 'install'}
+[16.833687] (arduinobot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller'], 'cwd': '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joho'), ('LC_TIME', 'es_CO.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/lib:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joho'), ('OLDPWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CO.UTF-8'), ('MANAGERPID', '1214'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3388'), ('COLCON_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'joho'), ('JOURNAL_STREAM', '8:10847'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joho'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/joho/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joho/.dotnet/tools'), ('SESSION_MANAGER', 'local/joho-X550DP:@/tmp/.ICE-unix/1475,unix/joho-X550DP:/tmp/.ICE-unix/1475'), ('INVOCATION_ID', '7f615bbaaa0f4aa091dc2b6c3a761424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/joho/.cache/dotnet_bundle_extract'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_CO.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CO.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:bc241fb7-e21d-4048-a19a-266dd6dc8f62'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CO.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_CO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/joho/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs/local/lib/python3.10/dist-packages:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_CO.UTF-8'), ('LC_PAPER', 'es_CO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_utils:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_remote:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_cpp_examples:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_msgs:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_moveit:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_firmware:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_description:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_bringup:/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_py_examples:/opt/ros/humble')]), 'shell': False}
+[16.852381] (arduinobot_controller) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[16.853579] (arduinobot_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.854405] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller//arduinobot_controller.xml\n'}
+[16.854994] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/config/arduinobot_controllers.yaml\n'}
+[16.855727] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/launch/controller.launch.py\n'}
+[16.856370] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/lib/libarduinobot_controller.so\n'}
+[16.857190] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/include/include/arduinobot_controller/arduinobot_interface.hpp\n'}
+[16.857708] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/library_path.sh\n'}
+[16.858100] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/library_path.dsv\n'}
+[16.858560] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/ament_index/resource_index/package_run_dependencies/arduinobot_controller\n'}
+[16.859027] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/ament_index/resource_index/parent_prefix_path/arduinobot_controller\n'}
+[16.859529] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.sh\n'}
+[16.860199] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.dsv\n'}
+[16.860648] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/path.sh\n'}
+[16.861048] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/environment/path.dsv\n'}
+[16.861489] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/local_setup.bash\n'}
+[16.861927] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/local_setup.sh\n'}
+[16.862382] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/local_setup.zsh\n'}
+[16.862833] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/local_setup.dsv\n'}
+[16.863384] (arduinobot_controller) StdoutLine: {'line': b'-- Symlinking: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/package.dsv\n'}
+[16.885515] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/ament_index/resource_index/packages/arduinobot_controller\n'}
+[16.885983] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arduinobot_controller\n'}
+[16.886368] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.886909] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.887560] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.888112] (-) TimerEvent: {}
+[16.888838] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig.cmake\n'}
+[16.889387] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig-version.cmake\n'}
+[16.889667] (arduinobot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/install/arduinobot_controller/share/arduinobot_controller/package.xml\n'}
+[16.892969] (arduinobot_controller) CommandEnded: {'returncode': 0}
+[16.950169] (arduinobot_controller) JobEnded: {'identifier': 'arduinobot_controller', 'rc': 0}
+[16.951838] (-) EventReactorShutdown: {}

@@ -3,9 +3,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
 <!-- Elemento raíz URDF; define el nombre del robot y el espacio de nombres de Xacro. -->
 
-  <xacro:arg name="is_sim" default="true"/>
+  <xacro:arg name="is_sim" default="false"/>
 
-  <xacro:arg name="is_ignition" default="true"/>
+  <xacro:arg name="is_ignition" default="false"/>
 
   <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_gazebo.xacro" />
   <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_ros2_control.xacro" />

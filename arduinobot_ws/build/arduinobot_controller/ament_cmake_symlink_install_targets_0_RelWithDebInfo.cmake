@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/joho/Documents/RoboticsAndROS2-LearnByDoingManipulators/arduinobot_ws/build/arduinobot_controller/libarduinobot_controller.so" "TARGETS" "arduinobot_controller" "DESTINATION" "lib")

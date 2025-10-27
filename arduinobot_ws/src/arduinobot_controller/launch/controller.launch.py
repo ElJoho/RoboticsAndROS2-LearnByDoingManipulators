@@ -1,109 +1,83 @@
-import os                                                      # Módulo estándar para manipular rutas y el sistema de archivos.
-from ament_index_python.packages import get_package_share_directory  # Obtiene la ruta de instalación (share) de un paquete de ROS 2.
 from launch import LaunchDescription
-from launch.conditions import UnlessCondition
-from launch_ros.actions import Node                            # Importa la acción para definir y lanzar nodos de ROS 2.
-from launch_ros.parameter_descriptions import ParameterValue   # Permite definir valores de parámetros (p.ej., robot_description).
-from launch.actions import DeclareLaunchArgument               # Acción para declarar argumentos que el usuario puede pasar al launch.
-from launch.substitutions import Command, LaunchConfiguration  # Herramientas para construir strings/valores dinámicos en tiempo de lanzamiento.
 from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration, Command
+from launch.conditions import UnlessCondition
+from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
+from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
-
-    is_sim_arg = DeclareLaunchArgument(
-        "is_sim",
-        default_value="true",
-        description="Usar reloj simulado y controller_manager del plugin en Gazebo"
-    )
-
     is_sim = LaunchConfiguration("is_sim")
+    # NEW (minimal): add is_ignition so we can explicitly disable it for real robot
+    is_ignition = LaunchConfiguration("is_ignition")
 
+    is_sim_arg = DeclareLaunchArgument("is_sim", default_value="false")
+    # NEW (minimal): declare is_ignition (defaults to false)
+    is_ignition_arg = DeclareLaunchArgument("is_ignition", default_value="false")
+
+    # URDF/Xacro → robot_description
+    xacro_path = os.path.join(get_package_share_directory("arduinobot_description"), "urdf", "arduinobot.urdf.xacro")
+    # NEW (minimal): forward both args to xacro so it picks the correct ros2_control plugin
     robot_description = ParameterValue(
-        Command(
-            [
-                "xacro ",
-                os.path.join(
-                    get_package_share_directory("arduinobot_description"),
-                    "urdf",
-                    "arduinobot.urdf.xacro",
-                ),
-                " is_sim:=false"
-            ],
-        ),
-        value_type=str
-    )
-    
-    robot_state_publisher_node = Node(                         # Define el nodo que publicará el URDF en /robot_description y TF.
-        package="robot_state_publisher",                       # Paquete donde vive el ejecutable.
-        executable="robot_state_publisher",                    # Nombre del ejecutable a lanzar.
-        condition = UnlessCondition(is_sim),
-        parameters=[
-            {
-                "robot_description": robot_description,        # Pasa el parámetro 'robot_description' ya resuelto (URDF plano).
-                "use_sim_time": is_sim
-            }    
-        ],
-        output="screen",
+        Command([
+            "xacro ", xacro_path,
+            " is_sim:=", is_sim,
+            " is_ignition:=", is_ignition,
+        ]),
+        value_type=str,
     )
 
+    # Solo en REAL (no Gazebo): ros2_control_node
     controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[
-            {
-                "robot_description":robot_description,
-                "use_sim_time" : is_sim
-            },
-            os.path.join(
-                get_package_share_directory("arduinobot_controller"),
-                "config",
-                "arduinobot_controllers.yaml",
-            ),
+            {"robot_description": robot_description},
+            os.path.join(get_package_share_directory("arduinobot_controller"), "config", "arduinobot_controllers.yaml"),
         ],
-        condition = UnlessCondition(is_sim),
         output="screen",
+        condition=UnlessCondition(is_sim),   # <-- no lo arranques si usas el manager de Gazebo
     )
 
+    # Spawners (cambia -c según sim/real)
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[
-            "joint_state_broadcaster",
-            "--controller-manager","/controller_manager",
-            "--controller-manager-timeout", "120"
-        ],
+        arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
         output="screen",
+        condition=UnlessCondition(is_sim),   # en Gazebo usa /gazebo/controller_manager o crea un bloque alterno
     )
-
     arm_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[
-            "arm_controller",
-            "--controller-manager","/controller_manager",
-            "--controller-manager-timeout", "120"
-        ],
+        arguments=["arm_controller", "-c", "/controller_manager"],
         output="screen",
+        condition=UnlessCondition(is_sim),
     )
-
     gripper_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[
-            "gripper_controller",
-            "--controller-manager","/controller_manager",
-            "--controller-manager-timeout", "120"
-        ],
+        arguments=["gripper_controller", "-c", "/controller_manager"],
+        output="screen",
+        condition=UnlessCondition(is_sim),
+    )
+
+    # Robot State Publisher (en ambos casos)
+    robot_state_publisher = Node(
+        package="robot_state_publisher",
+        executable="robot_state_publisher",
+        parameters=[{"robot_description": robot_description}],
         output="screen",
     )
 
-    return LaunchDescription(
-        [
-            is_sim_arg,
-            robot_state_publisher_node,
-            controller_manager,
-            joint_state_broadcaster_spawner,
-            arm_controller_spawner,
-            gripper_controller_spawner,
-        ]
-    )
+    return LaunchDescription([
+        # NEW (minimal): include the new arg in the description
+        is_sim_arg,
+        is_ignition_arg,
+        robot_state_publisher,
+        controller_manager,
+        joint_state_broadcaster_spawner,
+        arm_controller_spawner,
+        gripper_controller_spawner,
+    ])
