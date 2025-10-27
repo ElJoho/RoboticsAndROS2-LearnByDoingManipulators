@@ -3,7 +3,7 @@ Servo motor;
 void setup() {
   // put your setup code here, to run once:
   motor.attach(8);
-  motor.write(90);
+  motor.write(0);
 
   Serial.begin(115200);
   Serial.setTimeout(1);

@@ -276,6 +276,19 @@ simple_moveit_interface/fast:
 .PHONY : simple_moveit_interface/fast
 
 #=============================================================================
+# Target rules for targets named simple_lifecycle_node
+
+# Build rule for target.
+simple_lifecycle_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_lifecycle_node
+.PHONY : simple_lifecycle_node
+
+# fast build rule for target.
+simple_lifecycle_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_lifecycle_node.dir/build.make CMakeFiles/simple_lifecycle_node.dir/build
+.PHONY : simple_lifecycle_node/fast
+
+#=============================================================================
 # Target rules for targets named simple_action_server
 
 # Build rule for target.
@@ -422,6 +435,30 @@ src/simple_action_server.s: src/simple_action_server.cpp.s
 src/simple_action_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_action_server.dir/build.make CMakeFiles/simple_action_server.dir/src/simple_action_server.cpp.s
 .PHONY : src/simple_action_server.cpp.s
+
+src/simple_lifecycle_node.o: src/simple_lifecycle_node.cpp.o
+.PHONY : src/simple_lifecycle_node.o
+
+# target to build an object file
+src/simple_lifecycle_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_lifecycle_node.dir/build.make CMakeFiles/simple_lifecycle_node.dir/src/simple_lifecycle_node.cpp.o
+.PHONY : src/simple_lifecycle_node.cpp.o
+
+src/simple_lifecycle_node.i: src/simple_lifecycle_node.cpp.i
+.PHONY : src/simple_lifecycle_node.i
+
+# target to preprocess a source file
+src/simple_lifecycle_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_lifecycle_node.dir/build.make CMakeFiles/simple_lifecycle_node.dir/src/simple_lifecycle_node.cpp.i
+.PHONY : src/simple_lifecycle_node.cpp.i
+
+src/simple_lifecycle_node.s: src/simple_lifecycle_node.cpp.s
+.PHONY : src/simple_lifecycle_node.s
+
+# target to generate assembly for a file
+src/simple_lifecycle_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_lifecycle_node.dir/build.make CMakeFiles/simple_lifecycle_node.dir/src/simple_lifecycle_node.cpp.s
+.PHONY : src/simple_lifecycle_node.cpp.s
 
 src/simple_moveit_interface.o: src/simple_moveit_interface.cpp.o
 .PHONY : src/simple_moveit_interface.o
@@ -586,6 +623,7 @@ help:
 	@echo "... simple_action_client_node"
 	@echo "... simple_action_server"
 	@echo "... simple_action_server_node"
+	@echo "... simple_lifecycle_node"
 	@echo "... simple_moveit_interface"
 	@echo "... simple_parameter"
 	@echo "... simple_publisher"
@@ -604,6 +642,9 @@ help:
 	@echo "... src/simple_action_server.o"
 	@echo "... src/simple_action_server.i"
 	@echo "... src/simple_action_server.s"
+	@echo "... src/simple_lifecycle_node.o"
+	@echo "... src/simple_lifecycle_node.i"
+	@echo "... src/simple_lifecycle_node.s"
 	@echo "... src/simple_moveit_interface.o"
 	@echo "... src/simple_moveit_interface.i"
 	@echo "... src/simple_moveit_interface.s"

@@ -1,0 +1,10 @@
+<library path="arduinobot_controller">
+    <class name="arduinobot_controller/ArduinobotInterface"
+        type="ardinobot_controller::ArduinobotInterface"
+        base="hardware_interface::SystemInterface"
+    >
+        <description>
+            Arduinobot Hardware Interface
+        </description>
+    </class>
+</library>

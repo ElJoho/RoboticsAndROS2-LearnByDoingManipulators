@@ -6,6 +6,7 @@ from launch_ros.actions import Node                            # Importa la acci
 from launch_ros.parameter_descriptions import ParameterValue   # Permite definir valores de parámetros (p.ej., robot_description).
 from launch.actions import DeclareLaunchArgument               # Acción para declarar argumentos que el usuario puede pasar al launch.
 from launch.substitutions import Command, LaunchConfiguration  # Herramientas para construir strings/valores dinámicos en tiempo de lanzamiento.
+from launch.actions import DeclareLaunchArgument
 
 def generate_launch_description():
 
@@ -26,6 +27,7 @@ def generate_launch_description():
                     "urdf",
                     "arduinobot.urdf.xacro",
                 ),
+                " is_sim:=false"
             ],
         ),
         value_type=str
@@ -41,7 +43,7 @@ def generate_launch_description():
                 "use_sim_time": is_sim
             }    
         ],
-        output="screen",  
+        output="screen",
     )
 
     controller_manager = Node(

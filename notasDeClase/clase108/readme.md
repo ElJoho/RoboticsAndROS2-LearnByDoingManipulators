@@ -1,5 +1,3 @@
-# Clase 108 `simple_lyfecycle_node.cpp`
-    CMakeLists.txt
-    package.xml
-    arduinobot_cpp_examples/simple_lyfecycle_node.cpp
-    
+# Clase 108 ROS2 Lifecycle Nodes
+    arduinobot_py_examples/simple_lyfecycle_node
+    setup.py
