@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
 
+    <xacro:property name="PI" value="3.14159265359" />
     
     <ros2_control name="RobotSystem" type="system">
 
@@ -25,8 +26,6 @@
                 <param nmae="port">/dev/ttyUSB0</param>
             </hardware>
         </xacro:unless>
-
-        <xacro:property name="PI" value="3.14159265359" />
 
         <!-- ros2_control Gazebo -->
         <!-- ROS 2 Humble -->

@@ -7,7 +7,7 @@
 #define BASE_START 90
 #define SHOULDER_START 90
 #define ELBOW_START 90
-#define GRIPPER_START 00
+#define GRIPPER_START 90
 
 
 Servo base;
@@ -24,12 +24,12 @@ void reach_goal(Servo& motor, int goal){
   if(goal>=motor.read()){
     for(int pos = motor.read(); pos <= goal; pos++){
       motor.write(pos);
-      delay(10);
+      delay(1);
     }
   }else{
     for(int pos = motor.read(); pos >= goal; pos--){
       motor.write(pos);
-      delay(10);
+      delay(1);
     }
   }
 }
