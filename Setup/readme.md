@@ -24,19 +24,19 @@ Este repositorio requiere el uso de [Git LFS (Large File Storage)](https://git-l
    Ejecuta el siguiente comando en la raíz del repositorio:
 
    ```bash
-   git lfs track "*.ipt" "*.iam" "*.idw" "*.ipn" "*.stl" "*.step" "*.stp" "*.igs" "*.iges" "*.dwg" "*.dxf" "*.3ds" "*.obj" "*.fbx" "*.mp4" "*.mov" "*.avi" "*.mkv" "*.zip" "*.rar" "*.7z"
+   git lfs track "*.ipt" "*.iam" "*.idw" "*.ipn" "*.stl" "*.step" "*.stp" "*.igs" "*.iges" "*.dwg" "*.dxf" "*.3ds" "*.obj" "*.fbx" "*.mp4" "*.mov" "*.avi" "*.mkv" "*.zip" "*.rar" "*.7z" "*.dae"
    ```
 
 ---
 
 ### 📂 Clasificación de tipos de archivos
 
-| Categoría      | Extensiones                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| **Inventor**   | `.ipt`, `.iam`, `.idw`, `.ipn`                                                   |
-| **CAD/3D**     | `.stl`, `.step`, `.stp`, `.igs`, `.iges`, `.dwg`, `.dxf`, `.3ds`, `.obj`, `.fbx` |
-| **Video**      | `.mp4`, `.mov`, `.avi`, `.mkv`                                                   |
-| **Compresión** | `.zip`, `.rar`, `.7z`                                                            |
+| Categoría      | Extensiones                                                                               |
+|----------------|-------------------------------------------------------------------------------------------|
+| **Inventor**   | `.ipt`, `.iam`, `.idw`, `.ipn`                                                            |
+| **CAD/3D**     | `.stl`, `.step`, `.stp`, `.igs`, `.iges`, `.dwg`, `.dxf`, `.3ds`, `.obj`, `.fbx` , `.dae` |
+| **Video**      | `.mp4`, `.mov`, `.avi`, `.mkv`                                                            |
+| **Compresión** | `.zip`, `.rar`, `.7z`                                                                     |
 
 ---
 
